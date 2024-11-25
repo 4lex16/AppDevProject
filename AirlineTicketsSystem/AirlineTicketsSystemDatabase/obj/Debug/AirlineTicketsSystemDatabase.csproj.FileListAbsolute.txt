@@ -1,0 +1,12 @@
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemDatabase\bin\Debug\AirlineTicketsSystemDatabase.dll.config
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemDatabase\bin\Debug\AirlineTicketsSystemDatabase.dll
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemDatabase\bin\Debug\AirlineTicketsSystemDatabase.pdb
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemDatabase\bin\Debug\EntityFramework.dll
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemDatabase\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemDatabase\bin\Debug\EntityFramework.xml
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemDatabase\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemDatabase\obj\Debug\AirlineTicketsSystemDatabase.csproj.AssemblyReference.cache
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemDatabase\obj\Debug\AirlineTicketsSystemDatabase.csproj.CoreCompileInputs.cache
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemDatabase\obj\Debug\AirlineT.88467013.Up2Date
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemDatabase\obj\Debug\AirlineTicketsSystemDatabase.dll
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemDatabase\obj\Debug\AirlineTicketsSystemDatabase.pdb

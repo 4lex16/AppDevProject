@@ -42,6 +42,6 @@ erDiagram
     }
 
     Passenger ||--|{ Ticket : assignedTo
-    Ticket ||--o{ Flight: assignedTo
+    Ticket }o--|| Flight: assignedTo
     Ticket ||--|| SeatType: contains
 ```

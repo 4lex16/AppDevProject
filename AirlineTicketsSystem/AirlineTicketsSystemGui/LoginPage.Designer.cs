@@ -30,6 +30,7 @@
         {
             this.LoginTabControl = new System.Windows.Forms.TabControl();
             this.StaffLoginTab = new System.Windows.Forms.TabPage();
+            this.StaffAdminLabel = new System.Windows.Forms.Label();
             this.StaffPasswordLabel = new System.Windows.Forms.Label();
             this.StaffIdLabel = new System.Windows.Forms.Label();
             this.StaffPasswordTb = new System.Windows.Forms.TextBox();
@@ -49,7 +50,6 @@
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.StaffAdminLabel = new System.Windows.Forms.Label();
             this.LoginTabControl.SuspendLayout();
             this.StaffLoginTab.SuspendLayout();
             this.PassengerLoginTab.SuspendLayout();
@@ -70,7 +70,7 @@
             this.LoginTabControl.Multiline = true;
             this.LoginTabControl.Name = "LoginTabControl";
             this.LoginTabControl.SelectedIndex = 0;
-            this.LoginTabControl.Size = new System.Drawing.Size(311, 213);
+            this.LoginTabControl.Size = new System.Drawing.Size(311, 218);
             this.LoginTabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.LoginTabControl.TabIndex = 1;
             // 
@@ -85,10 +85,19 @@
             this.StaffLoginTab.Location = new System.Drawing.Point(4, 34);
             this.StaffLoginTab.Name = "StaffLoginTab";
             this.StaffLoginTab.Padding = new System.Windows.Forms.Padding(3);
-            this.StaffLoginTab.Size = new System.Drawing.Size(303, 175);
+            this.StaffLoginTab.Size = new System.Drawing.Size(303, 180);
             this.StaffLoginTab.TabIndex = 0;
             this.StaffLoginTab.Text = "Staff";
             this.StaffLoginTab.UseVisualStyleBackColor = true;
+            // 
+            // StaffAdminLabel
+            // 
+            this.StaffAdminLabel.Location = new System.Drawing.Point(11, 139);
+            this.StaffAdminLabel.Name = "StaffAdminLabel";
+            this.StaffAdminLabel.Size = new System.Drawing.Size(284, 34);
+            this.StaffAdminLabel.TabIndex = 11;
+            this.StaffAdminLabel.Text = "Login as Admin?";
+            this.StaffAdminLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // StaffPasswordLabel
             // 
@@ -233,13 +242,13 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "A&bout";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
             // 
             // languageToolStripMenuItem
@@ -254,29 +263,20 @@
             // frenchToolStripMenuItem
             // 
             this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.frenchToolStripMenuItem.Text = "F&rançais";
             // 
             // englishToolStripMenuItem
             // 
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.englishToolStripMenuItem.Text = "E&nglish";
-            // 
-            // StaffAdminLabel
-            // 
-            this.StaffAdminLabel.Location = new System.Drawing.Point(11, 135);
-            this.StaffAdminLabel.Name = "StaffAdminLabel";
-            this.StaffAdminLabel.Size = new System.Drawing.Size(284, 34);
-            this.StaffAdminLabel.TabIndex = 11;
-            this.StaffAdminLabel.Text = "Login as Admin?";
-            this.StaffAdminLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 239);
+            this.ClientSize = new System.Drawing.Size(311, 244);
             this.Controls.Add(this.TicketMenuStrip);
             this.Controls.Add(this.LoginTabControl);
             this.Name = "LoginPage";

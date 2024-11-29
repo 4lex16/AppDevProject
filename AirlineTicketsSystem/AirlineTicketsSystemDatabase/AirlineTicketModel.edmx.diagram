@@ -5,7 +5,6 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="3c79155e1327461ea66e1d5c70322af0" Name="Diagram1" >
-        <EntityTypeShape EntityType="AirlineTicketModel.User" Width="1.5" PointX="4.5" PointY="2.125" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

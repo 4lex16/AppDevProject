@@ -1,0 +1,12 @@
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\AirlineTicketsSystemGui.exe.config
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\AirlineTicketsSystemGui.exe
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\AirlineTicketsSystemGui.pdb
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.csproj.AssemblyReference.cache
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.LoginPage.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.PassengerPage.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.Properties.Resources.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.csproj.GenerateResource.cache
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.csproj.CoreCompileInputs.cache
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.exe
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.pdb
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.StaffPage.resources

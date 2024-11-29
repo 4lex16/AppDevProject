@@ -1,12 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="AirlineTicketModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
-  <EntityContainer Name="AirlineTicketModelContainer" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="Users" EntityType="AirlineTicketModel.User" />
-  </EntityContainer>
-  <EntityType Name="User">
-    <Key>
-      <PropertyRef Name="user_id" />
-    </Key>
-    <Property Name="user_id" Type="Int32" Nullable="false" />
-  </EntityType>
+  <EntityContainer Name="AirlineTicketModelContainer" annotation:LazyLoadingEnabled="true" />
 </Schema>

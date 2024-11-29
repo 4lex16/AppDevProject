@@ -52,6 +52,12 @@
     <Compile Include="PassengerPage.Designer.cs">
       <DependentUpon>PassengerPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="PassengerSignupPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PassengerSignupPage.Designer.cs">
+      <DependentUpon>PassengerSignupPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="StaffPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PassengerPage.resx">
       <DependentUpon>PassengerPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PassengerSignupPage.resx">
+      <DependentUpon>PassengerSignupPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

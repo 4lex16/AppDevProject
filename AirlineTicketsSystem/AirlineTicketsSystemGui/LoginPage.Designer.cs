@@ -39,11 +39,11 @@
             this.PassengerLoginTab = new System.Windows.Forms.TabPage();
             this.PassengerPasswordLabel = new System.Windows.Forms.Label();
             this.PassengerIdLabel = new System.Windows.Forms.Label();
-            this.PassengerPasswordTB = new System.Windows.Forms.TextBox();
-            this.PassengerUsernameTB = new System.Windows.Forms.TextBox();
+            this.PassengerPasswordTb = new System.Windows.Forms.TextBox();
+            this.PassengerUsernameTb = new System.Windows.Forms.TextBox();
             this.PassengerLoginButton = new System.Windows.Forms.Button();
             this.PassengerSignupLabel = new System.Windows.Forms.Label();
-            this.TicketMenuStrip = new System.Windows.Forms.MenuStrip();
+            this.LoginMenuStrip = new System.Windows.Forms.MenuStrip();
             this.pageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -53,7 +53,7 @@
             this.LoginTabControl.SuspendLayout();
             this.StaffLoginTab.SuspendLayout();
             this.PassengerLoginTab.SuspendLayout();
-            this.TicketMenuStrip.SuspendLayout();
+            this.LoginMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // LoginTabControl
@@ -150,14 +150,14 @@
             // 
             this.PassengerLoginTab.Controls.Add(this.PassengerPasswordLabel);
             this.PassengerLoginTab.Controls.Add(this.PassengerIdLabel);
-            this.PassengerLoginTab.Controls.Add(this.PassengerPasswordTB);
-            this.PassengerLoginTab.Controls.Add(this.PassengerUsernameTB);
+            this.PassengerLoginTab.Controls.Add(this.PassengerPasswordTb);
+            this.PassengerLoginTab.Controls.Add(this.PassengerUsernameTb);
             this.PassengerLoginTab.Controls.Add(this.PassengerLoginButton);
             this.PassengerLoginTab.Controls.Add(this.PassengerSignupLabel);
             this.PassengerLoginTab.Location = new System.Drawing.Point(4, 34);
             this.PassengerLoginTab.Name = "PassengerLoginTab";
             this.PassengerLoginTab.Padding = new System.Windows.Forms.Padding(3);
-            this.PassengerLoginTab.Size = new System.Drawing.Size(303, 175);
+            this.PassengerLoginTab.Size = new System.Drawing.Size(303, 180);
             this.PassengerLoginTab.TabIndex = 1;
             this.PassengerLoginTab.Text = "Passenger";
             this.PassengerLoginTab.UseVisualStyleBackColor = true;
@@ -180,21 +180,21 @@
             this.PassengerIdLabel.TabIndex = 5;
             this.PassengerIdLabel.Text = "Username :";
             // 
-            // PassengerPasswordTB
+            // PassengerPasswordTb
             // 
-            this.PassengerPasswordTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PassengerPasswordTB.Location = new System.Drawing.Point(11, 69);
-            this.PassengerPasswordTB.Name = "PassengerPasswordTB";
-            this.PassengerPasswordTB.Size = new System.Drawing.Size(284, 23);
-            this.PassengerPasswordTB.TabIndex = 4;
+            this.PassengerPasswordTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PassengerPasswordTb.Location = new System.Drawing.Point(11, 69);
+            this.PassengerPasswordTb.Name = "PassengerPasswordTb";
+            this.PassengerPasswordTb.Size = new System.Drawing.Size(284, 23);
+            this.PassengerPasswordTb.TabIndex = 4;
             // 
-            // PassengerUsernameTB
+            // PassengerUsernameTb
             // 
-            this.PassengerUsernameTB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PassengerUsernameTB.Location = new System.Drawing.Point(11, 23);
-            this.PassengerUsernameTB.Name = "PassengerUsernameTB";
-            this.PassengerUsernameTB.Size = new System.Drawing.Size(284, 23);
-            this.PassengerUsernameTB.TabIndex = 3;
+            this.PassengerUsernameTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PassengerUsernameTb.Location = new System.Drawing.Point(11, 23);
+            this.PassengerUsernameTb.Name = "PassengerUsernameTb";
+            this.PassengerUsernameTb.Size = new System.Drawing.Size(284, 23);
+            this.PassengerUsernameTb.TabIndex = 3;
             // 
             // PassengerLoginButton
             // 
@@ -219,16 +219,16 @@
             this.PassengerSignupLabel.Text = "Don\'t have an account? Sign Up";
             this.PassengerSignupLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TicketMenuStrip
+            // LoginMenuStrip
             // 
-            this.TicketMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.LoginMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pageToolStripMenuItem,
             this.languageToolStripMenuItem});
-            this.TicketMenuStrip.Location = new System.Drawing.Point(0, 0);
-            this.TicketMenuStrip.Name = "TicketMenuStrip";
-            this.TicketMenuStrip.Size = new System.Drawing.Size(311, 24);
-            this.TicketMenuStrip.TabIndex = 4;
-            this.TicketMenuStrip.Text = "menuStrip1";
+            this.LoginMenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.LoginMenuStrip.Name = "LoginMenuStrip";
+            this.LoginMenuStrip.Size = new System.Drawing.Size(311, 24);
+            this.LoginMenuStrip.TabIndex = 4;
+            this.LoginMenuStrip.Text = "menuStrip1";
             // 
             // pageToolStripMenuItem
             // 
@@ -277,7 +277,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(311, 244);
-            this.Controls.Add(this.TicketMenuStrip);
+            this.Controls.Add(this.LoginMenuStrip);
             this.Controls.Add(this.LoginTabControl);
             this.Name = "LoginPage";
             this.Text = "Login Page";
@@ -287,8 +287,8 @@
             this.StaffLoginTab.PerformLayout();
             this.PassengerLoginTab.ResumeLayout(false);
             this.PassengerLoginTab.PerformLayout();
-            this.TicketMenuStrip.ResumeLayout(false);
-            this.TicketMenuStrip.PerformLayout();
+            this.LoginMenuStrip.ResumeLayout(false);
+            this.LoginMenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,11 +306,11 @@
         private System.Windows.Forms.TabPage PassengerLoginTab;
         private System.Windows.Forms.Label PassengerPasswordLabel;
         private System.Windows.Forms.Label PassengerIdLabel;
-        private System.Windows.Forms.TextBox PassengerPasswordTB;
-        private System.Windows.Forms.TextBox PassengerUsernameTB;
+        private System.Windows.Forms.TextBox PassengerPasswordTb;
+        private System.Windows.Forms.TextBox PassengerUsernameTb;
         private System.Windows.Forms.Button PassengerLoginButton;
         private System.Windows.Forms.Label PassengerSignupLabel;
-        private System.Windows.Forms.MenuStrip TicketMenuStrip;
+        private System.Windows.Forms.MenuStrip LoginMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem pageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;

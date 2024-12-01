@@ -15,8 +15,7 @@ erDiagram
     
     Passenger {
         Int32 passenger_id PK
-        string passenger_first_name
-        string passenger_last_name
+        string passenger_full_name
         string passenger_email
         string passenger_password
         string passenger_phone

@@ -52,6 +52,16 @@
     <Compile Include="AdminPage.Designer.cs">
       <DependentUpon>AdminPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="controller\DatabaseController.cs" />
+    <Compile Include="controller\PassengerController.cs" />
+    <Compile Include="controller\StaffController.cs" />
+    <Compile Include="model\AirlineTicketSystem.cs" />
+    <Compile Include="model\Flight.cs" />
+    <Compile Include="model\Passenger.cs" />
+    <Compile Include="model\SeatType.cs" />
+    <Compile Include="model\Staff.cs" />
+    <Compile Include="model\Ticket.cs" />
+    <Compile Include="model\User.cs" />
     <Compile Include="PassengerPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +124,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="view\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

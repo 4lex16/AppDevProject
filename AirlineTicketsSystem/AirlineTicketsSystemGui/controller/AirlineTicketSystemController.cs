@@ -20,7 +20,7 @@ namespace AirlineTicketsSystemGui.controller
 
         public void InsertStaff(Staff staff)
         {
-            DatabaseController.InserStaffRecord(staff);
+            DatabaseController.InsertStaffRecord(staff);
             airlineTicketSystem.Staff.Add(staff);
         }
     }

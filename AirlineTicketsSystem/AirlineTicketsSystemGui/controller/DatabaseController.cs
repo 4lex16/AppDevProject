@@ -8,7 +8,7 @@ namespace AirlineTicketsSystemGui.controller
 {
     public class DatabaseController
     {
-        private const string DatabaseFileName = "Data Source=path/to/your/database.db"; // Update the path
+        private const string DatabaseFileName = "Data Source=PATH"; //TODO: Update the path
 
         public static SqliteConnection GetConnection()
         {
@@ -23,7 +23,7 @@ namespace AirlineTicketsSystemGui.controller
                 connection.Open();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                    CREATE TABLE IF NOT EXISTS Flights (
+                    CREATE TABLE IF NOT EXISTS flights (
                         flight_id INTEGER PRIMARY KEY,
                         first_class_seats INTEGER NOT NULL,
                         business_class_seats INTEGER NOT NULL,
@@ -44,14 +44,14 @@ namespace AirlineTicketsSystemGui.controller
                 connection.Open();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                    CREATE TABLE IF NOT EXISTS Tickets (
+                    CREATE TABLE IF NOT EXISTS tickets (
                         ticket_id INTEGER PRIMARY KEY,
-                        seatType_id INTEGER,
+                        seat_type_id INTEGER,
                         passenger_id INTEGER,
                         flight_id INTEGER,
-                        FOREIGN KEY (passenger_id) REFERENCES Passengers(passenger_id),
-                        FOREIGN KEY (flight_id) REFERENCES Flights(flight_id),
-                        FOREIGN KEY (seatType_id) REFERENCES SeatType(seatType_id)
+                        FOREIGN KEY (seat_type_id) REFERENCES seatTypes(seat_type_id),
+                        FOREIGN KEY (passenger_id) REFERENCES passengers(passenger_id),
+                        FOREIGN KEY (flight_id) REFERENCES flights(flight_id)
                     );
                 ";
                 command.ExecuteNonQuery();
@@ -65,7 +65,7 @@ namespace AirlineTicketsSystemGui.controller
                 connection.Open();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                    CREATE TABLE IF NOT EXISTS Staff (
+                    CREATE TABLE IF NOT EXISTS staff (
                         staff_id INTEGER PRIMARY KEY,
                         email TEXT,
                         password TEXT
@@ -82,8 +82,8 @@ namespace AirlineTicketsSystemGui.controller
                 connection.Open();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                    CREATE TABLE IF NOT EXISTS SeatTypes (
-                        seatType_id INTEGER PRIMARY KEY,
+                    CREATE TABLE IF NOT EXISTS seatTypes (
+                        seat_type_id INTEGER PRIMARY KEY,
                         seat_type TEXT,
                         seat_type_num INTEGER
                     );
@@ -99,12 +99,12 @@ namespace AirlineTicketsSystemGui.controller
                 connection.Open();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                    CREATE TABLE IF NOT EXISTS Passengers (
+                    CREATE TABLE IF NOT EXISTS passengers (
                         passenger_id INTEGER PRIMARY KEY,
                         passenger_name TEXT,
                         passenger_email TEXT,
                         passenger_password TEXT,
-                        passenger_phoneNumber TEXT,
+                        passenger_phone_number TEXT,
                         passenger_address TEXT
                     );
                 ";
@@ -120,7 +120,7 @@ namespace AirlineTicketsSystemGui.controller
                 connection.Open();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                    INSERT INTO Flights (flight_id, first_class_seats, business_class_seats, coach_class_seats, destination, departure_time, departure_date)
+                    INSERT INTO flights (flight_id, first_class_seats, business_class_seats, coach_class_seats, destination, departure_time, departure_date)
                     VALUES (@flightId, @firstClass, @businessClass, @coachClass, @destination, @departureTime, @departureDate);
                 ";
                 command.Parameters.AddWithValue("@flightId", flightId);
@@ -139,7 +139,6 @@ namespace AirlineTicketsSystemGui.controller
             InsertFlightRecord(flight.FlightId, flight.FirstClassSeats, flight.BusinessClassSeats, flight.CoachClassSeats,
                 flight.Destination, flight.DepartureTime, flight.DepartureDate);
         }
-        
 
         public static void InsertPassengerRecord(int passengerId, string fullName, string email, string password, string phone, string address)
         {
@@ -148,22 +147,24 @@ namespace AirlineTicketsSystemGui.controller
                 connection.Open();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                    INSERT INTO Passengers (passenger_id, passenger_name, passenger_email, passenger_password, passenger_phoneNumber, passenger_address)
-                    VALUES (@passenger_id, @passenger_name, @passenger_email, @passenger_password, @passenger_phoneNumber, @passenger_address);
+                    INSERT INTO passengers (passenger_id, passenger_name, passenger_email, passenger_password,
+                                            passenger_phone_number, passenger_address)
+                    VALUES (@passengerId, @name, @email, @password, @phone, @address);
                 ";
-                command.Parameters.AddWithValue("@passenger_id", passengerId);
-                command.Parameters.AddWithValue("@passenger_name", fullName);
-                command.Parameters.AddWithValue("@passenger_email", email);
-                command.Parameters.AddWithValue("@passenger_password", password);
-                command.Parameters.AddWithValue("@passenger_phoneNumber", phone);
-                command.Parameters.AddWithValue("@passenger_address", address);
+                command.Parameters.AddWithValue("@passengerId", passengerId);
+                command.Parameters.AddWithValue("@name", fullName);
+                command.Parameters.AddWithValue("@email", email);
+                command.Parameters.AddWithValue("@password", password);
+                command.Parameters.AddWithValue("@phone", phone);
+                command.Parameters.AddWithValue("@address", address);
                 command.ExecuteNonQuery();
             }
         }
 
         public static void InsertPassengerRecord(Passenger passenger)
         {
-            InsertPassengerRecord(passenger.UserId, passenger.Name, passenger.Email, passenger.Password, passenger.Phone, passenger.Address);
+            InsertPassengerRecord(passenger.UserId, passenger.Name, passenger.Email, passenger.Password, passenger.Phone,
+                passenger.Address);
         }
 
         public static void InsertStaffRecord(int staffId, string email, string password)
@@ -173,17 +174,17 @@ namespace AirlineTicketsSystemGui.controller
                 connection.Open();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                    INSERT INTO Staff (StaffId, Email, Password)
-                    VALUES (@staffId, @Email, @Password);
+                    INSERT INTO staff (staff_id, email, password)
+                    VALUES (@staffId, @email, @password);
                 ";
                 command.Parameters.AddWithValue("@staffId", staffId);
-                command.Parameters.AddWithValue("@Email", email);
-                command.Parameters.AddWithValue("@Password", password);
+                command.Parameters.AddWithValue("@email", email);
+                command.Parameters.AddWithValue("@password", password);
                 command.ExecuteNonQuery();
             }
         }
 
-        public static void InserStaffRecord(Staff staff)
+        public static void InsertStaffRecord(Staff staff)
         {
             InsertStaffRecord(staff.UserId, staff.Email, staff.Password);
         }
@@ -195,7 +196,7 @@ namespace AirlineTicketsSystemGui.controller
                 connection.Open();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                    INSERT INTO Tickets (TicketId, SeatTypeId, PassengerId, FlightId)
+                    INSERT INTO tickets (ticket_id, seat_type_id, passenger_id, flight_id)
                     VALUES (@ticketId, @seatTypeId, @passengerId, @flightId);
                 ";
                 command.Parameters.AddWithValue("@ticketId", ticketId);
@@ -214,7 +215,7 @@ namespace AirlineTicketsSystemGui.controller
             {
                 connection.Open();
                 var command = connection.CreateCommand();
-                command.CommandText = "SELECT * FROM Flights;";
+                command.CommandText = "SELECT * FROM flights;";
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
@@ -242,7 +243,7 @@ namespace AirlineTicketsSystemGui.controller
             {
                 connection.Open();
                 var command = connection.CreateCommand();
-                command.CommandText = "SELECT * FROM Passengers;";
+                command.CommandText = "SELECT * FROM passengers;";
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
@@ -270,9 +271,12 @@ namespace AirlineTicketsSystemGui.controller
                 connection.Open();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                    SELECT TicketId, seat_type_num, PassengerId, FlightId FROM Tickets JOIN SeatType 
-                    ON Tickets.SeatTypeId = SeatType.Id;
-";
+                    SELECT t.ticket_id, s.seat_type_num, p.passenger_id, f.flight_id 
+                    FROM tickets t
+                    JOIN seatTypes s ON t.seat_type_id = s.seat_type_id
+                    JOIN passengers p ON t.passenger_id = p.passenger_id
+                    JOIN flights f ON t.flight_id = f.flight_id;
+                ";
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
@@ -297,7 +301,7 @@ namespace AirlineTicketsSystemGui.controller
             {
                 connection.Open();
                 var command = connection.CreateCommand();
-                command.CommandText = "SELECT * FROM Staff;";
+                command.CommandText = "SELECT * FROM staff;";
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())

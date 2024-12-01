@@ -24,8 +24,13 @@ namespace AirlineTicketsSystemGui.controller
                 var command = connection.CreateCommand();
                 command.CommandText = @"
                     CREATE TABLE IF NOT EXISTS Flights (
-                        FlightId INTEGER PRIMARY KEY,
-                        SeatAvailability TEXT
+                        flight_id INTEGER PRIMARY KEY,
+                        first_class_seats INTEGER NOT NULL,
+                        business_class_seats INTEGER NOT NULL,
+                        coach_class_seats INTEGER NOT NULL,
+                        destination TEXT,
+                        departure_time TEXT,
+                        departure_date TEXT
                     );
                 ";
                 command.ExecuteNonQuery();
@@ -40,12 +45,13 @@ namespace AirlineTicketsSystemGui.controller
                 var command = connection.CreateCommand();
                 command.CommandText = @"
                     CREATE TABLE IF NOT EXISTS Tickets (
-                        TicketId INTEGER PRIMARY KEY,
-                        SeatTypeId INTEGER,
-                        PassengerId INTEGER,
-                        FlightId INTEGER,
-                        FOREIGN KEY (PassengerId) REFERENCES Passengers(UserId),
-                        FOREIGN KEY (FlightId) REFERENCES Flights(FlightId)
+                        ticket_id INTEGER PRIMARY KEY,
+                        seatType_id INTEGER,
+                        passenger_id INTEGER,
+                        flight_id INTEGER,
+                        FOREIGN KEY (passenger_id) REFERENCES Passengers(passenger_id),
+                        FOREIGN KEY (flight_id) REFERENCES Flights(flight_id),
+                        FOREIGN KEY (seatType_id) REFERENCES SeatType(seatType_id)
                     );
                 ";
                 command.ExecuteNonQuery();
@@ -60,9 +66,9 @@ namespace AirlineTicketsSystemGui.controller
                 var command = connection.CreateCommand();
                 command.CommandText = @"
                     CREATE TABLE IF NOT EXISTS Staff (
-                        StaffId INTEGER PRIMARY KEY,
-                        Email TEXT,
-                        Password TEXT
+                        staff_id INTEGER PRIMARY KEY,
+                        email TEXT,
+                        password TEXT
                     );
                 ";
                 command.ExecuteNonQuery();
@@ -77,8 +83,29 @@ namespace AirlineTicketsSystemGui.controller
                 var command = connection.CreateCommand();
                 command.CommandText = @"
                     CREATE TABLE IF NOT EXISTS SeatTypes (
-                        SeatTypeId INTEGER PRIMARY KEY,
-                        Description TEXT
+                        seatType_id INTEGER PRIMARY KEY,
+                        seat_type TEXT,
+                        seat_type_num INTEGER
+                    );
+                ";
+                command.ExecuteNonQuery();
+            }
+        }
+
+        public static void CreatePassengerTable()
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                var command = connection.CreateCommand();
+                command.CommandText = @"
+                    CREATE TABLE IF NOT EXISTS Passengers (
+                        passenger_id INTEGER PRIMARY KEY,
+                        passenger_name TEXT,
+                        passenger_email TEXT,
+                        passenger_password TEXT,
+                        passenger_phoneNumber TEXT,
+                        passenger_address TEXT
                     );
                 ";
                 command.ExecuteNonQuery();
@@ -86,39 +113,57 @@ namespace AirlineTicketsSystemGui.controller
         }
 
         // Insert Methods
-        public static void InsertFlightRecord(int flightId, string seatAvailability)
+        public static void InsertFlightRecord(int flightId, int firstClass, int businessClass, int coachClass, string destination, string departureTime, string departureDate)
         {
             using (var connection = GetConnection())
             {
                 connection.Open();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                    INSERT INTO Flights (FlightId, SeatAvailability)
-                    VALUES (@flightId, @seatAvailability);
+                    INSERT INTO Flights (flight_id, first_class_seats, business_class_seats, coach_class_seats, destination, departure_time, departure_date)
+                    VALUES (@flightId, @firstClass, @businessClass, @coachClass, @destination, @departureTime, @departureDate);
                 ";
                 command.Parameters.AddWithValue("@flightId", flightId);
-                command.Parameters.AddWithValue("@seatAvailability", seatAvailability);
+                command.Parameters.AddWithValue("@firstClass", firstClass);
+                command.Parameters.AddWithValue("@businessClass", businessClass);
+                command.Parameters.AddWithValue("@coachClass", coachClass);
+                command.Parameters.AddWithValue("@destination", destination);
+                command.Parameters.AddWithValue("@departureTime", departureTime);
+                command.Parameters.AddWithValue("@departureDate", departureDate);
                 command.ExecuteNonQuery();
             }
         }
 
-        public static void InsertPassengerRecord(int userId, string email, string password, string phone, string address)
+        public static void InsertFlightRecord(Flight flight)
+        {
+            InsertFlightRecord(flight.FlightId, flight.FirstClassSeats, flight.BusinessClassSeats, flight.CoachClassSeats,
+                flight.Destination, flight.DepartureTime, flight.DepartureDate);
+        }
+        
+
+        public static void InsertPassengerRecord(int passengerId, string fullName, string email, string password, string phone, string address)
         {
             using (var connection = GetConnection())
             {
                 connection.Open();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                    INSERT INTO Passengers (UserId, Email, Password, Phone, Address)
-                    VALUES (@userId, @Email, @Password, @Phone, @Address);
+                    INSERT INTO Passengers (passenger_id, passenger_name, passenger_email, passenger_password, passenger_phoneNumber, passenger_address)
+                    VALUES (@passenger_id, @passenger_name, @passenger_email, @passenger_password, @passenger_phoneNumber, @passenger_address);
                 ";
-                command.Parameters.AddWithValue("@userId", userId);
-                command.Parameters.AddWithValue("@Email", email);
-                command.Parameters.AddWithValue("@Password", password);
-                command.Parameters.AddWithValue("@Phone", phone);
-                command.Parameters.AddWithValue("@Address", address);
+                command.Parameters.AddWithValue("@passenger_id", passengerId);
+                command.Parameters.AddWithValue("@passenger_name", fullName);
+                command.Parameters.AddWithValue("@passenger_email", email);
+                command.Parameters.AddWithValue("@passenger_password", password);
+                command.Parameters.AddWithValue("@passenger_phoneNumber", phone);
+                command.Parameters.AddWithValue("@passenger_address", address);
                 command.ExecuteNonQuery();
             }
+        }
+
+        public static void InsertPassengerRecord(Passenger passenger)
+        {
+            InsertPassengerRecord(passenger.UserId, passenger.Name, passenger.Email, passenger.Password, passenger.Phone, passenger.Address);
         }
 
         public static void InsertStaffRecord(int staffId, string email, string password)
@@ -136,6 +181,11 @@ namespace AirlineTicketsSystemGui.controller
                 command.Parameters.AddWithValue("@Password", password);
                 command.ExecuteNonQuery();
             }
+        }
+
+        public static void InserStaffRecord(Staff staff)
+        {
+            InsertStaffRecord(staff.UserId, staff.Email, staff.Password);
         }
 
         public static void InsertTicketRecord(int ticketId, int seatTypeId, int passengerId, int flightId)
@@ -164,7 +214,7 @@ namespace AirlineTicketsSystemGui.controller
             {
                 connection.Open();
                 var command = connection.CreateCommand();
-                command.CommandText = "SELECT FlightId, SeatAvailability FROM Flights;";
+                command.CommandText = "SELECT * FROM Flights;";
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
@@ -172,7 +222,12 @@ namespace AirlineTicketsSystemGui.controller
                         flights.Add(new Flight
                         {
                             FlightId = reader.GetInt32(0),
-                            SeatAvailability = reader.GetString(1)
+                            FirstClassSeats = reader.GetInt32(1),
+                            BusinessClassSeats = reader.GetInt32(2),
+                            CoachClassSeats = reader.GetInt32(3),
+                            Destination = reader.GetString(4),
+                            DepartureDate = reader.GetString(5),
+                            DepartureTime = reader.GetString(6)
                         });
                     }
                 }
@@ -187,7 +242,7 @@ namespace AirlineTicketsSystemGui.controller
             {
                 connection.Open();
                 var command = connection.CreateCommand();
-                command.CommandText = "SELECT UserId, Email, Password, Phone, Address FROM Passengers;";
+                command.CommandText = "SELECT * FROM Passengers;";
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
@@ -195,10 +250,11 @@ namespace AirlineTicketsSystemGui.controller
                         passengers.Add(new Passenger
                         {
                             UserId = reader.GetInt32(0),
-                            Email = reader.GetString(1),
-                            Password = reader.GetString(2),
-                            Phone = reader.GetString(3),
-                            Address = reader.GetString(4)
+                            Name = reader.GetString(1),
+                            Email = reader.GetString(2),
+                            Password = reader.GetString(3),
+                            Phone = reader.GetString(4),
+                            Address = reader.GetString(5)
                         });
                     }
                 }

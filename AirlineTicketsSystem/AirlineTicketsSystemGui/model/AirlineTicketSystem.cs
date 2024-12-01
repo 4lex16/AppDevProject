@@ -5,10 +5,10 @@ namespace AirlineTicketsSystemGui.model
 {
     public class AirlineTicketSystem
     {
-        private AirlineTicketSystem _airlineTicketSystem;
-        private List<Passenger> Passengers;
-        private List<Staff> Staff;
-        private List<Flight> Flights;
+        private static AirlineTicketSystem _airlineTicketSystem;
+        public List<Passenger> Passengers { get; }
+        public List<Staff> Staff { get; }
+        public List<Flight> Flights { get; }
 
 
         private AirlineTicketSystem()
@@ -18,7 +18,7 @@ namespace AirlineTicketsSystemGui.model
             Flights = DatabaseController.QueryAllFlights();
         }
         
-        public AirlineTicketSystem GetInstance()
+        public static AirlineTicketSystem GetInstance()
         {
             if (_airlineTicketSystem == null)
             {

@@ -78,6 +78,7 @@
     <Compile Include="AdminPage.Designer.cs">
       <DependentUpon>AdminPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="controller\AirlineTicketSystemController.cs" />
     <Compile Include="controller\DatabaseController.cs" />
     <Compile Include="controller\PassengerController.cs" />
     <Compile Include="controller\StaffController.cs" />

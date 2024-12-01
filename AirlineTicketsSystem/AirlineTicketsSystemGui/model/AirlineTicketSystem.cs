@@ -13,9 +13,9 @@ namespace AirlineTicketsSystemGui.model
 
         private AirlineTicketSystem()
         {
-            Passengers = DatabaseController.quryAllPassengers();
-            Staff = DatabaseController.quryAllStaff();
-            Flights = DatabaseController.quryAllFlights();
+            Passengers = DatabaseController.QueryAllPassengers();
+            Staff = DatabaseController.QueryAllStaff();
+            Flights = DatabaseController.QueryAllFlights();
         }
         
         public AirlineTicketSystem GetInstance()

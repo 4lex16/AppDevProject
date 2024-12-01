@@ -39,6 +39,7 @@ erDiagram
     SeatType {
         Int32 seattype_id PK
         String seat_type
+        Int32 seat_type_num
     }
 
     Passenger ||--|{ Ticket : assignedTo

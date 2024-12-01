@@ -2,6 +2,8 @@
 {
     public enum SeatType
     {
-        COACH,BUSINEES,FIRST_CLASS
+        Coach = 0,
+        Business = 1,
+        FirstClass = 2
     }
 }

@@ -18,7 +18,7 @@ erDiagram
         String passenger_email
         String passenger_password
         String passenger_phone
-        String passenger_email
+        String passenger_address
     }
 
     %% Flight will be created by "Admin" (outside of our program)
@@ -39,6 +39,7 @@ erDiagram
     SeatType {
         Int32 seattype_id PK
         String seat_type
+        Int32 seat_type_num
     }
 
     Passenger ||--|{ Ticket : assignedTo

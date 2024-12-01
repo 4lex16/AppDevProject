@@ -18,7 +18,7 @@ erDiagram
         String passenger_email
         String passenger_password
         String passenger_phone
-        String passenger_email
+        String passenger_address
     }
 
     %% Flight will be created by "Admin" (outside of our program)

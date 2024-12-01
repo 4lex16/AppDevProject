@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using AirlineTicketsSystemGui.controller;
 
 namespace AirlineTicketsSystemGui.model
 {
@@ -12,7 +13,9 @@ namespace AirlineTicketsSystemGui.model
 
         private AirlineTicketSystem()
         {
-            //todo: instantiate all the lists using the queries in the database controller
+            Passengers = DatabaseController.quryAllPassengers();
+            Staff = DatabaseController.quryAllStaff();
+            Flights = DatabaseController.quryAllFlights();
         }
         
         public AirlineTicketSystem GetInstance()

@@ -15,19 +15,25 @@ erDiagram
     
     Passenger {
         Int32 passenger_id PK
-        String passenger_email
-        String passenger_password
-        String passenger_phone
-        String passenger_address
+        string passenger_first_name
+        string passenger_last_name
+        string passenger_email
+        string passenger_password
+        string passenger_phone
+        string passenger_address
     }
 
     %% Flight will be created by "Admin" (outside of our program)
     Flight {
         Int32 flight_id
-        Int32 seat_availability
+        Int32 first_class_seats
+        Int32 buisness_class_seats
+        Int32 coach_class_seats
+        string destination
+        string departure_date
+        string departure_time
     }
 
-    
 
     Ticket {
         Int32 ticket_id PK
@@ -38,7 +44,7 @@ erDiagram
 
     SeatType {
         Int32 seattype_id PK
-        String seat_type
+        string seat_type
         Int32 seat_type_num
     }
 

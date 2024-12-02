@@ -284,13 +284,20 @@ namespace AirlineTicketsSystemGui.controller
                 {
                     while (reader.Read())
                     {
-                        tickets.Add(new Ticket
-                        {
-                            TicketId = reader.GetInt32(0),
-                            SeatType = (SeatType)reader.GetInt32(1),
-                            PassengerId =  reader.GetInt32(2),
-                            Flight = new Flight(reader.GetInt32(3), reader.GetInt32(4), reader.GetInt32(5),reader.GetInt32(6), reader.GetString(7), reader.GetString(8), reader.GetString(9))
-                        });
+                        tickets.Add(new Ticket (
+                            reader.GetInt32(0),
+                            new Flight(
+                                reader.GetInt32(3),
+                                reader.GetInt32(4),
+                                reader.GetInt32(5),
+                                reader.GetInt32(6),
+                                reader.GetString(7),
+                                reader.GetString(8),
+                                reader.GetString(9)
+                            ),
+                            reader.GetInt32(2),
+                            (SeatType) reader.GetInt32(1)
+                        ));
                     }
                 }
             }

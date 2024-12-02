@@ -67,9 +67,7 @@
             // 
             // AdminMenuStrip
             // 
-            this.AdminMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pageToolStripMenuItem,
-            this.languageToolStripMenuItem});
+            this.AdminMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.pageToolStripMenuItem, this.languageToolStripMenuItem });
             this.AdminMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.AdminMenuStrip.Name = "AdminMenuStrip";
             this.AdminMenuStrip.Size = new System.Drawing.Size(586, 24);
@@ -78,10 +76,7 @@
             // 
             // pageToolStripMenuItem
             // 
-            this.pageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem,
-            this.logoutToolStripMenuItem,
-            this.exitToolStripMenuItem});
+            this.pageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.aboutToolStripMenuItem, this.logoutToolStripMenuItem, this.exitToolStripMenuItem });
             this.pageToolStripMenuItem.Name = "pageToolStripMenuItem";
             this.pageToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.pageToolStripMenuItem.Text = "&Page";
@@ -106,9 +101,7 @@
             // 
             // languageToolStripMenuItem
             // 
-            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.frenchToolStripMenuItem,
-            this.englishToolStripMenuItem});
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.frenchToolStripMenuItem, this.englishToolStripMenuItem });
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
             this.languageToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.languageToolStripMenuItem.Text = "&Language";
@@ -127,9 +120,7 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons;
             this.tabControl1.Controls.Add(this.StaffTab);
             this.tabControl1.Controls.Add(this.FlightTab);
@@ -185,6 +176,7 @@
             this.StaffEditButton.TabIndex = 23;
             this.StaffEditButton.Text = "Edit";
             this.StaffEditButton.UseVisualStyleBackColor = false;
+            this.StaffEditButton.Click += new System.EventHandler(this.StaffEditButton_Click);
             // 
             // StaffAddButton
             // 
@@ -198,6 +190,7 @@
             this.StaffAddButton.TabIndex = 22;
             this.StaffAddButton.Text = "Add";
             this.StaffAddButton.UseVisualStyleBackColor = false;
+            this.StaffAddButton.Click += new System.EventHandler(this.StaffAddButton_Click);
             // 
             // StaffDetailsButton
             // 
@@ -211,6 +204,7 @@
             this.StaffDetailsButton.TabIndex = 21;
             this.StaffDetailsButton.Text = "Details";
             this.StaffDetailsButton.UseVisualStyleBackColor = false;
+            this.StaffDetailsButton.Click += new System.EventHandler(this.StaffDetailsButton_Click);
             // 
             // StaffFilterLabel
             // 
@@ -245,8 +239,7 @@
             // 
             // StaffListBox
             // 
-            this.StaffListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.StaffListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.StaffListBox.FormattingEnabled = true;
             this.StaffListBox.ItemHeight = 16;
             this.StaffListBox.Location = new System.Drawing.Point(8, 71);
@@ -288,6 +281,7 @@
             this.FlightEditButton.TabIndex = 11;
             this.FlightEditButton.Text = "Edit";
             this.FlightEditButton.UseVisualStyleBackColor = false;
+            this.FlightEditButton.Click += new System.EventHandler(this.FlightEditButton_Click);
             // 
             // FlightBuyButton
             // 
@@ -301,6 +295,7 @@
             this.FlightBuyButton.TabIndex = 10;
             this.FlightBuyButton.Text = "Add";
             this.FlightBuyButton.UseVisualStyleBackColor = false;
+            this.FlightBuyButton.Click += new System.EventHandler(this.FlightAddButton_Click);
             // 
             // FlightDetailsButton
             // 
@@ -314,6 +309,7 @@
             this.FlightDetailsButton.TabIndex = 9;
             this.FlightDetailsButton.Text = "Details";
             this.FlightDetailsButton.UseVisualStyleBackColor = false;
+            this.FlightDetailsButton.Click += new System.EventHandler(this.FlightDetailsButton_Click);
             // 
             // FlightFilterLabel
             // 
@@ -361,8 +357,7 @@
             // 
             // FlightDestinationTb
             // 
-            this.FlightDestinationTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.FlightDestinationTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.FlightDestinationTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.FlightDestinationTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FlightDestinationTb.Location = new System.Drawing.Point(407, 40);
@@ -407,8 +402,7 @@
             // 
             // FlightListBox
             // 
-            this.FlightListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.FlightListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.FlightListBox.FormattingEnabled = true;
             this.FlightListBox.ItemHeight = 16;
             this.FlightListBox.Location = new System.Drawing.Point(9, 71);
@@ -435,7 +429,6 @@
             this.FlightTab.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

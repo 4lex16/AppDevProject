@@ -44,7 +44,6 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.PassengerDetailsButton = new System.Windows.Forms.Button();
             this.PassengerFilterLabel = new System.Windows.Forms.Label();
             this.PassengerOrderLabel = new System.Windows.Forms.Label();
@@ -225,7 +224,6 @@
             this.PassengerTab.Controls.Add(this.textBox1);
             this.PassengerTab.Controls.Add(this.label1);
             this.PassengerTab.Controls.Add(this.button2);
-            this.PassengerTab.Controls.Add(this.button1);
             this.PassengerTab.Controls.Add(this.PassengerDetailsButton);
             this.PassengerTab.Controls.Add(this.PassengerFilterLabel);
             this.PassengerTab.Controls.Add(this.PassengerOrderLabel);
@@ -277,19 +275,6 @@
             this.button2.Text = "Last Name";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.Window;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(112, 258);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 44);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Tickets";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // PassengerDetailsButton
             // 
             this.PassengerDetailsButton.BackColor = System.Drawing.SystemColors.Window;
@@ -302,6 +287,7 @@
             this.PassengerDetailsButton.TabIndex = 22;
             this.PassengerDetailsButton.Text = "Details";
             this.PassengerDetailsButton.UseVisualStyleBackColor = false;
+            this.PassengerDetailsButton.Click += new System.EventHandler(this.PassengerDetailsButton_Click);
             // 
             // PassengerFilterLabel
             // 
@@ -531,7 +517,6 @@
         private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem frenchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;

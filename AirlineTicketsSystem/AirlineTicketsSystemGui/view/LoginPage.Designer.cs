@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             this.LoginTabControl = new System.Windows.Forms.TabControl();
             this.StaffLoginTab = new System.Windows.Forms.TabPage();
             this.StaffAdminLabel = new System.Windows.Forms.Label();
@@ -58,229 +59,155 @@
             // 
             // LoginTabControl
             // 
-            this.LoginTabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LoginTabControl.Appearance = System.Windows.Forms.TabAppearance.Buttons;
+            resources.ApplyResources(this.LoginTabControl, "LoginTabControl");
             this.LoginTabControl.Controls.Add(this.StaffLoginTab);
             this.LoginTabControl.Controls.Add(this.PassengerLoginTab);
-            this.LoginTabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginTabControl.ItemSize = new System.Drawing.Size(150, 30);
-            this.LoginTabControl.Location = new System.Drawing.Point(0, 27);
             this.LoginTabControl.Multiline = true;
             this.LoginTabControl.Name = "LoginTabControl";
             this.LoginTabControl.SelectedIndex = 0;
-            this.LoginTabControl.Size = new System.Drawing.Size(311, 218);
             this.LoginTabControl.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.LoginTabControl.TabIndex = 1;
             // 
             // StaffLoginTab
             // 
+            resources.ApplyResources(this.StaffLoginTab, "StaffLoginTab");
             this.StaffLoginTab.Controls.Add(this.StaffAdminLabel);
             this.StaffLoginTab.Controls.Add(this.StaffPasswordLabel);
             this.StaffLoginTab.Controls.Add(this.StaffIdLabel);
             this.StaffLoginTab.Controls.Add(this.StaffPasswordTb);
             this.StaffLoginTab.Controls.Add(this.StaffIdTb);
             this.StaffLoginTab.Controls.Add(this.StaffLoginButton);
-            this.StaffLoginTab.Location = new System.Drawing.Point(4, 34);
             this.StaffLoginTab.Name = "StaffLoginTab";
-            this.StaffLoginTab.Padding = new System.Windows.Forms.Padding(3);
-            this.StaffLoginTab.Size = new System.Drawing.Size(303, 180);
-            this.StaffLoginTab.TabIndex = 0;
-            this.StaffLoginTab.Text = "Staff";
             this.StaffLoginTab.UseVisualStyleBackColor = true;
             // 
             // StaffAdminLabel
             // 
-            this.StaffAdminLabel.Location = new System.Drawing.Point(11, 139);
+            resources.ApplyResources(this.StaffAdminLabel, "StaffAdminLabel");
             this.StaffAdminLabel.Name = "StaffAdminLabel";
-            this.StaffAdminLabel.Size = new System.Drawing.Size(284, 34);
-            this.StaffAdminLabel.TabIndex = 11;
-            this.StaffAdminLabel.Text = "Login as Admin?";
-            this.StaffAdminLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.StaffAdminLabel.Click += new System.EventHandler(this.StaffAdminLabel_Click);
             // 
             // StaffPasswordLabel
             // 
-            this.StaffPasswordLabel.AutoSize = true;
-            this.StaffPasswordLabel.Location = new System.Drawing.Point(8, 49);
+            resources.ApplyResources(this.StaffPasswordLabel, "StaffPasswordLabel");
             this.StaffPasswordLabel.Name = "StaffPasswordLabel";
-            this.StaffPasswordLabel.Size = new System.Drawing.Size(87, 17);
-            this.StaffPasswordLabel.TabIndex = 10;
-            this.StaffPasswordLabel.Text = "Password :";
             // 
             // StaffIdLabel
             // 
-            this.StaffIdLabel.AutoSize = true;
-            this.StaffIdLabel.Location = new System.Drawing.Point(8, 3);
+            resources.ApplyResources(this.StaffIdLabel, "StaffIdLabel");
             this.StaffIdLabel.Name = "StaffIdLabel";
-            this.StaffIdLabel.Size = new System.Drawing.Size(33, 17);
-            this.StaffIdLabel.TabIndex = 9;
-            this.StaffIdLabel.Text = "ID :";
             // 
             // StaffPasswordTb
             // 
+            resources.ApplyResources(this.StaffPasswordTb, "StaffPasswordTb");
             this.StaffPasswordTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.StaffPasswordTb.Location = new System.Drawing.Point(11, 69);
             this.StaffPasswordTb.Name = "StaffPasswordTb";
-            this.StaffPasswordTb.Size = new System.Drawing.Size(284, 23);
-            this.StaffPasswordTb.TabIndex = 8;
             // 
             // StaffIdTb
             // 
+            resources.ApplyResources(this.StaffIdTb, "StaffIdTb");
             this.StaffIdTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.StaffIdTb.Location = new System.Drawing.Point(11, 23);
             this.StaffIdTb.Name = "StaffIdTb";
-            this.StaffIdTb.Size = new System.Drawing.Size(284, 23);
-            this.StaffIdTb.TabIndex = 7;
             // 
             // StaffLoginButton
             // 
+            resources.ApplyResources(this.StaffLoginButton, "StaffLoginButton");
             this.StaffLoginButton.BackColor = System.Drawing.SystemColors.Window;
-            this.StaffLoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StaffLoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StaffLoginButton.Location = new System.Drawing.Point(11, 102);
             this.StaffLoginButton.Name = "StaffLoginButton";
-            this.StaffLoginButton.Size = new System.Drawing.Size(284, 34);
-            this.StaffLoginButton.TabIndex = 1;
-            this.StaffLoginButton.Text = "Login";
             this.StaffLoginButton.UseVisualStyleBackColor = false;
             this.StaffLoginButton.Click += new System.EventHandler(this.StaffLoginButton_Click);
             // 
             // PassengerLoginTab
             // 
+            resources.ApplyResources(this.PassengerLoginTab, "PassengerLoginTab");
             this.PassengerLoginTab.Controls.Add(this.PassengerPasswordLabel);
             this.PassengerLoginTab.Controls.Add(this.PassengerIdLabel);
             this.PassengerLoginTab.Controls.Add(this.PassengerPasswordTb);
             this.PassengerLoginTab.Controls.Add(this.PassengerUsernameTb);
             this.PassengerLoginTab.Controls.Add(this.PassengerLoginButton);
             this.PassengerLoginTab.Controls.Add(this.PassengerSignupLabel);
-            this.PassengerLoginTab.Location = new System.Drawing.Point(4, 34);
             this.PassengerLoginTab.Name = "PassengerLoginTab";
-            this.PassengerLoginTab.Padding = new System.Windows.Forms.Padding(3);
-            this.PassengerLoginTab.Size = new System.Drawing.Size(303, 180);
-            this.PassengerLoginTab.TabIndex = 1;
-            this.PassengerLoginTab.Text = "Passenger";
             this.PassengerLoginTab.UseVisualStyleBackColor = true;
             // 
             // PassengerPasswordLabel
             // 
-            this.PassengerPasswordLabel.AutoSize = true;
-            this.PassengerPasswordLabel.Location = new System.Drawing.Point(8, 49);
+            resources.ApplyResources(this.PassengerPasswordLabel, "PassengerPasswordLabel");
             this.PassengerPasswordLabel.Name = "PassengerPasswordLabel";
-            this.PassengerPasswordLabel.Size = new System.Drawing.Size(87, 17);
-            this.PassengerPasswordLabel.TabIndex = 6;
-            this.PassengerPasswordLabel.Text = "Password :";
             // 
             // PassengerIdLabel
             // 
-            this.PassengerIdLabel.AutoSize = true;
-            this.PassengerIdLabel.Location = new System.Drawing.Point(8, 3);
+            resources.ApplyResources(this.PassengerIdLabel, "PassengerIdLabel");
             this.PassengerIdLabel.Name = "PassengerIdLabel";
-            this.PassengerIdLabel.Size = new System.Drawing.Size(91, 17);
-            this.PassengerIdLabel.TabIndex = 5;
-            this.PassengerIdLabel.Text = "Username :";
             // 
             // PassengerPasswordTb
             // 
+            resources.ApplyResources(this.PassengerPasswordTb, "PassengerPasswordTb");
             this.PassengerPasswordTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PassengerPasswordTb.Location = new System.Drawing.Point(11, 69);
             this.PassengerPasswordTb.Name = "PassengerPasswordTb";
-            this.PassengerPasswordTb.Size = new System.Drawing.Size(284, 23);
-            this.PassengerPasswordTb.TabIndex = 4;
             // 
             // PassengerUsernameTb
             // 
+            resources.ApplyResources(this.PassengerUsernameTb, "PassengerUsernameTb");
             this.PassengerUsernameTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PassengerUsernameTb.Location = new System.Drawing.Point(11, 23);
             this.PassengerUsernameTb.Name = "PassengerUsernameTb";
-            this.PassengerUsernameTb.Size = new System.Drawing.Size(284, 23);
-            this.PassengerUsernameTb.TabIndex = 3;
             // 
             // PassengerLoginButton
             // 
+            resources.ApplyResources(this.PassengerLoginButton, "PassengerLoginButton");
             this.PassengerLoginButton.BackColor = System.Drawing.SystemColors.Window;
-            this.PassengerLoginButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PassengerLoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PassengerLoginButton.Location = new System.Drawing.Point(11, 102);
             this.PassengerLoginButton.Name = "PassengerLoginButton";
-            this.PassengerLoginButton.Size = new System.Drawing.Size(284, 34);
-            this.PassengerLoginButton.TabIndex = 2;
-            this.PassengerLoginButton.Text = "Login";
             this.PassengerLoginButton.UseVisualStyleBackColor = false;
             this.PassengerLoginButton.Click += new System.EventHandler(this.PassengerLoginButton_Click);
             // 
             // PassengerSignupLabel
             // 
-            this.PassengerSignupLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PassengerSignupLabel.Location = new System.Drawing.Point(11, 136);
+            resources.ApplyResources(this.PassengerSignupLabel, "PassengerSignupLabel");
             this.PassengerSignupLabel.Name = "PassengerSignupLabel";
-            this.PassengerSignupLabel.Size = new System.Drawing.Size(284, 34);
-            this.PassengerSignupLabel.TabIndex = 2;
-            this.PassengerSignupLabel.Text = "Don\'t have an account? Sign Up";
-            this.PassengerSignupLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.PassengerSignupLabel.Click += new System.EventHandler(this.PassengerSignupLabel_Click);
             // 
             // LoginMenuStrip
             // 
-            this.LoginMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pageToolStripMenuItem,
-            this.languageToolStripMenuItem});
-            this.LoginMenuStrip.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.LoginMenuStrip, "LoginMenuStrip");
+            this.LoginMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.pageToolStripMenuItem, this.languageToolStripMenuItem });
             this.LoginMenuStrip.Name = "LoginMenuStrip";
-            this.LoginMenuStrip.Size = new System.Drawing.Size(311, 24);
-            this.LoginMenuStrip.TabIndex = 4;
-            this.LoginMenuStrip.Text = "menuStrip1";
             // 
             // pageToolStripMenuItem
             // 
-            this.pageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem,
-            this.exitToolStripMenuItem});
+            resources.ApplyResources(this.pageToolStripMenuItem, "pageToolStripMenuItem");
+            this.pageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.aboutToolStripMenuItem, this.exitToolStripMenuItem });
             this.pageToolStripMenuItem.Name = "pageToolStripMenuItem";
-            this.pageToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
-            this.pageToolStripMenuItem.Text = "&Page";
             // 
             // aboutToolStripMenuItem
             // 
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
-            this.aboutToolStripMenuItem.Text = "A&bout";
             // 
             // exitToolStripMenuItem
             // 
+            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
-            this.exitToolStripMenuItem.Text = "&Exit";
             // 
             // languageToolStripMenuItem
             // 
-            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.frenchToolStripMenuItem,
-            this.englishToolStripMenuItem});
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.frenchToolStripMenuItem, this.englishToolStripMenuItem });
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-            this.languageToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.languageToolStripMenuItem.Text = "&Language";
             // 
             // frenchToolStripMenuItem
             // 
+            resources.ApplyResources(this.frenchToolStripMenuItem, "frenchToolStripMenuItem");
             this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.frenchToolStripMenuItem.Text = "F&rançais";
             // 
             // englishToolStripMenuItem
             // 
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.englishToolStripMenuItem.Text = "E&nglish";
             // 
             // LoginPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 244);
             this.Controls.Add(this.LoginMenuStrip);
             this.Controls.Add(this.LoginTabControl);
             this.Name = "LoginPage";
-            this.Text = "Login Page";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginPage_FormClosing);
             this.LoginTabControl.ResumeLayout(false);
             this.StaffLoginTab.ResumeLayout(false);
@@ -291,7 +218,6 @@
             this.LoginMenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

@@ -27,3 +27,12 @@ C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsS
 C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineT.397D70B5.Up2Date
 C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.exe
 C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.pdb
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\en\AirlineTicketsSystemGui.resources.dll
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminAddFlightPage.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminAddStaffPage.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminEditFlightPage.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminEditStaffPage.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminLoginPage.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.PassengerBuyTicketPage.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.LoginPage.en.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\en\AirlineTicketsSystemGui.resources.dll

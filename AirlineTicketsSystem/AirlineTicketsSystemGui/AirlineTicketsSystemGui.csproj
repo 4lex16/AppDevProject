@@ -89,6 +89,12 @@
     <Compile Include="model\Staff.cs" />
     <Compile Include="model\Ticket.cs" />
     <Compile Include="model\User.cs" />
+    <Compile Include="DetailsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailsPage.Designer.cs">
+      <DependentUpon>DetailsPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="PassengerPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,6 +123,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AdminPage.resx">
       <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailsPage.resx">
+      <DependentUpon>DetailsPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>

@@ -16,7 +16,7 @@ namespace AirlineTicketsSystemGui
         [STAThread]
         static void Main()
         {
-            AirlineTicketSystemController atsController = new AirlineTicketSystemController();
+            //AirlineTicketSystemController atsController = new AirlineTicketSystemController();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             new LoginPage().Show();

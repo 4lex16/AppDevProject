@@ -89,53 +89,44 @@
     <Compile Include="model\Staff.cs" />
     <Compile Include="model\Ticket.cs" />
     <Compile Include="model\User.cs" />
-    <Compile Include="DetailsPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DetailsPage.Designer.cs">
-      <DependentUpon>DetailsPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PassengerPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PassengerPage.Designer.cs">
-      <DependentUpon>PassengerPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PassengerSignupPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PassengerSignupPage.Designer.cs">
-      <DependentUpon>PassengerSignupPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StaffPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StaffPage.Designer.cs">
-      <DependentUpon>StaffPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LoginPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoginPage.Designer.cs">
-      <DependentUpon>LoginPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AdminPage.resx">
+    <Compile Include="view\AdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\AdminPage.Designer.cs">
       <DependentUpon>AdminPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DetailsPage.resx">
+    </Compile>
+    <Compile Include="view\DetailsPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\DetailsPage.Designer.cs">
       <DependentUpon>DetailsPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoginPage.resx">
+    </Compile>
+    <Compile Include="view\LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PassengerPage.resx">
+    </Compile>
+    <Compile Include="view\PassengerPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\PassengerPage.Designer.cs">
       <DependentUpon>PassengerPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PassengerSignupPage.resx">
+    </Compile>
+    <Compile Include="view\PassengerSignupPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\PassengerSignupPage.Designer.cs">
       <DependentUpon>PassengerSignupPage.cs</DependentUpon>
-    </EmbeddedResource>
+    </Compile>
+    <Compile Include="view\StaffPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\StaffPage.Designer.cs">
+      <DependentUpon>StaffPage.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -145,7 +136,22 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="StaffPage.resx">
+    <EmbeddedResource Include="view\AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\DetailsPage.resx">
+      <DependentUpon>DetailsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\PassengerPage.resx">
+      <DependentUpon>PassengerPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\PassengerSignupPage.resx">
+      <DependentUpon>PassengerSignupPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\StaffPage.resx">
       <DependentUpon>StaffPage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
@@ -161,9 +167,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="view\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

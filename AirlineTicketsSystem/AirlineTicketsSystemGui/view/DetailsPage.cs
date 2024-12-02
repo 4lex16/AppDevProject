@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AirlineTicketsSystemGui.model;
 
 namespace AirlineTicketsSystemGui
 {
@@ -26,22 +28,30 @@ namespace AirlineTicketsSystemGui
             switch (Type) {
                 case "flight":
                 {
+                    Flight flight = (Flight) Data;
+                    AddRow("Flight Id", $"{10}");
+                    AddRow("Flight ", $"{10}");
+                    AddRow("Flight Id", $"{10}");
+                    AddRow("Flight Id", $"{10}");
+                    AddRow("Flight Id", $"{10}");
+                    AddRow("Flight Id", $"{10}");
+                    AddRow("Flight Id", $"{10}");
+                    DetailsTb.Text = details;
                     break;
                 }
                 case "passenger":
                 {
+                    Passenger passenger = (Passenger) Data;
                     break;
                 }
                 case "tickets":
                 {
+                    Ticket ticket = (Ticket) Data;
                     break;
                 }
                 case "staff":
                 {
-                    break;
-                }
-                case "":
-                {
+                    Staff staff = (Staff) Data;
                     break;
                 }
                 default:
@@ -49,6 +59,16 @@ namespace AirlineTicketsSystemGui
                     throw new Exception($"Cannot resolve {Type} in DetailsPage LoadData() switch case");
                 }
             }
+        }
+
+        private void AddRow(string header, string content)
+        {
+            DetailsTb.Text += $"{(header + ":"),-40}  {content}";
+        }
+
+        private void DetailsPage_Load(object sender, EventArgs e)
+        {
+            LoadData();
         }
     }
 }

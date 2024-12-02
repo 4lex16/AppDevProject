@@ -12,7 +12,6 @@ namespace AirlineTicketsSystemGui.controller
             DatabaseController.CreateTicketTable();
             DatabaseController.CreatePassengerTable();
             DatabaseController.CreateStaffTable();
-            DatabaseController.CreateSeatTypeTable();
             this.airlineTicketSystem = AirlineTicketSystem.GetInstance();
         }
 
@@ -38,6 +37,13 @@ namespace AirlineTicketsSystemGui.controller
             DatabaseController.InsertStaffRecord(staff);
             airlineTicketSystem.Staff.Add(staff);
             return staff.UserId;
+        }
+
+        public int inserTicket(Flight flight, int passengerId, SeatType seatType)
+        {
+            Ticket ticket = new Ticket(DatabaseController.GetTicketId(), flight, passengerId, seatType);
+            DatabaseController.InsertTicketRecord(DatabaseController.GetTicketId(), passengerId, flight.FlightId, seatType);
+            return ticket.TicketId;
         }
         
     }

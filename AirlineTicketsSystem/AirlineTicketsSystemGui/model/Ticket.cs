@@ -7,5 +7,13 @@
         
         public int PassengerId { get; set; }
         public SeatType SeatType { get; set; }
+
+        public Ticket(int ticketId, Flight flight, int passengerId, SeatType seatType)
+        {
+            TicketId = ticketId;
+            Flight = flight;
+            PassengerId = passengerId;
+            SeatType = seatType;
+        }
     }
 }

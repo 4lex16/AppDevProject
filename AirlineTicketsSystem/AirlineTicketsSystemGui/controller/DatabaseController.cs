@@ -46,9 +46,9 @@ namespace AirlineTicketsSystemGui.controller
                 command.CommandText = @"
                     CREATE TABLE IF NOT EXISTS tickets (
                         ticket_id INTEGER PRIMARY KEY,
-                        seat_type_id INTEGER,
                         passenger_id INTEGER,
                         flight_id INTEGER,
+                        seat_type INTEGER,
                         FOREIGN KEY (seat_type_id) REFERENCES seatTypes(seat_type_id),
                         FOREIGN KEY (passenger_id) REFERENCES passengers(passenger_id),
                         FOREIGN KEY (flight_id) REFERENCES flights(flight_id)
@@ -69,23 +69,6 @@ namespace AirlineTicketsSystemGui.controller
                         staff_id INTEGER PRIMARY KEY,
                         email TEXT,
                         password TEXT
-                    );
-                ";
-                command.ExecuteNonQuery();
-            }
-        }
-
-        public static void CreateSeatTypeTable()
-        {
-            using (var connection = GetConnection())
-            {
-                connection.Open();
-                var command = connection.CreateCommand();
-                command.CommandText = @"
-                    CREATE TABLE IF NOT EXISTS seatTypes (
-                        seat_type_id INTEGER PRIMARY KEY,
-                        seat_type TEXT,
-                        seat_type_num INTEGER
                     );
                 ";
                 command.ExecuteNonQuery();
@@ -139,7 +122,12 @@ namespace AirlineTicketsSystemGui.controller
             InsertFlightRecord(flight.FlightId, flight.FirstClassSeats, flight.BusinessClassSeats, flight.CoachClassSeats,
                 flight.Destination, flight.DepartureTime, flight.DepartureDate);
         }
-
+/*
+ *                      seat_type_id INTEGER PRIMARY KEY,
+                        seat_type TEXT,
+                        seat_type_num INTEGER
+ */
+        //seatTypeNum should be enum
         public static void InsertPassengerRecord(int passengerId, string fullName, string email, string password, string phone, string address)
         {
             using (var connection = GetConnection())
@@ -189,21 +177,34 @@ namespace AirlineTicketsSystemGui.controller
             InsertStaffRecord(staff.UserId, staff.Email, staff.Password);
         }
 
-        public static void InsertTicketRecord(int ticketId, int seatTypeId, int passengerId, int flightId)
+        public static void InsertTicketRecord(int ticketId, int passengerId, int flightId, SeatType seatType)
         {
             using (var connection = GetConnection())
             {
                 connection.Open();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                    INSERT INTO tickets (ticket_id, seat_type_id, passenger_id, flight_id)
-                    VALUES (@ticketId, @seatTypeId, @passengerId, @flightId);
+                    INSERT INTO tickets (ticket_id, passenger_id, flight_id, seat_type)
+                    VALUES (@ticketId, @passengerId, @flightId, @seatType);
                 ";
                 command.Parameters.AddWithValue("@ticketId", ticketId);
-                command.Parameters.AddWithValue("@seatTypeId", seatTypeId);
                 command.Parameters.AddWithValue("@passengerId", passengerId);
                 command.Parameters.AddWithValue("@flightId", flightId);
+                command.Parameters.AddWithValue("@seat_type", seatType);
                 command.ExecuteNonQuery();
+            }
+        }
+
+        public static int GetTicketId()
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                var command = connection.CreateCommand();
+                command.CommandText = @"
+                    select count(*) from tickets
+                ";
+                return command.ExecuteNonQuery() + 1;
             }
         }
 

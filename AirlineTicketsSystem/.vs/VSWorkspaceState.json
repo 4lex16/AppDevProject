@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\AirlineTicketsSystemDatabase",
+    "\\AirlineTicketsSystemGui",
+    "\\AirlineTicketsSystemGui\\controller"
+  ],
+  "SelectedNode": "\\AirlineTicketsSystemGui\\controller\\DatabaseController.cs",
+  "PreviewInSolutionExplorer": false
+}

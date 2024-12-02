@@ -33,7 +33,15 @@ namespace AirlineTicketsSystemGui
 
         private void StaffPage_Load(object sender, EventArgs e)
         {
+            //TODO: Load StaffPage ListBoxes
+        }
 
+        private void PassengerDetailsButton_Click(object sender, EventArgs e)
+        {
+            if (PassengerListBox.SelectedItem != null)
+            {
+                new DetailsPage("passenger", FlightListBox.SelectedItem).Show();
+            }
         }
     }
 }

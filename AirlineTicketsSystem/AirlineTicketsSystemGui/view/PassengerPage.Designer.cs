@@ -40,6 +40,7 @@
             this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.FlightTab = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
             this.FlightBuyButton = new System.Windows.Forms.Button();
             this.FlightDetailsButton = new System.Windows.Forms.Button();
             this.FlightFilterLabel = new System.Windows.Forms.Label();
@@ -65,7 +66,6 @@
             this.TicketIdButton = new System.Windows.Forms.Button();
             this.TicketListBox = new System.Windows.Forms.ListBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.button1 = new System.Windows.Forms.Button();
             this.PassengerMenuStrip.SuspendLayout();
             this.FlightTab.SuspendLayout();
             this.TicketTab.SuspendLayout();
@@ -74,10 +74,7 @@
             // 
             // PassengerMenuStrip
             // 
-            this.PassengerMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pageToolStripMenuItem,
-            this.accountToolStripMenuItem,
-            this.languageToolStripMenuItem});
+            this.PassengerMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.pageToolStripMenuItem, this.accountToolStripMenuItem, this.languageToolStripMenuItem });
             this.PassengerMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.PassengerMenuStrip.Name = "PassengerMenuStrip";
             this.PassengerMenuStrip.Size = new System.Drawing.Size(586, 24);
@@ -86,11 +83,7 @@
             // 
             // pageToolStripMenuItem
             // 
-            this.pageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem,
-            this.ticketListToolStripMenuItem,
-            this.flightListToolStripMenuItem,
-            this.exitToolStripMenuItem});
+            this.pageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.aboutToolStripMenuItem, this.ticketListToolStripMenuItem, this.flightListToolStripMenuItem, this.exitToolStripMenuItem });
             this.pageToolStripMenuItem.Name = "pageToolStripMenuItem";
             this.pageToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.pageToolStripMenuItem.Text = "&Page";
@@ -121,8 +114,7 @@
             // 
             // accountToolStripMenuItem
             // 
-            this.accountToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.logOutToolStripMenuItem});
+            this.accountToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.logOutToolStripMenuItem });
             this.accountToolStripMenuItem.Name = "accountToolStripMenuItem";
             this.accountToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.accountToolStripMenuItem.Text = "&Account";
@@ -135,9 +127,7 @@
             // 
             // languageToolStripMenuItem
             // 
-            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.frenchToolStripMenuItem,
-            this.englishToolStripMenuItem});
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.frenchToolStripMenuItem, this.englishToolStripMenuItem });
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
             this.languageToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.languageToolStripMenuItem.Text = "&Language";
@@ -176,6 +166,19 @@
             this.FlightTab.Text = "Flight";
             this.FlightTab.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.Window;
+            this.button1.FlatAppearance.BorderSize = 2;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(273, 6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(109, 29);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "DateTime";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // FlightBuyButton
             // 
             this.FlightBuyButton.BackColor = System.Drawing.SystemColors.Window;
@@ -188,6 +191,7 @@
             this.FlightBuyButton.TabIndex = 10;
             this.FlightBuyButton.Text = "Buy";
             this.FlightBuyButton.UseVisualStyleBackColor = false;
+            this.FlightBuyButton.Click += new System.EventHandler(this.FlightBuyButton_Click);
             // 
             // FlightDetailsButton
             // 
@@ -201,6 +205,7 @@
             this.FlightDetailsButton.TabIndex = 9;
             this.FlightDetailsButton.Text = "Details";
             this.FlightDetailsButton.UseVisualStyleBackColor = false;
+            this.FlightDetailsButton.Click += new System.EventHandler(this.FlightDetailsButton_Click);
             // 
             // FlightFilterLabel
             // 
@@ -248,8 +253,7 @@
             // 
             // FlightDestinationTb
             // 
-            this.FlightDestinationTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.FlightDestinationTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.FlightDestinationTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.FlightDestinationTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FlightDestinationTb.Location = new System.Drawing.Point(407, 40);
@@ -294,8 +298,7 @@
             // 
             // FlightListBox
             // 
-            this.FlightListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.FlightListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.FlightListBox.FormattingEnabled = true;
             this.FlightListBox.ItemHeight = 16;
             this.FlightListBox.Location = new System.Drawing.Point(6, 65);
@@ -337,6 +340,7 @@
             this.TicketPrintButton.TabIndex = 24;
             this.TicketPrintButton.Text = "Print";
             this.TicketPrintButton.UseVisualStyleBackColor = false;
+            this.TicketPrintButton.Click += new System.EventHandler(this.TicketPrintButton_Click);
             // 
             // TicketRefundButton
             // 
@@ -350,6 +354,7 @@
             this.TicketRefundButton.TabIndex = 23;
             this.TicketRefundButton.Text = "Refund";
             this.TicketRefundButton.UseVisualStyleBackColor = false;
+            this.TicketRefundButton.Click += new System.EventHandler(this.TicketRefundButton_Click);
             // 
             // TicketDetailsButton
             // 
@@ -363,6 +368,7 @@
             this.TicketDetailsButton.TabIndex = 22;
             this.TicketDetailsButton.Text = "Details";
             this.TicketDetailsButton.UseVisualStyleBackColor = false;
+            this.TicketDetailsButton.Click += new System.EventHandler(this.TicketDetailsButton_Click);
             // 
             // TicketFilterLabel
             // 
@@ -410,8 +416,7 @@
             // 
             // TicketDestinationTb
             // 
-            this.TicketDestinationTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TicketDestinationTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.TicketDestinationTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TicketDestinationTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TicketDestinationTb.Location = new System.Drawing.Point(407, 40);
@@ -456,8 +461,7 @@
             // 
             // TicketListBox
             // 
-            this.TicketListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TicketListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.TicketListBox.FormattingEnabled = true;
             this.TicketListBox.ItemHeight = 16;
             this.TicketListBox.Location = new System.Drawing.Point(6, 65);
@@ -467,9 +471,7 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons;
             this.tabControl1.Controls.Add(this.TicketTab);
             this.tabControl1.Controls.Add(this.FlightTab);
@@ -482,19 +484,6 @@
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tabControl1.TabIndex = 1;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.Window;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(273, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(109, 29);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "DateTime";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
             // PassengerPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -506,6 +495,7 @@
             this.Name = "PassengerPage";
             this.Text = "Passenger Page";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PassengerPage_FormClosing);
+            this.Load += new System.EventHandler(this.PassengerPage_Load);
             this.PassengerMenuStrip.ResumeLayout(false);
             this.PassengerMenuStrip.PerformLayout();
             this.FlightTab.ResumeLayout(false);
@@ -515,7 +505,6 @@
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

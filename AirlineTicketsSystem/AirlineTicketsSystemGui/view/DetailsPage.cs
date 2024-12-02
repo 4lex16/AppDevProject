@@ -36,7 +36,6 @@ namespace AirlineTicketsSystemGui
                     AddRow("Flight Id", $"{10}");
                     AddRow("Flight Id", $"{10}");
                     AddRow("Flight Id", $"{10}");
-                    DetailsTb.Text = details;
                     break;
                 }
                 case "passenger":

@@ -8,7 +8,7 @@ namespace AirlineTicketsSystemGui.controller
 {
     public class DatabaseController
     {
-        private const string DatabaseFileName = "Data Source=PATH"; //TODO: Update the path
+        private const string DatabaseFileName = "Data Source=AirlineTicketsSystemDatabase/AirlineTicketsSystemDatabase.db";
 
         public static SqliteConnection GetConnection()
         {
@@ -221,15 +221,15 @@ namespace AirlineTicketsSystemGui.controller
                     while (reader.Read())
                     {
                         flights.Add(new Flight
-                        {
-                            FlightId = reader.GetInt32(0),
-                            FirstClassSeats = reader.GetInt32(1),
-                            BusinessClassSeats = reader.GetInt32(2),
-                            CoachClassSeats = reader.GetInt32(3),
-                            Destination = reader.GetString(4),
-                            DepartureDate = reader.GetString(5),
-                            DepartureTime = reader.GetString(6)
-                        });
+                        (
+                            reader.GetInt32(0),
+                            reader.GetInt32(1),
+                            reader.GetInt32(2),
+                            reader.GetInt32(3),
+                            reader.GetString(4),
+                            reader.GetString(5),
+                            reader.GetString(6)
+                        ));
                     }
                 }
             }
@@ -249,14 +249,14 @@ namespace AirlineTicketsSystemGui.controller
                     while (reader.Read())
                     {
                         passengers.Add(new Passenger
-                        {
-                            UserId = reader.GetInt32(0),
-                            Name = reader.GetString(1),
-                            Email = reader.GetString(2),
-                            Password = reader.GetString(3),
-                            Phone = reader.GetString(4),
-                            Address = reader.GetString(5)
-                        });
+                        (
+                            reader.GetInt32(0),
+                            reader.GetString(1),
+                            reader.GetString(2),
+                            reader.GetString(3),
+                            reader.GetString(4),
+                            reader.GetString(5)
+                        ));
                     }
                 }
             }
@@ -271,7 +271,9 @@ namespace AirlineTicketsSystemGui.controller
                 connection.Open();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                    SELECT t.ticket_id, s.seat_type_num, p.passenger_id, f.flight_id 
+                    SELECT t.ticket_id, s.seat_type_num, p.passenger_id, f.flight_id,
+                           f.first_class_seats, f.business_class_seats, f.coach_class_seats, 
+                           f.destination, f.departure_time, f.departure_date 
                     FROM tickets t
                     JOIN seatTypes s ON t.seat_type_id = s.seat_type_id
                     JOIN passengers p ON t.passenger_id = p.passenger_id
@@ -285,8 +287,8 @@ namespace AirlineTicketsSystemGui.controller
                         {
                             TicketId = reader.GetInt32(0),
                             SeatType = (SeatType)reader.GetInt32(1),
-                            Passenger = new Passenger { UserId = reader.GetInt32(2) },
-                            Flight = new Flight { FlightId = reader.GetInt32(3) }
+                            PassengerId =  reader.GetInt32(2),
+                            Flight = new Flight(reader.GetInt32(3), reader.GetInt32(4), reader.GetInt32(5),reader.GetInt32(6), reader.GetString(7), reader.GetString(8), reader.GetString(9))
                         });
                     }
                 }
@@ -307,11 +309,11 @@ namespace AirlineTicketsSystemGui.controller
                     while (reader.Read())
                     {
                         staffList.Add(new Staff
-                        {
-                            UserId = reader.GetInt32(0),
-                            Email = reader.GetString(1),
-                            Password = reader.GetString(2)
-                        });
+                        (
+                            reader.GetInt32(0),
+                            reader.GetString(1),
+                            reader.GetString(2)
+                        ));
                     }
                 }
             }

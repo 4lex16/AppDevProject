@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AirlineTicketsSystemGui.controller;
+using AirlineTicketsSystemGui.model;
 
 namespace AirlineTicketsSystemGui
 {
@@ -14,6 +16,7 @@ namespace AirlineTicketsSystemGui
         [STAThread]
         static void Main()
         {
+            AirlineTicketSystemController atsController = new AirlineTicketSystemController();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             new LoginPage().Show();

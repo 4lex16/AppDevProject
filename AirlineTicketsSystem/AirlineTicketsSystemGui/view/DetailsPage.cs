@@ -29,28 +29,54 @@ namespace AirlineTicketsSystemGui
                 case "flight":
                 {
                     Flight flight = (Flight) Data;
-                    AddRow("Flight Id", $"{10}");
-                    AddRow("Flight ", $"{10}");
-                    AddRow("Flight Id", $"{10}");
-                    AddRow("Flight Id", $"{10}");
-                    AddRow("Flight Id", $"{10}");
-                    AddRow("Flight Id", $"{10}");
-                    AddRow("Flight Id", $"{10}");
+                    AddRow("Flight :");
+                    AddRow("Id", $"{flight.FlightId}");
+                    AddRow("Destination", $"{flight.Destination}");
+                    AddRow("Departure Date", $"{flight.DepartureDate}");
+                    AddRow("Departure Time", $"{flight.DepartureTime}");
+                    AddRow("Available Seats :");
+                    AddRow("First Class", $"{flight.FirstClassSeats}");
+                    AddRow("Business Class", $"{flight.BusinessClassSeats}");
+                    AddRow("Coach Class", $"{flight.CoachClassSeats}");
                     break;
                 }
                 case "passenger":
                 {
                     Passenger passenger = (Passenger) Data;
+                    AddRow("Passenger");
+                    AddRow("Id", $"{passenger.UserId}");
+                    AddRow("Name", $"{passenger.Name}");
+                    AddRow("Email", $"{passenger.Email}");
+                    AddRow("Phone", $"{passenger.Phone}");
+                    AddRow("Address", $"{passenger.Address}");
+                    AddRow("Password", $"{passenger.Password}");
+                    AddRow("Tickets");
+                    foreach (Ticket ticket in passenger.Tickets)
+                    {
+                        AddRow("Ticket");
+                        AddRow("Id", $"");
+                    }
+
                     break;
                 }
                 case "tickets":
                 {
                     Ticket ticket = (Ticket) Data;
+                    AddRow("Ticket");
+                    AddRow("Id", $"{ticket.TicketId}");
+                    AddRow("Destination", $"{ticket.Flight.Destination}");
+                    AddRow("Departure Date", $"{ticket.Flight.DepartureDate}");
+                    AddRow("Departure Time", $"{ticket.Flight.DepartureTime}");
+                    AddRow("Seat Type", $"{ticket.SeatType.ToString()}");
                     break;
                 }
                 case "staff":
                 {
                     Staff staff = (Staff) Data;
+                    AddRow("Staff");
+                    AddRow("Id", $"{staff.UserId}");
+                    AddRow("Email", $"{staff.Email}");
+                    AddRow("Password", $"{staff.Password}");
                     break;
                 }
                 default:
@@ -62,7 +88,11 @@ namespace AirlineTicketsSystemGui
 
         private void AddRow(string header, string content)
         {
-            DetailsTb.Text += $"{(header + ":"),-40}  {content}";
+            DetailsTb.Text += $"{(header + " : "), -40}  {content}\r\n";
+        }
+        private void AddRow(string header)
+        {
+            DetailsTb.Text += $"{header}\r\n";
         }
 
         private void DetailsPage_Load(object sender, EventArgs e)

@@ -33,7 +33,7 @@ namespace AirlineTicketsSystemGui
 
         private void StaffPage_Load(object sender, EventArgs e)
         {
-            FlightListBox.Items.Add(new Flight());
+            FlightListBox.Items.Add(new Flight());  //TODO: implement correct constructor adding flights to flightListBox
         }
     }
 }

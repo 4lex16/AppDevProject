@@ -1,28 +1,15 @@
-# Ignore temporary files
-*.tmp
+# Ignore Visual Studio temporary files
+.vs/
+*.suo
 
-# Ignore build folders
+# Ignore build and output folders
 bin/
 obj/
-AirlineTicketsSystem/AirlineTicketsSystemGui/obj/
-AirlineTicketsSystem/AirlineTicketsSystemDatabase/obj/
-AirlineTicketsSystem/AirlineTicketsSystemGui/bin/
 
+# Ignore compiled DLLs, and PDBs
+*.dll
+*.pdb
+*.json
 
-# Ignore Visual Studio files
-
-AirlineTicketsSystem/.vs/AirlineTicketsSystem/v17/.suo
-AirlineTicketsSystem/.vs/AirlineTicketsSystem/v17/DocumentLayout.json
-AirlineTicketsSystem/AirlineTicketsSystemGui/bin/Debug/AirlineTicketsSystemDatabase.dll.config
-AirlineTicketsSystem/AirlineTicketsSystemGui/bin/Debug/AirlineTicketsSystemGui.exe
-AirlineTicketsSystem/AirlineTicketsSystemGui/bin/Debug/AirlineTicketsSystemGui.pdb
-AirlineTicketsSystem/AirlineTicketsSystemGui/bin/Debug/en/AirlineTicketsSystemGui.resources.dll
-AirlineTicketsSystem/AirlineTicketsSystemGui/obj/Debug/AirlineTicketsSystemGui.LoginPage.en.resources
-AirlineTicketsSystem/AirlineTicketsSystemGui/obj/Debug/AirlineTicketsSystemGui.csproj.AssemblyReference.cache
-AirlineTicketsSystem/AirlineTicketsSystemGui/obj/Debug/AirlineTicketsSystemGui.csproj.CoreCompileInputs.cache
-AirlineTicketsSystem/AirlineTicketsSystemGui/obj/Debug/AirlineTicketsSystemGui.csproj.GenerateResource.cache
-AirlineTicketsSystem/AirlineTicketsSystemGui/obj/Debug/AirlineTicketsSystemGui.exe
-AirlineTicketsSystem/AirlineTicketsSystemGui/obj/Debug/AirlineTicketsSystemGui.pdb
-AirlineTicketsSystem/AirlineTicketsSystemGui/obj/Debug/en/AirlineTicketsSystemGui.resources.dll
-
-.vs/
+# Ignore other intermediate files
+*.cache

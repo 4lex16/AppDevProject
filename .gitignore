@@ -1,0 +1,9 @@
+# Ignore temporary files
+*.tmp
+
+# Ignore build folders
+bin/
+obj/
+
+# Ignore Visual Studio files
+.vs/

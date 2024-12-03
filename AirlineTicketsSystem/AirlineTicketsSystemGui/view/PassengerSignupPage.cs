@@ -19,13 +19,26 @@ namespace AirlineTicketsSystemGui
 
         private void PassengerSignupPage_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            new LoginPage().Show();
+            this.Hide();
         }
 
         private void SignupButton_Click(object sender, EventArgs e)
         {
+            //TODO: Implement the creation of the passenger and return their
             new LoginPage().Show();
             this.Hide();
+        }
+
+        private void loginToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new LoginPage().Show();
+            this.Hide();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

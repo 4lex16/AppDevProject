@@ -41,7 +41,9 @@
             this.FlightIdButton = new System.Windows.Forms.Button();
             this.FlightListBox = new System.Windows.Forms.ListBox();
             this.PassengerTab = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.PassengerDetailsButton = new System.Windows.Forms.Button();
             this.PassengerFilterLabel = new System.Windows.Forms.Label();
             this.PassengerOrderLabel = new System.Windows.Forms.Label();
@@ -63,9 +65,6 @@
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.FlightTab.SuspendLayout();
             this.PassengerTab.SuspendLayout();
@@ -121,6 +120,7 @@
             this.FlightDetailsButton.TabIndex = 9;
             this.FlightDetailsButton.Text = "Details";
             this.FlightDetailsButton.UseVisualStyleBackColor = false;
+            this.FlightDetailsButton.Click += new System.EventHandler(this.FlightDetailsButton_Click);
             // 
             // FlightFilterButton
             // 
@@ -228,7 +228,6 @@
             this.PassengerTab.Controls.Add(this.textBox1);
             this.PassengerTab.Controls.Add(this.label1);
             this.PassengerTab.Controls.Add(this.button2);
-            this.PassengerTab.Controls.Add(this.button1);
             this.PassengerTab.Controls.Add(this.PassengerDetailsButton);
             this.PassengerTab.Controls.Add(this.PassengerFilterLabel);
             this.PassengerTab.Controls.Add(this.PassengerOrderLabel);
@@ -248,18 +247,37 @@
             this.PassengerTab.Text = "Passenger";
             this.PassengerTab.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // textBox1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Window;
-            this.button1.FlatAppearance.BorderSize = 2;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(112, 258);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 44);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Tickets";
-            this.button1.UseVisualStyleBackColor = false;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(517, 39);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(110, 23);
+            this.textBox1.TabIndex = 26;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(426, 41);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 17);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "Last Name";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.Window;
+            this.button2.FlatAppearance.BorderSize = 2;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(273, 6);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(105, 29);
+            this.button2.TabIndex = 24;
+            this.button2.Text = "Last Name";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // PassengerDetailsButton
             // 
@@ -273,6 +291,7 @@
             this.PassengerDetailsButton.TabIndex = 22;
             this.PassengerDetailsButton.Text = "Details";
             this.PassengerDetailsButton.UseVisualStyleBackColor = false;
+            this.PassengerDetailsButton.Click += new System.EventHandler(this.PassengerDetailsButton_Click);
             // 
             // PassengerFilterLabel
             // 
@@ -399,26 +418,27 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "A&bout";
             // 
             // ticketListToolStripMenuItem
             // 
             this.ticketListToolStripMenuItem.Name = "ticketListToolStripMenuItem";
-            this.ticketListToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.ticketListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ticketListToolStripMenuItem.Text = "Pa&ssenger List";
             // 
             // flightListToolStripMenuItem
             // 
             this.flightListToolStripMenuItem.Name = "flightListToolStripMenuItem";
-            this.flightListToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.flightListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.flightListToolStripMenuItem.Text = "&Flight List";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(148, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // accountToolStripMenuItem
             // 
@@ -455,38 +475,6 @@
             this.englishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.englishToolStripMenuItem.Text = "E&nglish";
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.Window;
-            this.button2.FlatAppearance.BorderSize = 2;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(273, 6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 29);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "Last Name";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(426, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 17);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "Last Name";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(517, 39);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(110, 23);
-            this.textBox1.TabIndex = 26;
-            // 
             // StaffPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -497,6 +485,7 @@
             this.Name = "StaffPage";
             this.Text = "Staff Page";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StaffPage_FormClosing);
+            this.Load += new System.EventHandler(this.StaffPage_Load);
             this.tabControl1.ResumeLayout(false);
             this.FlightTab.ResumeLayout(false);
             this.FlightTab.PerformLayout();
@@ -545,7 +534,6 @@
         private System.Windows.Forms.ToolStripMenuItem languageToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem frenchToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;

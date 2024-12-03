@@ -10,3 +10,14 @@ C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsS
 C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.exe
 C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.pdb
 C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.StaffPage.resources
+C:\Users\Kai_Raf\Desktop\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.csproj.AssemblyReference.cache
+C:\Users\Kai_Raf\Desktop\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminPage.resources
+C:\Users\Kai_Raf\Desktop\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.LoginPage.resources
+C:\Users\Kai_Raf\Desktop\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.PassengerPage.resources
+C:\Users\Kai_Raf\Desktop\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.PassengerSignupPage.resources
+C:\Users\Kai_Raf\Desktop\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.Properties.Resources.resources
+C:\Users\Kai_Raf\Desktop\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.StaffPage.resources
+C:\Users\Kai_Raf\Desktop\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.csproj.GenerateResource.cache
+C:\Users\Kai_Raf\Desktop\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.csproj.CoreCompileInputs.cache
+C:\Users\Kai_Raf\Desktop\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.exe
+C:\Users\Kai_Raf\Desktop\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.pdb

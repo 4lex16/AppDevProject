@@ -8,7 +8,7 @@ namespace AirlineTicketsSystemGui.controller
 {
     public class DatabaseController
     {
-        private const string DatabaseFileName = "Data Source=PATH"; //TODO: Update the path
+        private const string DatabaseFileName = "Data Source=../AirlineTicketsSystemDatabase.db";
 
         public static SqliteConnection GetConnection()
         {
@@ -46,9 +46,9 @@ namespace AirlineTicketsSystemGui.controller
                 command.CommandText = @"
                     CREATE TABLE IF NOT EXISTS tickets (
                         ticket_id INTEGER PRIMARY KEY,
-                        seat_type_id INTEGER,
                         passenger_id INTEGER,
                         flight_id INTEGER,
+                        seat_type INTEGER,
                         FOREIGN KEY (seat_type_id) REFERENCES seatTypes(seat_type_id),
                         FOREIGN KEY (passenger_id) REFERENCES passengers(passenger_id),
                         FOREIGN KEY (flight_id) REFERENCES flights(flight_id)
@@ -69,23 +69,6 @@ namespace AirlineTicketsSystemGui.controller
                         staff_id INTEGER PRIMARY KEY,
                         email TEXT,
                         password TEXT
-                    );
-                ";
-                command.ExecuteNonQuery();
-            }
-        }
-
-        public static void CreateSeatTypeTable()
-        {
-            using (var connection = GetConnection())
-            {
-                connection.Open();
-                var command = connection.CreateCommand();
-                command.CommandText = @"
-                    CREATE TABLE IF NOT EXISTS seatTypes (
-                        seat_type_id INTEGER PRIMARY KEY,
-                        seat_type TEXT,
-                        seat_type_num INTEGER
                     );
                 ";
                 command.ExecuteNonQuery();
@@ -139,7 +122,12 @@ namespace AirlineTicketsSystemGui.controller
             InsertFlightRecord(flight.FlightId, flight.FirstClassSeats, flight.BusinessClassSeats, flight.CoachClassSeats,
                 flight.Destination, flight.DepartureTime, flight.DepartureDate);
         }
-
+        /*
+         *                      seat_type_id INTEGER PRIMARY KEY,
+                                seat_type TEXT,
+                                seat_type_num INTEGER
+         */
+        //seatTypeNum should be enum
         public static void InsertPassengerRecord(int passengerId, string fullName, string email, string password, string phone, string address)
         {
             using (var connection = GetConnection())
@@ -189,21 +177,34 @@ namespace AirlineTicketsSystemGui.controller
             InsertStaffRecord(staff.UserId, staff.Email, staff.Password);
         }
 
-        public static void InsertTicketRecord(int ticketId, int seatTypeId, int passengerId, int flightId)
+        public static void InsertTicketRecord(int ticketId, int passengerId, int flightId, SeatType seatType)
         {
             using (var connection = GetConnection())
             {
                 connection.Open();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                    INSERT INTO tickets (ticket_id, seat_type_id, passenger_id, flight_id)
-                    VALUES (@ticketId, @seatTypeId, @passengerId, @flightId);
+                    INSERT INTO tickets (ticket_id, passenger_id, flight_id, seat_type)
+                    VALUES (@ticketId, @passengerId, @flightId, @seatType);
                 ";
                 command.Parameters.AddWithValue("@ticketId", ticketId);
-                command.Parameters.AddWithValue("@seatTypeId", seatTypeId);
                 command.Parameters.AddWithValue("@passengerId", passengerId);
                 command.Parameters.AddWithValue("@flightId", flightId);
+                command.Parameters.AddWithValue("@seat_type", seatType);
                 command.ExecuteNonQuery();
+            }
+        }
+
+        public static int GetTicketId()
+        {
+            using (var connection = GetConnection())
+            {
+                connection.Open();
+                var command = connection.CreateCommand();
+                command.CommandText = @"
+                    select count(*) from tickets
+                ";
+                return command.ExecuteNonQuery() + 1;
             }
         }
 
@@ -221,15 +222,15 @@ namespace AirlineTicketsSystemGui.controller
                     while (reader.Read())
                     {
                         flights.Add(new Flight
-                        {
-                            FlightId = reader.GetInt32(0),
-                            FirstClassSeats = reader.GetInt32(1),
-                            BusinessClassSeats = reader.GetInt32(2),
-                            CoachClassSeats = reader.GetInt32(3),
-                            Destination = reader.GetString(4),
-                            DepartureDate = reader.GetString(5),
-                            DepartureTime = reader.GetString(6)
-                        });
+                        (
+                            reader.GetInt32(0),
+                            reader.GetInt32(1),
+                            reader.GetInt32(2),
+                            reader.GetInt32(3),
+                            reader.GetString(4),
+                            reader.GetString(5),
+                            reader.GetString(6)
+                        ));
                     }
                 }
             }
@@ -249,14 +250,14 @@ namespace AirlineTicketsSystemGui.controller
                     while (reader.Read())
                     {
                         passengers.Add(new Passenger
-                        {
-                            UserId = reader.GetInt32(0),
-                            Name = reader.GetString(1),
-                            Email = reader.GetString(2),
-                            Password = reader.GetString(3),
-                            Phone = reader.GetString(4),
-                            Address = reader.GetString(5)
-                        });
+                        (
+                            reader.GetInt32(0),
+                            reader.GetString(1),
+                            reader.GetString(2),
+                            reader.GetString(3),
+                            reader.GetString(4),
+                            reader.GetString(5)
+                        ));
                     }
                 }
             }
@@ -271,7 +272,9 @@ namespace AirlineTicketsSystemGui.controller
                 connection.Open();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
-                    SELECT t.ticket_id, s.seat_type_num, p.passenger_id, f.flight_id 
+                    SELECT t.ticket_id, s.seat_type_num, p.passenger_id, f.flight_id,
+                           f.first_class_seats, f.business_class_seats, f.coach_class_seats, 
+                           f.destination, f.departure_time, f.departure_date 
                     FROM tickets t
                     JOIN seatTypes s ON t.seat_type_id = s.seat_type_id
                     JOIN passengers p ON t.passenger_id = p.passenger_id
@@ -281,13 +284,20 @@ namespace AirlineTicketsSystemGui.controller
                 {
                     while (reader.Read())
                     {
-                        tickets.Add(new Ticket
-                        {
-                            TicketId = reader.GetInt32(0),
-                            SeatType = (SeatType)reader.GetInt32(1),
-                            Passenger = new Passenger { UserId = reader.GetInt32(2) },
-                            Flight = new Flight { FlightId = reader.GetInt32(3) }
-                        });
+                        tickets.Add(new Ticket(
+                            reader.GetInt32(0),
+                            new Flight(
+                                reader.GetInt32(3),
+                                reader.GetInt32(4),
+                                reader.GetInt32(5),
+                                reader.GetInt32(6),
+                                reader.GetString(7),
+                                reader.GetString(8),
+                                reader.GetString(9)
+                            ),
+                            reader.GetInt32(2),
+                            (SeatType)reader.GetInt32(1)
+                        ));
                     }
                 }
             }
@@ -307,11 +317,11 @@ namespace AirlineTicketsSystemGui.controller
                     while (reader.Read())
                     {
                         staffList.Add(new Staff
-                        {
-                            UserId = reader.GetInt32(0),
-                            Email = reader.GetString(1),
-                            Password = reader.GetString(2)
-                        });
+                        (
+                            reader.GetInt32(0),
+                            reader.GetString(1),
+                            reader.GetString(2)
+                        ));
                     }
                 }
             }

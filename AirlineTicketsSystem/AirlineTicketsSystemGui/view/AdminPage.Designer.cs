@@ -103,6 +103,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // languageToolStripMenuItem
             // 
@@ -185,6 +186,7 @@
             this.StaffEditButton.TabIndex = 23;
             this.StaffEditButton.Text = "Edit";
             this.StaffEditButton.UseVisualStyleBackColor = false;
+            this.StaffEditButton.Click += new System.EventHandler(this.StaffEditButton_Click);
             // 
             // StaffAddButton
             // 
@@ -198,6 +200,7 @@
             this.StaffAddButton.TabIndex = 22;
             this.StaffAddButton.Text = "Add";
             this.StaffAddButton.UseVisualStyleBackColor = false;
+            this.StaffAddButton.Click += new System.EventHandler(this.StaffAddButton_Click);
             // 
             // StaffDetailsButton
             // 
@@ -211,6 +214,7 @@
             this.StaffDetailsButton.TabIndex = 21;
             this.StaffDetailsButton.Text = "Details";
             this.StaffDetailsButton.UseVisualStyleBackColor = false;
+            this.StaffDetailsButton.Click += new System.EventHandler(this.StaffDetailsButton_Click);
             // 
             // StaffFilterLabel
             // 
@@ -288,6 +292,7 @@
             this.FlightEditButton.TabIndex = 11;
             this.FlightEditButton.Text = "Edit";
             this.FlightEditButton.UseVisualStyleBackColor = false;
+            this.FlightEditButton.Click += new System.EventHandler(this.FlightEditButton_Click);
             // 
             // FlightBuyButton
             // 
@@ -301,6 +306,7 @@
             this.FlightBuyButton.TabIndex = 10;
             this.FlightBuyButton.Text = "Add";
             this.FlightBuyButton.UseVisualStyleBackColor = false;
+            this.FlightBuyButton.Click += new System.EventHandler(this.FlightAddButton_Click);
             // 
             // FlightDetailsButton
             // 
@@ -314,6 +320,7 @@
             this.FlightDetailsButton.TabIndex = 9;
             this.FlightDetailsButton.Text = "Details";
             this.FlightDetailsButton.UseVisualStyleBackColor = false;
+            this.FlightDetailsButton.Click += new System.EventHandler(this.FlightDetailsButton_Click);
             // 
             // FlightFilterLabel
             // 

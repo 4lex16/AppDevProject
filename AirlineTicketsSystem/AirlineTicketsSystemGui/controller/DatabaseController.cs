@@ -122,11 +122,11 @@ namespace AirlineTicketsSystemGui.controller
             InsertFlightRecord(flight.FlightId, flight.FirstClassSeats, flight.BusinessClassSeats, flight.CoachClassSeats,
                 flight.Destination, flight.DepartureTime, flight.DepartureDate);
         }
-        /*
-         *                      seat_type_id INTEGER PRIMARY KEY,
-                                seat_type TEXT,
-                                seat_type_num INTEGER
-         */
+/*
+ *                      seat_type_id INTEGER PRIMARY KEY,
+                        seat_type TEXT,
+                        seat_type_num INTEGER
+ */
         //seatTypeNum should be enum
         public static void InsertPassengerRecord(int passengerId, string fullName, string email, string password, string phone, string address)
         {
@@ -284,7 +284,11 @@ namespace AirlineTicketsSystemGui.controller
                 {
                     while (reader.Read())
                     {
+<<<<<<< HEAD
                         tickets.Add(new Ticket(
+=======
+                        tickets.Add(new Ticket (
+>>>>>>> c1672b1b444fa15d83f860a779f88af2fd24046d
                             reader.GetInt32(0),
                             new Flight(
                                 reader.GetInt32(3),
@@ -296,7 +300,11 @@ namespace AirlineTicketsSystemGui.controller
                                 reader.GetString(9)
                             ),
                             reader.GetInt32(2),
+<<<<<<< HEAD
                             (SeatType)reader.GetInt32(1)
+=======
+                            (SeatType) reader.GetInt32(1)
+>>>>>>> c1672b1b444fa15d83f860a779f88af2fd24046d
                         ));
                     }
                 }

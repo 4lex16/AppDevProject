@@ -72,6 +72,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controller\AirlineTicketSystemController.cs" />
+    <Compile Include="controller\DatabaseController.cs" />
+    <Compile Include="controller\PassengerController.cs" />
+    <Compile Include="controller\StaffController.cs" />
+    <Compile Include="model\AirlineTicketSystem.cs" />
+    <Compile Include="model\Flight.cs" />
+    <Compile Include="model\Passenger.cs" />
+    <Compile Include="model\SeatType.cs" />
+    <Compile Include="model\Staff.cs" />
+    <Compile Include="model\Ticket.cs" />
+    <Compile Include="model\User.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="view\AdminAddFlightPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,22 +121,17 @@
     <Compile Include="view\AdminPage.Designer.cs">
       <DependentUpon>AdminPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="controller\AirlineTicketSystemController.cs" />
-    <Compile Include="controller\DatabaseController.cs" />
-    <Compile Include="controller\PassengerController.cs" />
-    <Compile Include="controller\StaffController.cs" />
-    <Compile Include="model\AirlineTicketSystem.cs" />
-    <Compile Include="model\Flight.cs" />
-    <Compile Include="model\Passenger.cs" />
-    <Compile Include="model\SeatType.cs" />
-    <Compile Include="model\Staff.cs" />
-    <Compile Include="model\Ticket.cs" />
-    <Compile Include="model\User.cs" />
     <Compile Include="view\DetailsPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="view\DetailsPage.Designer.cs">
       <DependentUpon>DetailsPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
     <Compile Include="view\PassengerBuyTicketPage.cs">
       <SubType>Form</SubType>
@@ -149,26 +157,6 @@
     <Compile Include="view\StaffPage.Designer.cs">
       <DependentUpon>StaffPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\LoginPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="view\LoginPage.Designer.cs">
-      <DependentUpon>LoginPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="view\AdminPage.resx">
-      <DependentUpon>AdminPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="view\LoginPage.resx">
-      <DependentUpon>LoginPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="view\PassengerPage.resx">
-      <DependentUpon>PassengerPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="view\PassengerSignupPage.resx">
-      <DependentUpon>PassengerSignupPage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -178,6 +166,42 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="view\AdminAddFlightPage.resx">
+      <DependentUpon>AdminAddFlightPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\AdminAddStaffPage.resx">
+      <DependentUpon>AdminAddStaffPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\AdminEditFlightPage.resx">
+      <DependentUpon>AdminEditFlightPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\AdminEditStaffPage.resx">
+      <DependentUpon>AdminEditStaffPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\AdminLoginPage.resx">
+      <DependentUpon>AdminLoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\DetailsPage.resx">
+      <DependentUpon>DetailsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\LoginPage.en.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\PassengerBuyTicketPage.resx">
+      <DependentUpon>PassengerBuyTicketPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\PassengerPage.resx">
+      <DependentUpon>PassengerPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\PassengerSignupPage.resx">
+      <DependentUpon>PassengerSignupPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\StaffPage.resx">
       <DependentUpon>StaffPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -195,6 +219,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\AirlineTicketsSystemDatabase\AirlineTicketsSystemDatabase.csproj">
+      <Project>{86cc78a9-83dd-42fc-bc24-62c57d73aabe}</Project>
+      <Name>AirlineTicketsSystemDatabase</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -45,6 +45,6 @@ namespace AirlineTicketsSystemGui.controller
             DatabaseController.InsertTicketRecord(DatabaseController.GetTicketId(), passengerId, flight.FlightId, seatType);
             return ticket.TicketId;
         }
-
+        
     }
 }

@@ -12,7 +12,7 @@
             DepartureDate = departureDate;
             DepartureTime = departureTime;
         }
-
+        
         public Flight(Flight flight)
         {
             FlightId = flight.FlightId;

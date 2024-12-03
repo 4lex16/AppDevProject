@@ -1,12 +1,98 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\controller\\AirlineTicketSystemController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AirlineTicketsSystemGui\\controller\\AirlineTicketSystemController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\controller\\DatabaseController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AirlineTicketsSystemGui\\controller\\DatabaseController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\airlineticketssystemgui\\view\\admineditflightpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:airlineticketssystemgui\\view\\admineditflightpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\view\\DetailsPage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AirlineTicketsSystemGui\\view\\DetailsPage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\airlineticketssystemgui\\view\\detailspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:airlineticketssystemgui\\view\\detailspage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AirlineTicketSystemController.cs",
+              "DocumentMoniker": "C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\controller\\AirlineTicketSystemController.cs",
+              "RelativeDocumentMoniker": "AirlineTicketsSystemGui\\controller\\AirlineTicketSystemController.cs",
+              "ToolTip": "C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\controller\\AirlineTicketSystemController.cs",
+              "RelativeToolTip": "AirlineTicketsSystemGui\\controller\\AirlineTicketSystemController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T22:35:18.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DatabaseController.cs",
+              "DocumentMoniker": "C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\controller\\DatabaseController.cs",
+              "RelativeDocumentMoniker": "AirlineTicketsSystemGui\\controller\\DatabaseController.cs",
+              "ToolTip": "C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\controller\\DatabaseController.cs",
+              "RelativeToolTip": "AirlineTicketsSystemGui\\controller\\DatabaseController.cs",
+              "ViewState": "AQIAABgBAAAAAAAAAAAAAOwAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T22:34:26.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminEditFlightPage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\view\\AdminEditFlightPage.cs",
+              "RelativeDocumentMoniker": "AirlineTicketsSystemGui\\view\\AdminEditFlightPage.cs",
+              "ToolTip": "E:\\App Dev presentation\\AppDevProject-main\\AppDevProject-main\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\view\\AdminEditFlightPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T22:32:36.947Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DetailsPage.cs",
+              "DocumentMoniker": "C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\view\\DetailsPage.cs",
+              "RelativeDocumentMoniker": "AirlineTicketsSystemGui\\view\\DetailsPage.cs",
+              "ToolTip": "C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\view\\DetailsPage.cs",
+              "RelativeToolTip": "AirlineTicketsSystemGui\\view\\DetailsPage.cs",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAIwBoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T22:31:21.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DetailsPage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\view\\DetailsPage.cs",
+              "RelativeDocumentMoniker": "AirlineTicketsSystemGui\\view\\DetailsPage.cs",
+              "ToolTip": "E:\\App Dev presentation\\AppDevProject-main\\AppDevProject-main\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\view\\DetailsPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T22:31:12.088Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

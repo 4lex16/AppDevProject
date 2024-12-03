@@ -1,4 +1,5 @@
-﻿using AirlineTicketsSystemGui.model;
+﻿using System.Windows.Forms;
+using AirlineTicketsSystemGui.model;
 
 namespace AirlineTicketsSystemGui.controller
 {
@@ -45,6 +46,21 @@ namespace AirlineTicketsSystemGui.controller
             DatabaseController.InsertTicketRecord(DatabaseController.GetTicketId(), passengerId, flight.FlightId, seatType);
             return ticket.TicketId;
         }
-        
+
+
+        public static void AboutMb(string header, string message)
+        {
+            MessageBox.Show(message, header, MessageBoxButtons.OK ,MessageBoxIcon.Information);
+        }
+
+        public static void NotImplementedMb()
+        {
+            MessageBox.Show(
+                "This Feature will be Implemented at a Later Date",
+                "Sorry Feature Not Implemented", 
+                MessageBoxButtons.OK, 
+                MessageBoxIcon.Error
+            );
+        }
     }
 }

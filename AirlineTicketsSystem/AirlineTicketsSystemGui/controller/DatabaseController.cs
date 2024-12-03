@@ -284,11 +284,7 @@ namespace AirlineTicketsSystemGui.controller
                 {
                     while (reader.Read())
                     {
-<<<<<<< HEAD
-                        tickets.Add(new Ticket(
-=======
                         tickets.Add(new Ticket (
->>>>>>> c1672b1b444fa15d83f860a779f88af2fd24046d
                             reader.GetInt32(0),
                             new Flight(
                                 reader.GetInt32(3),
@@ -300,11 +296,8 @@ namespace AirlineTicketsSystemGui.controller
                                 reader.GetString(9)
                             ),
                             reader.GetInt32(2),
-<<<<<<< HEAD
-                            (SeatType)reader.GetInt32(1)
-=======
+
                             (SeatType) reader.GetInt32(1)
->>>>>>> c1672b1b444fa15d83f860a779f88af2fd24046d
                         ));
                     }
                 }

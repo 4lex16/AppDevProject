@@ -37,8 +37,9 @@ namespace AirlineTicketsSystemGui
             this.loginPageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.spanishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AdminKeyLabel = new System.Windows.Forms.Label();
             this.AdminKeyTb = new System.Windows.Forms.TextBox();
             this.AdminLoginButton = new System.Windows.Forms.Button();
@@ -47,9 +48,7 @@ namespace AirlineTicketsSystemGui
             // 
             // LoginMenuStrip
             // 
-            this.LoginMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pageToolStripMenuItem,
-            this.languageToolStripMenuItem});
+            this.LoginMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.pageToolStripMenuItem, this.languageToolStripMenuItem });
             this.LoginMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.LoginMenuStrip.Name = "LoginMenuStrip";
             this.LoginMenuStrip.Size = new System.Drawing.Size(311, 24);
@@ -58,10 +57,7 @@ namespace AirlineTicketsSystemGui
             // 
             // pageToolStripMenuItem
             // 
-            this.pageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.aboutToolStripMenuItem,
-            this.loginPageToolStripMenuItem,
-            this.exitToolStripMenuItem});
+            this.pageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.aboutToolStripMenuItem, this.loginPageToolStripMenuItem, this.exitToolStripMenuItem });
             this.pageToolStripMenuItem.Name = "pageToolStripMenuItem";
             this.pageToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.pageToolStripMenuItem.Text = "&Page";
@@ -69,43 +65,51 @@ namespace AirlineTicketsSystemGui
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.aboutToolStripMenuItem.Text = "A&bout";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // loginPageToolStripMenuItem
             // 
             this.loginPageToolStripMenuItem.Name = "loginPageToolStripMenuItem";
-            this.loginPageToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.loginPageToolStripMenuItem.Text = "Login Page";
+            this.loginPageToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
+            this.loginPageToolStripMenuItem.Text = "L&ogin Page";
             this.loginPageToolStripMenuItem.Click += new System.EventHandler(this.loginPageToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // languageToolStripMenuItem
             // 
-            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.frenchToolStripMenuItem,
-            this.englishToolStripMenuItem});
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.englishToolStripMenuItem, this.frenchToolStripMenuItem, this.spanishToolStripMenuItem });
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
             this.languageToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.languageToolStripMenuItem.Text = "&Language";
             // 
-            // frenchToolStripMenuItem
-            // 
-            this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.frenchToolStripMenuItem.Text = "F&rançais";
-            // 
             // englishToolStripMenuItem
             // 
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.englishToolStripMenuItem.Text = "E&nglish";
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
+            // 
+            // frenchToolStripMenuItem
+            // 
+            this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
+            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.frenchToolStripMenuItem.Text = "F&rançais";
+            this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
+            // 
+            // spanishToolStripMenuItem
+            // 
+            this.spanishToolStripMenuItem.Name = "spanishToolStripMenuItem";
+            this.spanishToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.spanishToolStripMenuItem.Text = "&Spanish";
+            this.spanishToolStripMenuItem.Click += new System.EventHandler(this.spanishToolStripMenuItem_Click);
             // 
             // AdminKeyLabel
             // 
@@ -119,8 +123,7 @@ namespace AirlineTicketsSystemGui
             // 
             // AdminKeyTb
             // 
-            this.AdminKeyTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.AdminKeyTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.AdminKeyTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.AdminKeyTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminKeyTb.Location = new System.Drawing.Point(12, 62);
@@ -151,14 +154,15 @@ namespace AirlineTicketsSystemGui
             this.Controls.Add(this.AdminKeyTb);
             this.Controls.Add(this.LoginMenuStrip);
             this.Name = "AdminLoginPage";
-            this.Text = "AdminLoginPage";
+            this.Text = "Admin Login Page";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdminLoginPage_FormClosing);
             this.LoginMenuStrip.ResumeLayout(false);
             this.LoginMenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
+
+        private System.Windows.Forms.ToolStripMenuItem spanishToolStripMenuItem;
 
         private System.Windows.Forms.Button AdminLoginButton;
 

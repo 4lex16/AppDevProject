@@ -1,12 +1,120 @@
 C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\AirlineTicketsSystemGui.exe.config
 C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\AirlineTicketsSystemGui.exe
 C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\AirlineTicketsSystemGui.pdb
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Buffers.dll
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Memory.dll
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Buffers.xml
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Memory.xml
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.csproj.AssemblyReference.cache
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.Properties.Resources.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminPage.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.DetailsPage.resources
 C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.LoginPage.resources
 C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.PassengerPage.resources
-C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.Properties.Resources.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.PassengerSignupPage.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.StaffPage.resources
 C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.csproj.GenerateResource.cache
 C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.csproj.CoreCompileInputs.cache
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineT.397D70B5.Up2Date
 C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.exe
 C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.pdb
-C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.StaffPage.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\en\AirlineTicketsSystemGui.resources.dll
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminAddFlightPage.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminAddStaffPage.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminEditFlightPage.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminEditStaffPage.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminLoginPage.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.PassengerBuyTicketPage.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.LoginPage.en.resources
+C:\Users\cirla\Documents\College\Semester_3\AppDev\AppDevProject\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\en\AirlineTicketsSystemGui.resources.dll
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\AirlineTicketsSystemGui.exe.config
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\AirlineTicketsSystemGui.exe
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\AirlineTicketsSystemGui.pdb
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\en\AirlineTicketsSystemGui.resources.dll
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\SQLitePCLRaw.core.dll
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Buffers.dll
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Memory.dll
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Buffers.xml
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Memory.xml
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.csproj.AssemblyReference.cache
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.Properties.Resources.resources
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminAddFlightPage.resources
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminAddStaffPage.resources
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminEditFlightPage.resources
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminEditStaffPage.resources
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminLoginPage.resources
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminPage.resources
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.DetailsPage.resources
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.LoginPage.resources
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.PassengerBuyTicketPage.resources
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.PassengerPage.resources
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.PassengerSignupPage.resources
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.StaffPage.resources
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.LoginPage.en.resources
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.csproj.GenerateResource.cache
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.csproj.CoreCompileInputs.cache
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\en\AirlineTicketsSystemGui.resources.dll
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineT.397D70B5.Up2Date
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.exe
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.pdb
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\AirlineTicketsSystemDatabase.dll
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\AirlineTicketsSystemDatabase.pdb
+C:\Users\2371100\Downloads\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\AirlineTicketsSystemDatabase.dll.config
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\AirlineTicketsSystemGui.exe.config
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\AirlineTicketsSystemGui.exe
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\AirlineTicketsSystemGui.pdb
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\en\AirlineTicketsSystemGui.resources.dll
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\AirlineTicketsSystemDatabase.dll
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\Microsoft.Data.Sqlite.dll
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\SQLitePCLRaw.batteries_v2.dll
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\SQLitePCLRaw.core.dll
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\SQLitePCLRaw.provider.dynamic_cdecl.dll
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Buffers.dll
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Memory.dll
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Numerics.Vectors.dll
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\AirlineTicketsSystemDatabase.pdb
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\AirlineTicketsSystemDatabase.dll.config
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\Microsoft.Data.Sqlite.xml
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Buffers.xml
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Memory.xml
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Numerics.Vectors.xml
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.csproj.AssemblyReference.cache
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.Properties.Resources.resources
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminAddFlightPage.resources
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminAddStaffPage.resources
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminEditFlightPage.resources
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminEditStaffPage.resources
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminLoginPage.resources
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.AdminPage.resources
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.DetailsPage.resources
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.LoginPage.resources
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.PassengerBuyTicketPage.resources
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.PassengerPage.resources
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.PassengerSignupPage.resources
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.StaffPage.resources
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.LoginPage.en.resources
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.csproj.GenerateResource.cache
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.csproj.CoreCompileInputs.cache
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\en\AirlineTicketsSystemGui.resources.dll
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineT.397D70B5.Up2Date
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.exe
+E:\App Dev presentation\AppDevProject-main\AppDevProject-main\AirlineTicketsSystem\AirlineTicketsSystemGui\obj\Debug\AirlineTicketsSystemGui.pdb

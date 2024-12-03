@@ -50,14 +50,19 @@ classDiagram
 
     class Passenger {
         +string Phone
+        +string FullName
         +string Address
         +List~Ticket~ Tickets
     }
 
     class Flight {
         + int FlightId
-        + SeatType SeatQuality
-        + String SeatAvailability
+        + int FirstClassSeats
+        + int BuisnessClassSeats
+        + int CoachClassSeats
+        + string Destination
+        + string DepartureDate
+        + string DepartureTime
     }
 
     class SeatType {

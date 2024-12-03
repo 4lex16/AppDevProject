@@ -29,5 +29,10 @@ namespace AirlineTicketsSystemGui
         {
             //TODO: Implement Showing Flight Details
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

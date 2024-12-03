@@ -31,6 +31,6 @@
         public string Destination { get; set; }
         public string DepartureDate { get; set; }
         public string DepartureTime { get; set; }
-        
+
     }
 }

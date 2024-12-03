@@ -69,7 +69,10 @@ namespace AirlineTicketsSystemGui
             // 
             // PassengerMenuStrip
             // 
-            this.PassengerMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.pageToolStripMenuItem, this.accountToolStripMenuItem, this.languageToolStripMenuItem });
+            this.PassengerMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pageToolStripMenuItem,
+            this.accountToolStripMenuItem,
+            this.languageToolStripMenuItem});
             this.PassengerMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.PassengerMenuStrip.Name = "PassengerMenuStrip";
             this.PassengerMenuStrip.Size = new System.Drawing.Size(448, 24);
@@ -78,7 +81,11 @@ namespace AirlineTicketsSystemGui
             // 
             // pageToolStripMenuItem
             // 
-            this.pageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.aboutToolStripMenuItem, this.ticketListToolStripMenuItem, this.flightListToolStripMenuItem, this.exitToolStripMenuItem });
+            this.pageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem,
+            this.ticketListToolStripMenuItem,
+            this.flightListToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.pageToolStripMenuItem.Name = "pageToolStripMenuItem";
             this.pageToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.pageToolStripMenuItem.Text = "&Page";
@@ -86,30 +93,32 @@ namespace AirlineTicketsSystemGui
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "A&bout";
             // 
             // ticketListToolStripMenuItem
             // 
             this.ticketListToolStripMenuItem.Name = "ticketListToolStripMenuItem";
-            this.ticketListToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.ticketListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ticketListToolStripMenuItem.Text = "&Ticket List";
             // 
             // flightListToolStripMenuItem
             // 
             this.flightListToolStripMenuItem.Name = "flightListToolStripMenuItem";
-            this.flightListToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.flightListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.flightListToolStripMenuItem.Text = "&Flight List";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // accountToolStripMenuItem
             // 
-            this.accountToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.logOutToolStripMenuItem });
+            this.accountToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.logOutToolStripMenuItem});
             this.accountToolStripMenuItem.Name = "accountToolStripMenuItem";
             this.accountToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
             this.accountToolStripMenuItem.Text = "&Account";
@@ -122,7 +131,9 @@ namespace AirlineTicketsSystemGui
             // 
             // languageToolStripMenuItem
             // 
-            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.frenchToolStripMenuItem, this.englishToolStripMenuItem });
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.frenchToolStripMenuItem,
+            this.englishToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
             this.languageToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.languageToolStripMenuItem.Text = "&Language";
@@ -162,7 +173,10 @@ namespace AirlineTicketsSystemGui
             // SeatTypeCb
             // 
             this.SeatTypeCb.FormattingEnabled = true;
-            this.SeatTypeCb.Items.AddRange(new object[] { "First Class", "Business Class", "Coach Class" });
+            this.SeatTypeCb.Items.AddRange(new object[] {
+            "First Class",
+            "Business Class",
+            "Coach Class"});
             this.SeatTypeCb.Location = new System.Drawing.Point(12, 55);
             this.SeatTypeCb.Name = "SeatTypeCb";
             this.SeatTypeCb.Size = new System.Drawing.Size(431, 24);
@@ -378,6 +392,7 @@ namespace AirlineTicketsSystemGui
             this.FlightDetailsGb.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.Button CancelButton;

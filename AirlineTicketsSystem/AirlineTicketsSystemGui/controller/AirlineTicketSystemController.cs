@@ -4,7 +4,7 @@ namespace AirlineTicketsSystemGui.controller
 {
     public class AirlineTicketSystemController
     {
-        private AirlineTicketSystem airlineTicketSystem;
+        private static AirlineTicketSystem airlineTicketSystem;
 
         public AirlineTicketSystemController()
         {
@@ -12,10 +12,10 @@ namespace AirlineTicketsSystemGui.controller
             DatabaseController.CreateTicketTable();
             DatabaseController.CreatePassengerTable();
             DatabaseController.CreateStaffTable();
-            this.airlineTicketSystem = AirlineTicketSystem.GetInstance();
+            airlineTicketSystem = AirlineTicketSystem.GetInstance();
         }
 
-        public int InsertPassenger(string fullName, string email, string password, string phone, string address)
+        public static int InsertPassenger(string fullName, string email, string password, string phone, string address)
         {
             Passenger passenger = new Passenger(airlineTicketSystem.Passengers.Count + 10000, fullName, email, password, phone, address);
             DatabaseController.InsertPassengerRecord(passenger);
@@ -23,7 +23,7 @@ namespace AirlineTicketsSystemGui.controller
             return passenger.UserId;
         }
 
-        public int InsertFlight(int firstClassSeats, int businessClassSeats, int coachClassSeats, string destination, string departureDate, string departureTime)
+        public static int InsertFlight(int firstClassSeats, int businessClassSeats, int coachClassSeats, string destination, string departureDate, string departureTime)
         {
             Flight flight = new Flight(airlineTicketSystem.Flights.Count + 1000, firstClassSeats, businessClassSeats, coachClassSeats, destination, departureDate, departureTime);
             DatabaseController.InsertFlightRecord(flight);
@@ -31,7 +31,7 @@ namespace AirlineTicketsSystemGui.controller
             return flight.FlightId;
         }
 
-        public int InsertStaff(int userId, string email, string password)
+        public static int InsertStaff(string email, string password)
         {
             Staff staff = new Staff(airlineTicketSystem.Staff.Count + 100, email, password);
             DatabaseController.InsertStaffRecord(staff);
@@ -39,7 +39,7 @@ namespace AirlineTicketsSystemGui.controller
             return staff.UserId;
         }
 
-        public int inserTicket(Flight flight, int passengerId, SeatType seatType)
+        public static int inserTicket(Flight flight, int passengerId, SeatType seatType)
         {
             Ticket ticket = new Ticket(DatabaseController.GetTicketId(), flight, passengerId, seatType);
             DatabaseController.InsertTicketRecord(DatabaseController.GetTicketId(), passengerId, flight.FlightId, seatType);

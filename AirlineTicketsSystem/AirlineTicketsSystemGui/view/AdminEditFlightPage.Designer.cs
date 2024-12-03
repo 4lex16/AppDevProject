@@ -65,7 +65,9 @@ namespace AirlineTicketsSystemGui
             // 
             // EditFlightMenuStrip
             // 
-            this.EditFlightMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.pageToolStripMenuItem, this.languageToolStripMenuItem });
+            this.EditFlightMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pageToolStripMenuItem,
+            this.languageToolStripMenuItem});
             this.EditFlightMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.EditFlightMenuStrip.Name = "EditFlightMenuStrip";
             this.EditFlightMenuStrip.Size = new System.Drawing.Size(418, 24);
@@ -74,7 +76,9 @@ namespace AirlineTicketsSystemGui
             // 
             // pageToolStripMenuItem
             // 
-            this.pageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.aboutToolStripMenuItem, this.exitToolStripMenuItem });
+            this.pageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.pageToolStripMenuItem.Name = "pageToolStripMenuItem";
             this.pageToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.pageToolStripMenuItem.Text = "&Page";
@@ -82,18 +86,21 @@ namespace AirlineTicketsSystemGui
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "A&bout";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // languageToolStripMenuItem
             // 
-            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.frenchToolStripMenuItem, this.englishToolStripMenuItem });
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.frenchToolStripMenuItem,
+            this.englishToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
             this.languageToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.languageToolStripMenuItem.Text = "&Language";
@@ -112,26 +119,48 @@ namespace AirlineTicketsSystemGui
             // 
             // MinuteNup
             // 
-            this.MinuteNup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.MinuteNup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.MinuteNup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MinuteNup.Location = new System.Drawing.Point(316, 209);
-            this.MinuteNup.Maximum = new decimal(new int[] { 59, 0, 0, 0 });
+            this.MinuteNup.Maximum = new decimal(new int[] {
+            59,
+            0,
+            0,
+            0});
             this.MinuteNup.Name = "MinuteNup";
             this.MinuteNup.Size = new System.Drawing.Size(93, 23);
             this.MinuteNup.TabIndex = 41;
-            this.MinuteNup.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            this.MinuteNup.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // HourNup
             // 
-            this.HourNup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.HourNup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.HourNup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HourNup.Location = new System.Drawing.Point(316, 180);
-            this.HourNup.Maximum = new decimal(new int[] { 12, 0, 0, 0 });
-            this.HourNup.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
+            this.HourNup.Maximum = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            this.HourNup.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.HourNup.Name = "HourNup";
             this.HourNup.Size = new System.Drawing.Size(93, 23);
             this.HourNup.TabIndex = 40;
-            this.HourNup.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            this.HourNup.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // CoachCLabel
             // 
@@ -232,10 +261,13 @@ namespace AirlineTicketsSystemGui
             // 
             // AmPmCb
             // 
-            this.AmPmCb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.AmPmCb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.AmPmCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AmPmCb.FormattingEnabled = true;
-            this.AmPmCb.Items.AddRange(new object[] { "AM", "PM" });
+            this.AmPmCb.Items.AddRange(new object[] {
+            "AM",
+            "PM"});
             this.AmPmCb.Location = new System.Drawing.Point(316, 239);
             this.AmPmCb.Name = "AmPmCb";
             this.AmPmCb.Size = new System.Drawing.Size(93, 24);
@@ -243,7 +275,8 @@ namespace AirlineTicketsSystemGui
             // 
             // TimeLabel
             // 
-            this.TimeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.TimeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TimeLabel.Location = new System.Drawing.Point(230, 143);
             this.TimeLabel.Name = "TimeLabel";
@@ -254,7 +287,8 @@ namespace AirlineTicketsSystemGui
             // 
             // DateDp
             // 
-            this.DateDp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.DateDp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DateDp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateDp.Location = new System.Drawing.Point(12, 106);
             this.DateDp.Name = "DateDp";
@@ -263,7 +297,8 @@ namespace AirlineTicketsSystemGui
             // 
             // DateLabel
             // 
-            this.DateLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.DateLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateLabel.Location = new System.Drawing.Point(12, 80);
             this.DateLabel.Name = "DateLabel";
@@ -274,7 +309,8 @@ namespace AirlineTicketsSystemGui
             // 
             // EditingButton
             // 
-            this.EditingButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.EditingButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.EditingButton.BackColor = System.Drawing.SystemColors.Window;
             this.EditingButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EditingButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -287,7 +323,8 @@ namespace AirlineTicketsSystemGui
             // 
             // DestinationTb
             // 
-            this.DestinationTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.DestinationTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DestinationTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.DestinationTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DestinationTb.Location = new System.Drawing.Point(12, 54);
@@ -297,7 +334,8 @@ namespace AirlineTicketsSystemGui
             // 
             // DestinationLabel
             // 
-            this.DestinationLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.DestinationLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.DestinationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DestinationLabel.Location = new System.Drawing.Point(12, 28);
             this.DestinationLabel.Name = "DestinationLabel";
@@ -308,7 +346,8 @@ namespace AirlineTicketsSystemGui
             // 
             // EditButton
             // 
-            this.EditButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.EditButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.EditButton.BackColor = System.Drawing.SystemColors.Window;
             this.EditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EditButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -353,6 +392,7 @@ namespace AirlineTicketsSystemGui
             ((System.ComponentModel.ISupportInitialize)(this.HourNup)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.Button EditButton;

@@ -1,15 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\cirla\\Documents\\College\\Semester_3\\AppDev\\AppDevProject\\AirlineTicketsSystem\\",
+  "WorkspaceRootPath": "C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\PassengerSignupPage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BD70FE8B-5660-4C34-9D12-367E00E063A7}|AirlineTicketsSystemGui\\AirlineTicketsSystemGui.csproj|c:\\users\\kai_raf\\desktop\\appdevproject\\airlineticketssystem\\airlineticketssystemgui\\passengersignuppage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD70FE8B-5660-4C34-9D12-367E00E063A7}|AirlineTicketsSystemGui\\AirlineTicketsSystemGui.csproj|solutionrelative:airlineticketssystemgui\\passengersignuppage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\airlineticketssystemgui\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BD70FE8B-5660-4C34-9D12-367E00E063A7}|AirlineTicketsSystemGui\\AirlineTicketsSystemGui.csproj|C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\airlineticketssystemgui\\passengersignuppage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BD70FE8B-5660-4C34-9D12-367E00E063A7}|AirlineTicketsSystemGui\\AirlineTicketsSystemGui.csproj|solutionrelative:airlineticketssystemgui\\passengersignuppage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\airlineticketssystemgui\\passengersignuppage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{BD70FE8B-5660-4C34-9D12-367E00E063A7}|AirlineTicketsSystemGui\\AirlineTicketsSystemGui.csproj|C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\airlineticketssystemgui\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BD70FE8B-5660-4C34-9D12-367E00E063A7}|AirlineTicketsSystemGui\\AirlineTicketsSystemGui.csproj|solutionrelative:airlineticketssystemgui\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,12 +26,12 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "LoginPage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\LoginPage.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\LoginPage.cs",
+              "RelativeDocumentMoniker": "AirlineTicketsSystemGui\\LoginPage.cs",
               "ToolTip": "C:\\Users\\cirla\\Documents\\College\\Semester_3\\AppDev\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\LoginPage.cs [Design]",
-              "RelativeToolTip": "AirlineTicketsSystemGui\\LoginPage.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\cirla\\Documents\\College\\Semester_3\\AppDev\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\LoginPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-29T17:54:43.537Z"
             },
@@ -37,21 +40,22 @@
               "DocumentIndex": 0,
               "Title": "PassengerSignupPage.cs",
               "DocumentMoniker": "C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\PassengerSignupPage.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\PassengerSignupPage.cs",
+              "RelativeDocumentMoniker": "AirlineTicketsSystemGui\\PassengerSignupPage.cs",
               "ToolTip": "C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\PassengerSignupPage.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\..\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\PassengerSignupPage.cs",
+              "RelativeToolTip": "AirlineTicketsSystemGui\\PassengerSignupPage.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-29T20:35:54.129Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PassengerSignupPage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\PassengerSignupPage.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\..\\Kai_Raf\\Desktop\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\PassengerSignupPage.cs",
+              "RelativeDocumentMoniker": "AirlineTicketsSystemGui\\PassengerSignupPage.cs",
               "ToolTip": "C:\\Users\\cirla\\Documents\\College\\Semester_3\\AppDev\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\PassengerSignupPage.cs [Design]",
-              "RelativeToolTip": "AirlineTicketsSystemGui\\PassengerSignupPage.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\cirla\\Documents\\College\\Semester_3\\AppDev\\AppDevProject\\AirlineTicketsSystem\\AirlineTicketsSystemGui\\PassengerSignupPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-29T17:13:36.968Z"
             }

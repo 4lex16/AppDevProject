@@ -1,0 +1,13 @@
+# Ignore temporary files
+*.tmp
+
+# Ignore build folders
+bin/
+obj/
+AirlineTicketsSystem/AirlineTicketsSystemGui/obj/
+AirlineTicketsSystem/AirlineTicketsSystemDatabase/obj/
+AirlineTicketsSystem/AirlineTicketsSystemGui/bin/
+
+
+# Ignore Visual Studio files
+.vs/

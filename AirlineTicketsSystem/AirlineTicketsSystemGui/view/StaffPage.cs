@@ -43,5 +43,10 @@ namespace AirlineTicketsSystemGui
                 new DetailsPage("passenger", FlightListBox.SelectedItem).Show();
             }
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

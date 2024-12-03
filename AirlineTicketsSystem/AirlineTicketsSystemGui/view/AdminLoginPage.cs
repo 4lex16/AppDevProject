@@ -17,15 +17,26 @@ namespace AirlineTicketsSystemGui
 
         private void AdminLoginButton_Click(object sender, EventArgs e)
         {
-            //TODO: Authenticate the key
-            new AdminPage().Show();
-            this.Hide();
+            if (AdminKeyTb.Text == "12345678")
+            {
+                new AdminPage().Show();
+                this.Hide();
+            } else
+            {
+                MessageBox.Show("Invalid Admin Key");
+            }
+            
         }
 
         private void loginPageToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new LoginPage().Show();
             this.Hide();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

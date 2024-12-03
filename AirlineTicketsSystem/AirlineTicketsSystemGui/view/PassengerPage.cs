@@ -62,5 +62,10 @@ namespace AirlineTicketsSystemGui
         {
             //TODO: Implement Print Ticket Button
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -91,26 +91,27 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "A&bout";
             // 
             // ticketListToolStripMenuItem
             // 
             this.ticketListToolStripMenuItem.Name = "ticketListToolStripMenuItem";
-            this.ticketListToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.ticketListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ticketListToolStripMenuItem.Text = "&Ticket List";
             // 
             // flightListToolStripMenuItem
             // 
             this.flightListToolStripMenuItem.Name = "flightListToolStripMenuItem";
-            this.flightListToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.flightListToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.flightListToolStripMenuItem.Text = "&Flight List";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(126, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // accountToolStripMenuItem
             // 
@@ -464,7 +465,7 @@
             this.TicketListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
             this.TicketListBox.FormattingEnabled = true;
             this.TicketListBox.ItemHeight = 16;
-            this.TicketListBox.Location = new System.Drawing.Point(6, 65);
+            this.TicketListBox.Location = new System.Drawing.Point(12, 62);
             this.TicketListBox.Name = "TicketListBox";
             this.TicketListBox.Size = new System.Drawing.Size(542, 180);
             this.TicketListBox.TabIndex = 13;

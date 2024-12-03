@@ -8,7 +8,7 @@ namespace AirlineTicketsSystemGui.controller
 {
     public class DatabaseController
     {
-        private const string DatabaseFileName = "Data Source=AirlineTicketsSystemDatabase/AirlineTicketsSystemDatabase.db";
+        private const string DatabaseFileName = "Data Source=../AirlineTicketsSystemDatabase.db";
 
         public static SqliteConnection GetConnection()
         {
@@ -296,6 +296,7 @@ namespace AirlineTicketsSystemGui.controller
                                 reader.GetString(9)
                             ),
                             reader.GetInt32(2),
+
                             (SeatType) reader.GetInt32(1)
                         ));
                     }

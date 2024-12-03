@@ -12,5 +12,10 @@ namespace AirlineTicketsSystemGui
             Flight = flight;
             InitializeComponent();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, System.EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

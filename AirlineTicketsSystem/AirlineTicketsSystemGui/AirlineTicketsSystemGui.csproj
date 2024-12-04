@@ -91,6 +91,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controller\AdminController.cs" />
     <Compile Include="controller\AirlineTicketSystemController.cs" />
     <Compile Include="controller\DatabaseController.cs" />
     <Compile Include="controller\PassengerController.cs" />
@@ -104,40 +105,40 @@
     <Compile Include="model\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="view\AdminAddFlightPage.cs">
+    <Compile Include="view\admin\AdminAddFlightPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\AdminAddFlightPage.Designer.cs">
+    <Compile Include="view\admin\AdminAddFlightPage.Designer.cs">
       <DependentUpon>AdminAddFlightPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\AdminAddStaffPage.cs">
+    <Compile Include="view\admin\AdminAddStaffPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\AdminAddStaffPage.Designer.cs">
+    <Compile Include="view\admin\AdminAddStaffPage.Designer.cs">
       <DependentUpon>AdminAddStaffPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\AdminEditFlightPage.cs">
+    <Compile Include="view\admin\AdminEditFlightPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\AdminEditFlightPage.Designer.cs">
+    <Compile Include="view\admin\AdminEditFlightPage.Designer.cs">
       <DependentUpon>AdminEditFlightPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\AdminEditStaffPage.cs">
+    <Compile Include="view\admin\AdminEditStaffPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\AdminEditStaffPage.Designer.cs">
+    <Compile Include="view\admin\AdminEditStaffPage.Designer.cs">
       <DependentUpon>AdminEditStaffPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\AdminLoginPage.cs">
+    <Compile Include="view\admin\AdminLoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\AdminLoginPage.Designer.cs">
+    <Compile Include="view\admin\AdminLoginPage.Designer.cs">
       <DependentUpon>AdminLoginPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\AdminPage.cs">
+    <Compile Include="view\admin\AdminPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\AdminPage.Designer.cs">
+    <Compile Include="view\admin\AdminPage.Designer.cs">
       <DependentUpon>AdminPage.cs</DependentUpon>
     </Compile>
     <Compile Include="view\DetailsPage.cs">
@@ -152,28 +153,28 @@
     <Compile Include="view\LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\PassengerBuyTicketPage.cs">
+    <Compile Include="view\passenger\PassengerBuyTicketPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\PassengerBuyTicketPage.Designer.cs">
+    <Compile Include="view\passenger\PassengerBuyTicketPage.Designer.cs">
       <DependentUpon>PassengerBuyTicketPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\PassengerPage.cs">
+    <Compile Include="view\passenger\PassengerPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\PassengerPage.Designer.cs">
+    <Compile Include="view\passenger\PassengerPage.Designer.cs">
       <DependentUpon>PassengerPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\PassengerSignupPage.cs">
+    <Compile Include="view\passenger\PassengerSignupPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\PassengerSignupPage.Designer.cs">
+    <Compile Include="view\passenger\PassengerSignupPage.Designer.cs">
       <DependentUpon>PassengerSignupPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="view\StaffPage.cs">
+    <Compile Include="view\staff\StaffPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\StaffPage.Designer.cs">
+    <Compile Include="view\staff\StaffPage.Designer.cs">
       <DependentUpon>StaffPage.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -185,22 +186,22 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="view\AdminAddFlightPage.resx">
+    <EmbeddedResource Include="view\admin\AdminAddFlightPage.resx">
       <DependentUpon>AdminAddFlightPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\AdminAddStaffPage.resx">
+    <EmbeddedResource Include="view\admin\AdminAddStaffPage.resx">
       <DependentUpon>AdminAddStaffPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\AdminEditFlightPage.resx">
+    <EmbeddedResource Include="view\admin\AdminEditFlightPage.resx">
       <DependentUpon>AdminEditFlightPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\AdminEditStaffPage.resx">
+    <EmbeddedResource Include="view\admin\AdminEditStaffPage.resx">
       <DependentUpon>AdminEditStaffPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\AdminLoginPage.resx">
+    <EmbeddedResource Include="view\admin\AdminLoginPage.resx">
       <DependentUpon>AdminLoginPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\AdminPage.resx">
+    <EmbeddedResource Include="view\admin\AdminPage.resx">
       <DependentUpon>AdminPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\DetailsPage.resx">
@@ -212,16 +213,16 @@
     <EmbeddedResource Include="view\LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\PassengerBuyTicketPage.resx">
+    <EmbeddedResource Include="view\passenger\PassengerBuyTicketPage.resx">
       <DependentUpon>PassengerBuyTicketPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\PassengerPage.resx">
+    <EmbeddedResource Include="view\passenger\PassengerPage.resx">
       <DependentUpon>PassengerPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\PassengerSignupPage.resx">
+    <EmbeddedResource Include="view\passenger\PassengerSignupPage.resx">
       <DependentUpon>PassengerSignupPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view\StaffPage.resx">
+    <EmbeddedResource Include="view\staff\StaffPage.resx">
       <DependentUpon>StaffPage.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />

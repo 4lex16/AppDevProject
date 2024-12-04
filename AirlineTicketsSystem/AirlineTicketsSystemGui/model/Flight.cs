@@ -32,5 +32,9 @@
         public string DepartureDate { get; set; }
         public string DepartureTime { get; set; }
 
+        public override string ToString()
+        {
+            return $"{Destination} | {DepartureTime} on the {DepartureDate}";
+        }
     }
 }

@@ -35,7 +35,7 @@ namespace AirlineTicketsSystemGui.controller
         {
             if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
             {
-                SQLiteConnection.CreateFile(DatabaseFileName);
+                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -68,7 +68,7 @@ namespace AirlineTicketsSystemGui.controller
         {
             if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
             {
-                SQLiteConnection.CreateFile(DatabaseFileName);
+                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -98,7 +98,7 @@ namespace AirlineTicketsSystemGui.controller
         {
             if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
             {
-                SQLiteConnection.CreateFile(DatabaseFileName);
+                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -125,7 +125,7 @@ namespace AirlineTicketsSystemGui.controller
         {
             if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
             {
-                SQLiteConnection.CreateFile(DatabaseFileName);
+                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
             }
 
 
@@ -156,7 +156,7 @@ namespace AirlineTicketsSystemGui.controller
         {
             if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
             {
-                SQLiteConnection.CreateFile(DatabaseFileName);
+                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -192,7 +192,7 @@ namespace AirlineTicketsSystemGui.controller
         {
             if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
             {
-                SQLiteConnection.CreateFile(DatabaseFileName);
+                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -226,7 +226,7 @@ namespace AirlineTicketsSystemGui.controller
         {
             if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
             {
-                SQLiteConnection.CreateFile(DatabaseFileName);
+                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -257,7 +257,7 @@ namespace AirlineTicketsSystemGui.controller
         {
             if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
             {
-                SQLiteConnection.CreateFile(DatabaseFileName);
+                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -286,9 +286,9 @@ namespace AirlineTicketsSystemGui.controller
             var flights = new List<Flight>();
 
             // Check if the database file exists, and create it if it doesn't
-            if (!File.Exists(DatabaseFileName))
+            if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
             {
-                SQLiteConnection.CreateFile(DatabaseFileName);
+                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -323,9 +323,9 @@ namespace AirlineTicketsSystemGui.controller
             var passengers = new List<Passenger>();
 
             // Check if the database file exists, and create it if it doesn't
-            if (!File.Exists(DatabaseFileName))
+            if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
             {
-                SQLiteConnection.CreateFile(DatabaseFileName);
+                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -359,9 +359,9 @@ namespace AirlineTicketsSystemGui.controller
             var tickets = new List<Ticket>();
 
             // Check if the database file exists, and create it if it doesn't
-            if (!File.Exists(DatabaseFileName))
+            if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
             {
-                SQLiteConnection.CreateFile(DatabaseFileName);
+                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -408,9 +408,9 @@ namespace AirlineTicketsSystemGui.controller
             var staffList = new List<Staff>();
 
             // Check if the database file exists, and create it if it doesn't
-            if (!File.Exists(DatabaseFileName))
+            if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
             {
-                SQLiteConnection.CreateFile(DatabaseFileName);
+                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -441,9 +441,9 @@ namespace AirlineTicketsSystemGui.controller
             int ticketId = 0;
 
             // Check if the database exists
-            if (!File.Exists(DatabaseFileName))
+            if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
             {
-                SQLiteConnection.CreateFile(DatabaseFileName);
+                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))

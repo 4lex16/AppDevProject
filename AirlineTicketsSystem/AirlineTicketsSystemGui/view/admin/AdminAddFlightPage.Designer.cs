@@ -37,10 +37,8 @@ namespace AirlineTicketsSystemGui
             this.DateLabel = new System.Windows.Forms.Label();
             this.DateDp = new System.Windows.Forms.DateTimePicker();
             this.TimeLabel = new System.Windows.Forms.Label();
-            this.AmPmCb = new System.Windows.Forms.ComboBox();
             this.HourLabel = new System.Windows.Forms.Label();
             this.MinuteLabel = new System.Windows.Forms.Label();
-            this.AmPmLabel = new System.Windows.Forms.Label();
             this.FirstCTb = new System.Windows.Forms.TextBox();
             this.SeatsLabel = new System.Windows.Forms.Label();
             this.BusinessCTb = new System.Windows.Forms.TextBox();
@@ -57,6 +55,7 @@ namespace AirlineTicketsSystemGui
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.spanishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.HourNup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinuteNup)).BeginInit();
             this.AddFlightMenuStrip.SuspendLayout();
@@ -73,7 +72,6 @@ namespace AirlineTicketsSystemGui
             this.DestinationLabel.TabIndex = 0;
             this.DestinationLabel.Text = "Destination";
             this.DestinationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DestinationLabel.Click += new System.EventHandler(this.DestinationLabel_Click);
             // 
             // DestinationTb
             // 
@@ -135,20 +133,6 @@ namespace AirlineTicketsSystemGui
             this.TimeLabel.Text = "Departure Time";
             this.TimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // AmPmCb
-            // 
-            this.AmPmCb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.AmPmCb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AmPmCb.FormattingEnabled = true;
-            this.AmPmCb.Items.AddRange(new object[] {
-            "AM",
-            "PM"});
-            this.AmPmCb.Location = new System.Drawing.Point(316, 235);
-            this.AmPmCb.Name = "AmPmCb";
-            this.AmPmCb.Size = new System.Drawing.Size(93, 24);
-            this.AmPmCb.TabIndex = 9;
-            // 
             // HourLabel
             // 
             this.HourLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -168,16 +152,6 @@ namespace AirlineTicketsSystemGui
             this.MinuteLabel.TabIndex = 11;
             this.MinuteLabel.Text = "Minute :";
             this.MinuteLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // AmPmLabel
-            // 
-            this.AmPmLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AmPmLabel.Location = new System.Drawing.Point(231, 235);
-            this.AmPmLabel.Name = "AmPmLabel";
-            this.AmPmLabel.Size = new System.Drawing.Size(80, 23);
-            this.AmPmLabel.TabIndex = 12;
-            this.AmPmLabel.Text = "AM/PM :";
-            this.AmPmLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FirstCTb
             // 
@@ -253,12 +227,7 @@ namespace AirlineTicketsSystemGui
             this.HourNup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HourNup.Location = new System.Drawing.Point(316, 176);
             this.HourNup.Maximum = new decimal(new int[] {
-            12,
-            0,
-            0,
-            0});
-            this.HourNup.Minimum = new decimal(new int[] {
-            1,
+            23,
             0,
             0,
             0});
@@ -266,7 +235,7 @@ namespace AirlineTicketsSystemGui
             this.HourNup.Size = new System.Drawing.Size(93, 23);
             this.HourNup.TabIndex = 20;
             this.HourNup.Value = new decimal(new int[] {
-            1,
+            12,
             0,
             0,
             0});
@@ -285,11 +254,6 @@ namespace AirlineTicketsSystemGui
             this.MinuteNup.Name = "MinuteNup";
             this.MinuteNup.Size = new System.Drawing.Size(93, 23);
             this.MinuteNup.TabIndex = 21;
-            this.MinuteNup.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
             // 
             // AddFlightMenuStrip
             // 
@@ -316,19 +280,21 @@ namespace AirlineTicketsSystemGui
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "A&bout";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // languageToolStripMenuItem
             // 
             this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.englishToolStripMenuItem,
             this.frenchToolStripMenuItem,
-            this.englishToolStripMenuItem});
+            this.spanishToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
             this.languageToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.languageToolStripMenuItem.Text = "&Language";
@@ -336,14 +302,23 @@ namespace AirlineTicketsSystemGui
             // frenchToolStripMenuItem
             // 
             this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.frenchToolStripMenuItem.Text = "F&rançais";
+            this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
             // 
             // englishToolStripMenuItem
             // 
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.englishToolStripMenuItem.Text = "E&nglish";
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
+            // 
+            // spanishToolStripMenuItem
+            // 
+            this.spanishToolStripMenuItem.Name = "spanishToolStripMenuItem";
+            this.spanishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.spanishToolStripMenuItem.Text = "Spanish";
+            this.spanishToolStripMenuItem.Click += new System.EventHandler(this.spanishToolStripMenuItem_Click);
             // 
             // AdminAddFlightPage
             // 
@@ -360,10 +335,8 @@ namespace AirlineTicketsSystemGui
             this.Controls.Add(this.BusinessCTb);
             this.Controls.Add(this.FirstCTb);
             this.Controls.Add(this.SeatsLabel);
-            this.Controls.Add(this.AmPmLabel);
             this.Controls.Add(this.MinuteLabel);
             this.Controls.Add(this.HourLabel);
-            this.Controls.Add(this.AmPmCb);
             this.Controls.Add(this.TimeLabel);
             this.Controls.Add(this.DateDp);
             this.Controls.Add(this.DateLabel);
@@ -405,9 +378,6 @@ namespace AirlineTicketsSystemGui
 
         private System.Windows.Forms.Label HourLabel;
         private System.Windows.Forms.Label MinuteLabel;
-        private System.Windows.Forms.Label AmPmLabel;
-
-        private System.Windows.Forms.ComboBox AmPmCb;
 
         private System.Windows.Forms.Label DateLabel;
         private System.Windows.Forms.DateTimePicker DateDp;
@@ -418,5 +388,7 @@ namespace AirlineTicketsSystemGui
         private System.Windows.Forms.Button AddButton;
 
         #endregion
+
+        private System.Windows.Forms.ToolStripMenuItem spanishToolStripMenuItem;
     }
 }

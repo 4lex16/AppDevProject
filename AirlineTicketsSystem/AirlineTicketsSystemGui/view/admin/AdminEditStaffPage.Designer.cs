@@ -44,6 +44,7 @@ namespace AirlineTicketsSystemGui
             this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CancelButton = new System.Windows.Forms.Button();
+            this.spanishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.EditStaffMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,6 +134,7 @@ namespace AirlineTicketsSystemGui
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "A&bout";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
@@ -144,8 +146,9 @@ namespace AirlineTicketsSystemGui
             // languageToolStripMenuItem
             // 
             this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.englishToolStripMenuItem,
             this.frenchToolStripMenuItem,
-            this.englishToolStripMenuItem});
+            this.spanishToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
             this.languageToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.languageToolStripMenuItem.Text = "&Language";
@@ -153,14 +156,16 @@ namespace AirlineTicketsSystemGui
             // frenchToolStripMenuItem
             // 
             this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.frenchToolStripMenuItem.Text = "F&rançais";
+            this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
             // 
             // englishToolStripMenuItem
             // 
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.englishToolStripMenuItem.Text = "E&nglish";
+            this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // CancelButton
             // 
@@ -176,6 +181,13 @@ namespace AirlineTicketsSystemGui
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = false;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            // 
+            // spanishToolStripMenuItem
+            // 
+            this.spanishToolStripMenuItem.Name = "spanishToolStripMenuItem";
+            this.spanishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.spanishToolStripMenuItem.Text = "Spanish";
+            this.spanishToolStripMenuItem.Click += new System.EventHandler(this.spanishToolStripMenuItem_Click);
             // 
             // AdminEditStaffPage
             // 
@@ -214,5 +226,7 @@ namespace AirlineTicketsSystemGui
         private System.Windows.Forms.Button CancelButton;
 
         #endregion
+
+        private System.Windows.Forms.ToolStripMenuItem spanishToolStripMenuItem;
     }
 }

@@ -14,5 +14,10 @@
             PassengerId = passengerId;
             SeatType = seatType;
         }
+
+        public override string ToString()
+        {
+            return $"{SeatType} | {Flight.Destination} | {Flight.DepartureTime} on the {Flight.DepartureDate}";
+        }
     }
 }

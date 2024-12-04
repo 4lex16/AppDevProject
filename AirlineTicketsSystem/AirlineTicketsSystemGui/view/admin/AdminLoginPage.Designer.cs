@@ -93,21 +93,21 @@ namespace AirlineTicketsSystemGui
             // englishToolStripMenuItem
             // 
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.englishToolStripMenuItem.Text = "E&nglish";
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // frenchToolStripMenuItem
             // 
             this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.frenchToolStripMenuItem.Text = "F&rançais";
             this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
             // 
             // spanishToolStripMenuItem
             // 
             this.spanishToolStripMenuItem.Name = "spanishToolStripMenuItem";
-            this.spanishToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.spanishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.spanishToolStripMenuItem.Text = "&Spanish";
             this.spanishToolStripMenuItem.Click += new System.EventHandler(this.spanishToolStripMenuItem_Click);
             // 
@@ -128,6 +128,7 @@ namespace AirlineTicketsSystemGui
             this.AdminKeyTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AdminKeyTb.Location = new System.Drawing.Point(12, 62);
             this.AdminKeyTb.Name = "AdminKeyTb";
+            this.AdminKeyTb.PasswordChar = '●';
             this.AdminKeyTb.Size = new System.Drawing.Size(287, 23);
             this.AdminKeyTb.TabIndex = 10;
             // 

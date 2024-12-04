@@ -26,5 +26,10 @@ namespace AirlineTicketsSystemGui.model
             Address = address;
             Tickets = tickets;
         }
+
+        public override string ToString()
+        {
+            return $"{Name} | {Email} | {Phone} | Tickets : ${Tickets.Count}";
+        }
     }
 }

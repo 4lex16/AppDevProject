@@ -2,6 +2,14 @@
 {
     public class Flight
     {
+        public int FlightId { get; set; }
+        public int FirstClassSeats { get; set; }
+        public int BusinessClassSeats { get; set; }
+        public int CoachClassSeats { get; set; }
+        public string Destination { get; set; }
+        public string DepartureDate { get; set; }
+        public string DepartureTime { get; set; }
+
         public Flight(int flightId, int firstClassSeats, int businessClassSeats, int coachClassSeats, string destination, string departureDate, string departureTime)
         {
             FlightId = flightId;
@@ -24,13 +32,11 @@
             DepartureTime = flight.DepartureTime;
         }
 
-        public int FlightId { get; set; }
-        public int FirstClassSeats { get; set; }
-        public int BusinessClassSeats { get; set; }
-        public int CoachClassSeats { get; set; }
-        public string Destination { get; set; }
-        public string DepartureDate { get; set; }
-        public string DepartureTime { get; set; }
+        public override string ToString()
+        {
+            return $"Flight ID: {FlightId}, Destination: {Destination}, Departure Date: {DepartureDate}, Departure Time: {DepartureTime}, " +
+                   $"First Class Seats: {FirstClassSeats}, Business Class Seats: {BusinessClassSeats}, Coach Class Seats: {CoachClassSeats}";
+        }
 
     }
 }

@@ -14,5 +14,10 @@
             PassengerId = passengerId;
             SeatType = seatType;
         }
+
+        public override string ToString()
+        {
+            return $"Ticket ID: {TicketId}, Flight: {Flight.ToString()}, Passenger ID: {PassengerId}, Seat Type: {SeatType.ToString()}";
+        }
     }
 }

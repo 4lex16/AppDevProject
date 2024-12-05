@@ -7,11 +7,13 @@ namespace AirlineTicketsSystemGui
     public partial class PassengerBuyTicketPage : Form
     {
         private Flight Flight { get; set; }
+        private Passenger Passenger { get; set; }
 
-        public PassengerBuyTicketPage(Flight flight)
+        public PassengerBuyTicketPage(Flight flight, Passenger passenger)
         {
             Flight = flight;
             InitializeComponent();
+            Passenger = passenger;
         }
 
         private void CancelButton_Click(object sender, EventArgs e)
@@ -21,18 +23,49 @@ namespace AirlineTicketsSystemGui
 
         private void BuyButton_Click(object sender, EventArgs e)
         {
-            //TODO: Implement Buy Ticket Button Click
             //All it do is get information and create ticket assign it to passenger
+            Ticket ticket = new Ticket(Passenger.Tickets.Count + 100, Flight, Passenger.UserId, (SeatType)SeatTypeCb.SelectedIndex);
+
+            Passenger.Tickets.Add(ticket);
         }
 
         private void PassengerBuyTicketPage_Load(object sender, EventArgs e)
         {
-            //TODO: Implement Showing Flight Details
+           
+            DestinationTb.Text = Flight.Destination;
+            DateTb.Text = Flight.DepartureDate;
+            TimeTb.Text = Flight.DepartureTime;
+            FirstClassTb.Text = Flight.FirstClassSeats.ToString();
+            BusinessClassTb.Text = Flight.BusinessClassSeats.ToString();
+            CoachClassTb.Text = Flight.CoachClassSeats.ToString();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Make sure to input all the correct data please");
+        }
+
+        private void ticketListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new PassengerPage(Passenger).Show();
+            this.Hide();
+        }
+
+        private void flightListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new PassengerPage(Passenger).Show();
+            this.Hide();
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new LoginPage();
+            this.Hide();
         }
     }
 }

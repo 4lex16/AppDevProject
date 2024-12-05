@@ -13,6 +13,9 @@ namespace AirlineTicketsSystemGui.model
 
         public Passenger(int userId, string email, string password, string name, string phone, string address) : base(userId, email, password)
         {
+            this.UserId = userId;
+            this.Email = email;
+            this.Password = password;
             Name = name;
             Phone = phone;
             Address = address;
@@ -21,10 +24,21 @@ namespace AirlineTicketsSystemGui.model
 
         public Passenger(int userId, string email, string password, string name, string phone, string address, List<Ticket> tickets) : base(userId, email, password)
         {
+            this.UserId = userId;
+            this.Email = email;
+            this.Password = password;
             Name = name;
             Phone = phone;
             Address = address;
             Tickets = tickets;
         }
+
+        public override string ToString()
+        {
+            return $"Passenger Name: {Name}, Email: {Email}, Phone: {Phone}, Address: {Address}, " +
+                   $"Tickets: {Tickets.Count}";
+        }
     }
+
+
 }

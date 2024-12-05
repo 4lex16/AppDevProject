@@ -56,7 +56,11 @@ namespace AirlineTicketsSystemGui
         {
             if (PassengerListBox.SelectedItem != null)
             {
-                new DetailsPage("passenger", FlightListBox.SelectedItem).Show();
+                new DetailsPage("passenger", PassengerListBox.SelectedItem).Show();
+            }
+            else if (FlightListBox.SelectedItems != null)
+            {
+                new DetailsPage("flight", FlightListBox.SelectedItem).Show();
             }
         }
 

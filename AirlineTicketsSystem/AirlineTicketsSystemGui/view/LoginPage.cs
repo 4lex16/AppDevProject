@@ -53,15 +53,15 @@ namespace AirlineTicketsSystemGui
 
         private void PassengerLoginButton_Click(object sender, EventArgs e)
         {
-            
+
             int enteredPassengerId = int.Parse(PassengerIdTb.Text);
             String enteredPassengerPassword = PassengerPasswordTb.Text;
-            
+
 
             for (int i = 0; i < airlineTicketSystem.Passengers.Count(); i++)
             {
                 int id = airlineTicketSystem.Passengers[i].UserId;
-                
+
                 if (enteredPassengerId == id)
                 {
                     string password = airlineTicketSystem.Passengers[i].Password;
@@ -69,15 +69,18 @@ namespace AirlineTicketsSystemGui
                     {
                         new PassengerPage(airlineTicketSystem.Passengers[i], airlineTicketSystem.Passengers[i].Tickets).Show();
                         this.Hide();
-                    } else
+                    }
+                    else
                     {
                         MessageBox.Show("Incorrect Password, Please try again");
                     }
+                }
 
-                } else
+                else
                 {
                     MessageBox.Show("Id not found please try again!");
                 }
+                
             }
         }
 

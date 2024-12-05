@@ -5,10 +5,11 @@ namespace AirlineTicketsSystemGui.controller
 {
     public class AirlineTicketSystemController
     {
-        private static AirlineTicketSystem airlineTicketSystem = AirlineTicketSystem.GetInstance();
+        private static AirlineTicketSystem airlineTicketSystem;
 
         public AirlineTicketSystemController()
         {
+            airlineTicketSystem = AirlineTicketSystem.GetInstance();
             DatabaseController.InitializeDatabase();
             DatabaseController.CreateFlightTable();
             DatabaseController.CreateTicketTable();

@@ -11,6 +11,7 @@ namespace AirlineTicketsSystemGui.controller
     public class DatabaseController
     {
         private static readonly string DatabaseFileName = @"Data Source=..\..\Files\AirlineTicketsSystemDatabase.db;Version=3;";
+        private static string dbFilePath = @"..\..\Files\AirlineTicketsSystemDatabase.db";
 
         public static void InitializeDatabase()
         {
@@ -33,9 +34,9 @@ namespace AirlineTicketsSystemGui.controller
         // Table Creation Methods
         public static void CreateFlightTable()
         {
-            if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
+            if (!File.Exists(dbFilePath))
             {
-                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
+                SQLiteConnection.CreateFile(dbFilePath);
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -66,9 +67,9 @@ namespace AirlineTicketsSystemGui.controller
         // Create Table Methods
         public static void CreateTicketTable()
         {
-            if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
+            if (!File.Exists(dbFilePath))
             {
-                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
+                SQLiteConnection.CreateFile(dbFilePath);
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -96,9 +97,9 @@ namespace AirlineTicketsSystemGui.controller
 
         public static void CreateStaffTable()
         {
-            if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
+            if (!File.Exists(dbFilePath))
             {
-                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
+                SQLiteConnection.CreateFile(dbFilePath);
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -123,9 +124,9 @@ namespace AirlineTicketsSystemGui.controller
 
         public static void CreatePassengerTable()
         {
-            if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
+            if (!File.Exists(dbFilePath))
             {
-                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
+                SQLiteConnection.CreateFile(dbFilePath);
             }
 
 
@@ -154,9 +155,9 @@ namespace AirlineTicketsSystemGui.controller
         // Insert Methods
         public static void InsertFlightRecord(int flightId, int firstClass, int businessClass, int coachClass, string destination, string departureTime, string departureDate)
         {
-            if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
+            if (!File.Exists(dbFilePath))
             {
-                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
+                SQLiteConnection.CreateFile(dbFilePath);
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -190,9 +191,9 @@ namespace AirlineTicketsSystemGui.controller
 
         public static void InsertPassengerRecord(int passengerId, string fullName, string email, string password, string phone, string address)
         {
-            if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
+            if (!File.Exists(dbFilePath))
             {
-                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
+                SQLiteConnection.CreateFile(dbFilePath);
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -224,9 +225,9 @@ namespace AirlineTicketsSystemGui.controller
 
         public static void InsertStaffRecord(int staffId, string email, string password)
         {
-            if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
+            if (!File.Exists(dbFilePath))
             {
-                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
+                SQLiteConnection.CreateFile(dbFilePath);
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -255,9 +256,9 @@ namespace AirlineTicketsSystemGui.controller
 
         public static void InsertTicketRecord(int ticketId, int passengerId, int flightId, SeatType seatType)
         {
-            if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
+            if (!File.Exists(dbFilePath))
             {
-                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
+                SQLiteConnection.CreateFile(dbFilePath);
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -286,9 +287,9 @@ namespace AirlineTicketsSystemGui.controller
             var flights = new List<Flight>();
 
             // Check if the database file exists, and create it if it doesn't
-            if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
+            if (!File.Exists(dbFilePath))
             {
-                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
+                SQLiteConnection.CreateFile(dbFilePath);
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -323,9 +324,17 @@ namespace AirlineTicketsSystemGui.controller
             var passengers = new List<Passenger>();
 
             // Check if the database file exists, and create it if it doesn't
-            if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
+            if (!File.Exists(dbFilePath))
             {
-                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
+                try
+                {
+                    SQLiteConnection.CreateFile(dbFilePath);
+
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -359,9 +368,9 @@ namespace AirlineTicketsSystemGui.controller
             var tickets = new List<Ticket>();
 
             // Check if the database file exists, and create it if it doesn't
-            if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
+            if (!File.Exists(dbFilePath))
             {
-                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
+                SQLiteConnection.CreateFile(dbFilePath);
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -408,9 +417,9 @@ namespace AirlineTicketsSystemGui.controller
             var staffList = new List<Staff>();
 
             // Check if the database file exists, and create it if it doesn't
-            if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
+            if (!File.Exists(dbFilePath))
             {
-                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
+                SQLiteConnection.CreateFile(dbFilePath);
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
@@ -441,9 +450,9 @@ namespace AirlineTicketsSystemGui.controller
             int ticketId = 0;
 
             // Check if the database exists
-            if (!File.Exists(@"..\..\Files\AirlineTicketsSystemDatabase.db"))
+            if (!File.Exists(dbFilePath))
             {
-                SQLiteConnection.CreateFile(@"..\..\Files\AirlineTicketsSystemDatabase.db");
+                SQLiteConnection.CreateFile(dbFilePath);
             }
 
             using (var connection = new SQLiteConnection(DatabaseFileName))

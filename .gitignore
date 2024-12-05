@@ -13,3 +13,7 @@ obj/
 
 # Ignore other intermediate files
 *.cache
+
+# ADD THE DATABASE FILE
+!AirlineTicketsSystem/AirlineTicketsSystemGui/Files/AirlineTicketsSystemDatabase.db
+

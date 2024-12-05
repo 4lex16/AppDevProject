@@ -24,62 +24,63 @@ namespace AirlineTicketsSystemGui
 
         private void StaffLoginButton_Click(object sender, EventArgs e)
         {
-            //int enteredStaffId = int.Parse(StaffIdTb.Text);
-            //String enteredStaffPassword = StaffPasswordTb.Text;
+            int enteredStaffId = int.Parse(StaffIdTb.Text);
+            String enteredStaffPassword = StaffPasswordTb.Text;
 
-            //for (int i = 0; i < airlineTicketSystem.Staff.Count(); i++)
-            //{
-            //    int id = airlineTicketSystem.Staff[i].UserId;
+            for (int i = 0; i < airlineTicketSystem.Staff.Count(); i++)
+            {
+                int id = airlineTicketSystem.Staff[i].UserId;
 
-            //    if (enteredStaffId == id)
-            //    {
-            //        string password = airlineTicketSystem.Staff[i].Password;
-            //        if (password.Equals(enteredStaffPassword))
-            //        {
-            //            new StaffPage(airlineTicketSystem.Staff[i]).Show();
-            //            this.Hide();
-            //        }
-            //        else
-            //        {
-            //            MessageBox.Show("Incorrect Password, Please try again");
-            //        }
-            //    }
-            //    else
-            //    {
-            //        MessageBox.Show("Id not found please try again!");
-            //    }
-            //}
+                if (enteredStaffId == id)
+                {
+                    string password = airlineTicketSystem.Staff[i].Password;
+                    if (password.Equals(enteredStaffPassword))
+                    {
+                        new StaffPage(airlineTicketSystem.Staff[i]).Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect Password, Please try again");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Id not found please try again!");
+                }
+            }
         }
 
         private void PassengerLoginButton_Click(object sender, EventArgs e)
         {
 
-            //int enteredPassengerId = int.Parse(PassengerIdTb.Text);
-            //String enteredPassengerPassword = PassengerPasswordTb.Text;
+            int enteredPassengerId = int.Parse(PassengerIdTb.Text);
+            String enteredPassengerPassword = PassengerPasswordTb.Text;
 
 
-            //for (int i = 0; i < airlineTicketSystem.Passengers.Count(); i++)
-            //{
-            //    int id = airlineTicketSystem.Passengers[i].UserId;
-
-            if (enteredPassengerId == id)
+            for (int i = 0; i < airlineTicketSystem.Passengers.Count(); i++)
             {
-                string password = airlineTicketSystem.Passengers[i].Password;
-                if (password.Equals(enteredPassengerPassword))
+                int id = airlineTicketSystem.Passengers[i].UserId;
+
+                if (enteredPassengerId == id)
                 {
-                    new PassengerPage(airlineTicketSystem.Passengers[i], airlineTicketSystem.Passengers[i].Tickets).Show();
-                    this.Hide();
+                    string password = airlineTicketSystem.Passengers[i].Password;
+                    if (password.Equals(enteredPassengerPassword))
+                    {
+                        new PassengerPage(airlineTicketSystem.Passengers[i], airlineTicketSystem.Passengers[i].Tickets).Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Incorrect Password, Please try again");
+                    }
                 }
+
                 else
                 {
-                    MessageBox.Show("Incorrect Password, Please try again");
+                    MessageBox.Show("Id not found please try again!");
                 }
-
-                //    } else
-                //    {
-                //        MessageBox.Show("Id not found please try again!");
-                //    }
-                //}
+                
             }
         }
 

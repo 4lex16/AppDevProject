@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.FirstnameTb = new System.Windows.Forms.TextBox();
+            this.FullnameTb = new System.Windows.Forms.TextBox();
             this.FirstnameLabel = new System.Windows.Forms.Label();
             this.EmailLabel = new System.Windows.Forms.Label();
             this.EmailTb = new System.Windows.Forms.TextBox();
@@ -50,14 +50,14 @@
             this.TicketMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
-            // FirstnameTb
+            // FullnameTb
             // 
-            this.FirstnameTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FirstnameTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstnameTb.Location = new System.Drawing.Point(162, 29);
-            this.FirstnameTb.Name = "FirstnameTb";
-            this.FirstnameTb.Size = new System.Drawing.Size(223, 23);
-            this.FirstnameTb.TabIndex = 0;
+            this.FullnameTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FullnameTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FullnameTb.Location = new System.Drawing.Point(162, 29);
+            this.FullnameTb.Name = "FullnameTb";
+            this.FullnameTb.Size = new System.Drawing.Size(223, 23);
+            this.FullnameTb.TabIndex = 0;
             // 
             // FirstnameLabel
             // 
@@ -147,7 +147,9 @@
             // 
             // TicketMenuStrip
             // 
-            this.TicketMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.pageToolStripMenuItem, this.languageToolStripMenuItem });
+            this.TicketMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pageToolStripMenuItem,
+            this.languageToolStripMenuItem});
             this.TicketMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.TicketMenuStrip.Name = "TicketMenuStrip";
             this.TicketMenuStrip.Size = new System.Drawing.Size(397, 24);
@@ -156,7 +158,10 @@
             // 
             // pageToolStripMenuItem
             // 
-            this.pageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.aboutToolStripMenuItem, this.loginToolStripMenuItem, this.exitToolStripMenuItem });
+            this.pageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem,
+            this.loginToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.pageToolStripMenuItem.Name = "pageToolStripMenuItem";
             this.pageToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.pageToolStripMenuItem.Text = "&Page";
@@ -164,25 +169,29 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "A&bout";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // loginToolStripMenuItem
             // 
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.loginToolStripMenuItem.Text = "Login Page";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // languageToolStripMenuItem
             // 
-            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.frenchToolStripMenuItem, this.englishToolStripMenuItem });
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.frenchToolStripMenuItem,
+            this.englishToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
             this.languageToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.languageToolStripMenuItem.Text = "&Language";
@@ -228,7 +237,7 @@
             this.Controls.Add(this.EmailLabel);
             this.Controls.Add(this.EmailTb);
             this.Controls.Add(this.FirstnameLabel);
-            this.Controls.Add(this.FirstnameTb);
+            this.Controls.Add(this.FullnameTb);
             this.Name = "PassengerSignupPage";
             this.Text = "Sign Up";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PassengerSignupPage_FormClosing);
@@ -236,11 +245,12 @@
             this.TicketMenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox FirstnameTb;
+        private System.Windows.Forms.TextBox FullnameTb;
         private System.Windows.Forms.Label FirstnameLabel;
         private System.Windows.Forms.Label EmailLabel;
         private System.Windows.Forms.TextBox EmailTb;

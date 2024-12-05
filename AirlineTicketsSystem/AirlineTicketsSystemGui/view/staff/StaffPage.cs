@@ -13,8 +13,10 @@ namespace AirlineTicketsSystemGui
 {
     public partial class StaffPage : Form
     {
-        public StaffPage()
+        public static Staff Staff { get; set; }
+        public StaffPage(Staff staff)
         {
+            Staff = staff;
             InitializeComponent();
         }
 

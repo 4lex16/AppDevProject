@@ -35,8 +35,12 @@ namespace AirlineTicketsSystemGui.model
 
         public override string ToString()
         {
+<<<<<<< HEAD
             return $"Passenger Name: {Name}, Email: {Email}, Phone: {Phone}, Address: {Address}, " +
                    $"Tickets: {Tickets.Count}";
+=======
+            return $"{Name} | {Email} | {Phone} | Tickets : ${Tickets.Count}";
+>>>>>>> ec4e4167c39e3d877d965e844b1d32ade5332d7e
         }
     }
 

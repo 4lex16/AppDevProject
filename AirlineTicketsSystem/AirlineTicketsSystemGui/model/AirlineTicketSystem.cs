@@ -11,6 +11,7 @@ namespace AirlineTicketsSystemGui.model
         public List<Flight> Flights { get; set; }
         private AirlineTicketSystem()
         {
+            DatabaseController.InitializeDatabase();
             Passengers = DatabaseController.QueryAllPassengers();
             Staff = DatabaseController.QueryAllStaff();
             Flights = DatabaseController.QueryAllFlights();

@@ -19,6 +19,7 @@ namespace AirlineTicketsSystemGui
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            AirlineTicketSystemController a = new AirlineTicketSystemController();
             new LoginPage().Show();
             Application.Run();
         }

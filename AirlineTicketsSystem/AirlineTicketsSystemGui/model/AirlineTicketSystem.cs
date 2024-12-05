@@ -11,9 +11,10 @@ namespace AirlineTicketsSystemGui.model
         public List<Flight> Flights { get; set; }
         private AirlineTicketSystem()
         {
-            Passengers = DatabaseController.QueryAllPassengers();
-            Staff = DatabaseController.QueryAllStaff();
-            Flights = DatabaseController.QueryAllFlights();
+            // these quries are to be called only once when starting the project and never again
+            //Passengers = DatabaseController.QueryAllPassengers();
+            //Staff = DatabaseController.QueryAllStaff();
+            //Flights = DatabaseController.QueryAllFlights();
         }
 
         public static AirlineTicketSystem GetInstance()

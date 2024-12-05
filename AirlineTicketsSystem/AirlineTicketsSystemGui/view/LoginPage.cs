@@ -1,4 +1,5 @@
 ﻿
+using AirlineTicketsSystemGui.controller;
 using AirlineTicketsSystemGui.model;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,7 @@ namespace AirlineTicketsSystemGui
         public LoginPage()
         {
             InitializeComponent();
+            AirlineTicketSystemController airlineTicketSystemController = new AirlineTicketSystemController();
         }
 
         private void StaffLoginButton_Click(object sender, EventArgs e)
@@ -65,7 +67,7 @@ namespace AirlineTicketsSystemGui
                     string password = airlineTicketSystem.Passengers[i].Password;
                     if (password.Equals(enteredPassengerPassword))
                     {
-                        new PassengerPage(airlineTicketSystem.Passengers[i]).Show();
+                        new PassengerPage(airlineTicketSystem.Passengers[i], airlineTicketSystem.Passengers[i].Tickets).Show();
                         this.Hide();
                     } else
                     {

@@ -37,10 +37,5 @@
             return $"Flight ID: {FlightId}, Destination: {Destination}, Departure Date: {DepartureDate}, Departure Time: {DepartureTime}, " +
                    $"First Class Seats: {FirstClassSeats}, Business Class Seats: {BusinessClassSeats}, Coach Class Seats: {CoachClassSeats}";
         }
-
-        public override string ToString()
-        {
-            return $"{Destination} | {DepartureTime} on the {DepartureDate}";
-        }
     }
 }

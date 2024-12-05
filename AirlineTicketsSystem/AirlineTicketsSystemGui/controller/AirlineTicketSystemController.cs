@@ -9,6 +9,7 @@ namespace AirlineTicketsSystemGui.controller
 
         public AirlineTicketSystemController()
         {
+            DatabaseController.InitializeDatabase();
             DatabaseController.CreateFlightTable();
             DatabaseController.CreateTicketTable();
             DatabaseController.CreatePassengerTable();

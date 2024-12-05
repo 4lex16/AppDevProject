@@ -52,13 +52,13 @@ namespace AirlineTicketsSystemGui
 
         private void ticketListToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new PassengerPage(Passenger).Show();
+            new PassengerPage(Passenger, Passenger.Tickets).Show();
             this.Hide();
         }
 
         private void flightListToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new PassengerPage(Passenger).Show();
+            new PassengerPage(Passenger, Passenger.Tickets).Show();
             this.Hide();
         }
 

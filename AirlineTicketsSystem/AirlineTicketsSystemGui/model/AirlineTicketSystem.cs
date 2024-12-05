@@ -6,9 +6,9 @@ namespace AirlineTicketsSystemGui.model
     public class AirlineTicketSystem
     {
         private static AirlineTicketSystem _airlineTicketSystem;
-        public List<Passenger> Passengers { get; }
-        public List<Staff> Staff { get; }
-        public List<Flight> Flights { get; }
+        public List<Passenger> Passengers { get; set; }
+        public List<Staff> Staff { get; set; }
+        public List<Flight> Flights { get; set; }
         private AirlineTicketSystem()
         {
             Passengers = DatabaseController.QueryAllPassengers();

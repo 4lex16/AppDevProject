@@ -5,7 +5,7 @@ namespace AirlineTicketsSystemGui.controller
 {
     public class AirlineTicketSystemController
     {
-        private static AirlineTicketSystem airlineTicketSystem;
+        private static AirlineTicketSystem airlineTicketSystem = AirlineTicketSystem.GetInstance();
 
         public AirlineTicketSystemController()
         {
@@ -13,7 +13,6 @@ namespace AirlineTicketsSystemGui.controller
             DatabaseController.CreateTicketTable();
             DatabaseController.CreatePassengerTable();
             DatabaseController.CreateStaffTable();
-            airlineTicketSystem = AirlineTicketSystem.GetInstance();
         }
 
         public static int InsertPassenger(string fullName, string email, string password, string phone, string address)

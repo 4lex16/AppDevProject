@@ -41,7 +41,7 @@
             this.PassengerPasswordLabel = new System.Windows.Forms.Label();
             this.PassengerIdLabel = new System.Windows.Forms.Label();
             this.PassengerPasswordTb = new System.Windows.Forms.TextBox();
-            this.PassengerUsernameTb = new System.Windows.Forms.TextBox();
+            this.PassengerIdTb = new System.Windows.Forms.TextBox();
             this.PassengerLoginButton = new System.Windows.Forms.Button();
             this.PassengerSignupLabel = new System.Windows.Forms.Label();
             this.LoginMenuStrip = new System.Windows.Forms.MenuStrip();
@@ -121,7 +121,7 @@
             this.PassengerLoginTab.Controls.Add(this.PassengerPasswordLabel);
             this.PassengerLoginTab.Controls.Add(this.PassengerIdLabel);
             this.PassengerLoginTab.Controls.Add(this.PassengerPasswordTb);
-            this.PassengerLoginTab.Controls.Add(this.PassengerUsernameTb);
+            this.PassengerLoginTab.Controls.Add(this.PassengerIdTb);
             this.PassengerLoginTab.Controls.Add(this.PassengerLoginButton);
             this.PassengerLoginTab.Controls.Add(this.PassengerSignupLabel);
             this.PassengerLoginTab.Name = "PassengerLoginTab";
@@ -143,11 +143,11 @@
             this.PassengerPasswordTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PassengerPasswordTb.Name = "PassengerPasswordTb";
             // 
-            // PassengerUsernameTb
+            // PassengerIdTb
             // 
-            resources.ApplyResources(this.PassengerUsernameTb, "PassengerUsernameTb");
-            this.PassengerUsernameTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PassengerUsernameTb.Name = "PassengerUsernameTb";
+            resources.ApplyResources(this.PassengerIdTb, "PassengerIdTb");
+            this.PassengerIdTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PassengerIdTb.Name = "PassengerIdTb";
             // 
             // PassengerLoginButton
             // 
@@ -166,29 +166,37 @@
             // LoginMenuStrip
             // 
             resources.ApplyResources(this.LoginMenuStrip, "LoginMenuStrip");
-            this.LoginMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.pageToolStripMenuItem, this.languageToolStripMenuItem });
+            this.LoginMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pageToolStripMenuItem,
+            this.languageToolStripMenuItem});
             this.LoginMenuStrip.Name = "LoginMenuStrip";
             // 
             // pageToolStripMenuItem
             // 
             resources.ApplyResources(this.pageToolStripMenuItem, "pageToolStripMenuItem");
-            this.pageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.aboutToolStripMenuItem, this.exitToolStripMenuItem });
+            this.pageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.aboutToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.pageToolStripMenuItem.Name = "pageToolStripMenuItem";
             // 
             // aboutToolStripMenuItem
             // 
             resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // languageToolStripMenuItem
             // 
             resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
-            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { this.frenchToolStripMenuItem, this.englishToolStripMenuItem });
+            this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.frenchToolStripMenuItem,
+            this.englishToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
             // 
             // frenchToolStripMenuItem
@@ -218,6 +226,7 @@
             this.LoginMenuStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion
@@ -233,7 +242,7 @@
         private System.Windows.Forms.Label PassengerPasswordLabel;
         private System.Windows.Forms.Label PassengerIdLabel;
         private System.Windows.Forms.TextBox PassengerPasswordTb;
-        private System.Windows.Forms.TextBox PassengerUsernameTb;
+        private System.Windows.Forms.TextBox PassengerIdTb;
         private System.Windows.Forms.Button PassengerLoginButton;
         private System.Windows.Forms.Label PassengerSignupLabel;
         private System.Windows.Forms.MenuStrip LoginMenuStrip;

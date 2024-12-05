@@ -1,4 +1,6 @@
 ﻿
+using AirlineTicketsSystemGui.controller;
+using AirlineTicketsSystemGui.model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +15,9 @@ namespace AirlineTicketsSystemGui
 {
     public partial class PassengerSignupPage : Form
     {
+        public static int passengerId = -1;
+
+        AirlineTicketSystem airlineTicketSystem = AirlineTicketSystem.GetInstance();
         public PassengerSignupPage()
         {
             InitializeComponent();
@@ -26,15 +31,45 @@ namespace AirlineTicketsSystemGui
 
         private void SignupButton_Click(object sender, EventArgs e)
         {
-            //TODO: Implement the creation of the passenger and return their
+            AirlineTicketSystemController.InsertPassenger(FullnameTb.Text, EmailTb.Text, PasswordTb.Text, PhoneTb.Text, AddressTb.Text);
             new LoginPage().Show();
             this.Hide();
+
+            
+
+            for (int i = 0; i < airlineTicketSystem.Passengers.Count; i++)
+            {
+                //because phoneNumbers are unique
+                string phoneNumber = airlineTicketSystem.Passengers[i].Phone;
+
+                if (phoneNumber.Equals(PhoneTb.Text))
+                {
+                    passengerId = airlineTicketSystem.Passengers[i].UserId;
+                    break;
+                }
+            }
+
+            MessageBox.Show("Signup successful! Here is you UserId, Do Not Loose It: " + passengerId);
+
+            new LoginPage().Show();
+            this.Hide();
+
         }
 
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new LoginPage().Show();
             this.Hide();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("This is a sign up page for a new passenger, after successfully signing up, an id will appear keep it safe and do not share it with anyone");
         }
     }
 }

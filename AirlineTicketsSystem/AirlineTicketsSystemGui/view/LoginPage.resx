@@ -124,8 +124,8 @@
   <data name="PassengerSignupLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>284, 34</value>
   </data>
-  <data name="&gt;&gt;pageToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;StaffIdLabel.Parent" xml:space="preserve">
+    <value>StaffLoginTab</value>
   </data>
   <data name="&gt;&gt;LoginTabControl.Parent" xml:space="preserve">
     <value>$this</value>
@@ -185,11 +185,8 @@
   <data name="LoginMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
     <value>311, 24</value>
   </data>
-  <data name="&gt;&gt;PassengerPasswordLabel.Name" xml:space="preserve">
-    <value>PassengerPasswordLabel</value>
-  </data>
-  <data name="&gt;&gt;PassengerUsernameTb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;StaffIdLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>107, 22</value>
@@ -209,6 +206,9 @@
   <data name="LoginTabControl.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 27</value>
   </data>
+  <data name="PassengerIdTb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 23</value>
+  </data>
   <data name="&gt;&gt;StaffAdminLabel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
@@ -218,11 +218,8 @@
   <data name="PassengerSignupLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;PassengerUsernameTb.Name" xml:space="preserve">
-    <value>PassengerUsernameTb</value>
-  </data>
-  <data name="&gt;&gt;PassengerSignupLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;PassengerUsernameTb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="StaffLoginTab.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -233,8 +230,8 @@
   <data name="StaffPasswordTb.Size" type="System.Drawing.Size, System.Drawing">
     <value>284, 23</value>
   </data>
-  <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 22</value>
+  <data name="&gt;&gt;StaffLoginButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="StaffPasswordTb.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -252,8 +249,8 @@
   <data name="LoginTabControl.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;StaffLoginButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;StaffIdTb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="PassengerSignupLabel.Text" xml:space="preserve">
     <value>Don't have an account? Sign Up</value>
@@ -291,14 +288,14 @@
   <data name="PassengerIdLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;StaffIdTb.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;PassengerPasswordTb.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="&gt;&gt;exitToolStripMenuItem.Name" xml:space="preserve">
     <value>exitToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;PassengerLoginButton.Name" xml:space="preserve">
+    <value>PassengerLoginButton</value>
   </data>
   <data name="PassengerLoginButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -329,6 +326,9 @@
   </data>
   <data name="&gt;&gt;PassengerLoginButton.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 22</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Login Page</value>
@@ -363,17 +363,20 @@
   <data name="&gt;&gt;PassengerLoginTab.Name" xml:space="preserve">
     <value>PassengerLoginTab</value>
   </data>
-  <data name="StaffLoginTab.Text" xml:space="preserve">
-    <value>Staff</value>
+  <data name="&gt;&gt;StaffPasswordLabel.Name" xml:space="preserve">
+    <value>StaffPasswordLabel</value>
   </data>
   <data name="&gt;&gt;pageToolStripMenuItem.Name" xml:space="preserve">
     <value>pageToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;StaffIdLabel.Parent" xml:space="preserve">
-    <value>StaffLoginTab</value>
+  <data name="&gt;&gt;PassengerPasswordLabel.Name" xml:space="preserve">
+    <value>PassengerPasswordLabel</value>
   </data>
   <data name="&gt;&gt;PassengerIdLabel.Name" xml:space="preserve">
     <value>PassengerIdLabel</value>
+  </data>
+  <data name="StaffIdLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="StaffPasswordLabel.Text" xml:space="preserve">
     <value>Password :</value>
@@ -387,11 +390,11 @@
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="PassengerIdLabel.Text" xml:space="preserve">
-    <value>ID :</value>
+  <data name="&gt;&gt;PassengerIdTb.Name" xml:space="preserve">
+    <value>PassengerIdTb</value>
   </data>
-  <data name="&gt;&gt;PassengerLoginButton.Name" xml:space="preserve">
-    <value>PassengerLoginButton</value>
+  <data name="PassengerUsernameTb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 23</value>
   </data>
   <data name="pageToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Page</value>
@@ -405,8 +408,8 @@
   <data name="LoginMenuStrip.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;LoginMenuStrip.Name" xml:space="preserve">
-    <value>LoginMenuStrip</value>
+  <data name="&gt;&gt;PassengerIdTb.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;StaffAdminLabel.Name" xml:space="preserve">
     <value>StaffAdminLabel</value>
@@ -414,14 +417,17 @@
   <data name="&gt;&gt;LoginMenuStrip.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;StaffPasswordLabel.Name" xml:space="preserve">
-    <value>StaffPasswordLabel</value>
+  <data name="&gt;&gt;LoginMenuStrip.Name" xml:space="preserve">
+    <value>LoginMenuStrip</value>
   </data>
   <data name="&gt;&gt;StaffPasswordLabel.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="PassengerPasswordLabel.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
+  </data>
+  <data name="&gt;&gt;PassengerUsernameTb.Name" xml:space="preserve">
+    <value>PassengerUsernameTb</value>
   </data>
   <data name="&gt;&gt;StaffPasswordTb.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -438,9 +444,6 @@
   <data name="StaffLoginButton.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="PassengerPasswordTb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 69</value>
-  </data>
   <data name="PassengerLoginButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>284, 34</value>
   </data>
@@ -454,9 +457,6 @@
     <value>11, 23</value>
   </data>
   <data name="PassengerPasswordTb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>284, 23</value>
-  </data>
-  <data name="PassengerUsernameTb.Size" type="System.Drawing.Size, System.Drawing">
     <value>284, 23</value>
   </data>
   <data name="&gt;&gt;StaffPasswordLabel.Type" xml:space="preserve">
@@ -474,8 +474,8 @@
   <data name="StaffIdLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 17</value>
   </data>
-  <data name="StaffPasswordLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 17</value>
+  <data name="PassengerPasswordTb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 69</value>
   </data>
   <data name="StaffLoginButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
@@ -483,11 +483,17 @@
   <data name="&gt;&gt;PassengerLoginButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;PassengerIdTb.Parent" xml:space="preserve">
+    <value>PassengerLoginTab</value>
+  </data>
   <data name="&gt;&gt;StaffPasswordTb.Parent" xml:space="preserve">
     <value>StaffLoginTab</value>
   </data>
-  <data name="StaffIdLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;pageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PassengerSignupLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="StaffIdLabel.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -546,6 +552,9 @@
   <data name="englishToolStripMenuItem.Text" xml:space="preserve">
     <value>E&amp;nglish</value>
   </data>
+  <data name="PassengerIdLabel.Text" xml:space="preserve">
+    <value>ID :</value>
+  </data>
   <data name="PassengerLoginButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
@@ -555,8 +564,8 @@
   <data name="&gt;&gt;PassengerLoginTab.Parent" xml:space="preserve">
     <value>LoginTabControl</value>
   </data>
-  <data name="&gt;&gt;StaffIdLabel.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="PassengerIdTb.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;StaffLoginButton.Name" xml:space="preserve">
     <value>StaffLoginButton</value>
@@ -582,6 +591,9 @@
   <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
     <value>A&amp;bout</value>
   </data>
+  <data name="StaffLoginTab.Text" xml:space="preserve">
+    <value>Staff</value>
+  </data>
   <data name="pageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>45, 20</value>
   </data>
@@ -594,8 +606,14 @@
   <data name="&gt;&gt;StaffIdLabel.Name" xml:space="preserve">
     <value>StaffIdLabel</value>
   </data>
+  <data name="&gt;&gt;PassengerIdTb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;PassengerPasswordLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="StaffPasswordLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 17</value>
   </data>
   <data name="&gt;&gt;StaffIdTb.Parent" xml:space="preserve">
     <value>StaffLoginTab</value>

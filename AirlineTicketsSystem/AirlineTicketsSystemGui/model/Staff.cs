@@ -1,9 +1,19 @@
-﻿namespace AirlineTicketsSystemGui.model
+﻿using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+
+namespace AirlineTicketsSystemGui.model
 {
     public class Staff : User
     {
         public Staff(int userId, string email, string password) : base(userId, email, password)
         {
+            this.UserId = userId;
+            this.Email = email;
+            this.Password = password;
+        }
+
+        public override string ToString()
+        {
+            return $"Staff UserID: {UserId}, Email: {Email}, Password: {Password}";
         }
 
         public override string ToString()
@@ -11,4 +21,6 @@
             return $"{UserId} | {Email}";
         }
     }
+
+    
 }

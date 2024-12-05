@@ -1,6 +1,7 @@
 using AirlineTicketsSystemGui.controller;
 using System;
 using System.Windows.Forms;
+using AirlineTicketsSystemGui.model;
 
 namespace AirlineTicketsSystemGui
 {
@@ -10,27 +11,43 @@ namespace AirlineTicketsSystemGui
         {
             InitializeComponent();
         }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void AddButton_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            string destination = DestinationTb.Text;
+            string date = DateDp.Text;
+            string time = $"{HourNup.Text}:{MinuteNup.Text}";
+            int fc = int.Parse(FirstCTb.Text);
+            int bc = int.Parse(BusinessCTb.Text);
+            int cc = int.Parse(CoachCTb.Text);
+            //TODO: Add Flight the the thing
+            this.Close();
         }
 
-        private void DestinationLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        // Admin Add Flight Page Tools Menu
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void AddButton_Click(object sender, EventArgs e)
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string time = HourNup.TabIndex.ToString() + ":" + MinuteNup.TabIndex.ToString() + ":" + AmPmCb.Text;
-            //int firstClassSeats, int businessClassSeats, int coachClassSeats, string destination, string departureDate, string departureTime
-            AirlineTicketSystemController.InsertFlight(int.Parse(FirstCTb.Text), int.Parse(BusinessCTb.Text), int.Parse(CoachCTb.Text), DestinationTb.Text, DateDp.Text, time);
+            AirlineTicketSystemController.AboutMb("About Add Flight Page",
+                "This page is used to add flights to the system.");
+        }
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AirlineTicketSystemController.NotImplementedMb();
+        }
+
+        private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AirlineTicketSystemController.NotImplementedMb();
+        }
+
+        private void spanishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AirlineTicketSystemController.NotImplementedMb();
         }
     }
 }

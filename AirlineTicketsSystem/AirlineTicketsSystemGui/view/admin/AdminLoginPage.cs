@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using AirlineTicketsSystemGui.controller;
 
 namespace AirlineTicketsSystemGui
 {
@@ -17,7 +18,7 @@ namespace AirlineTicketsSystemGui
 
         private void AdminLoginButton_Click(object sender, EventArgs e)
         {
-            if (AdminKeyTb.Text == "12345678")
+            if (AdminController.IsKey(AdminKeyTb.Text))
             {
                 new AdminPage().Show();
                 this.Hide();
@@ -31,12 +32,9 @@ namespace AirlineTicketsSystemGui
         // Tool Strip Menu Controls
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(
-                "This page is used to Login as an Admin using" +
-                    " the key that will be known by the Managers",
+            AirlineTicketSystemController.AboutMb(
                 "About Admin Login Page", 
-                MessageBoxButtons.OK, 
-                MessageBoxIcon.Information
+                "This page is used to login as an admin using the key that will be known by the managers."
             );
         }
         
@@ -53,35 +51,17 @@ namespace AirlineTicketsSystemGui
 
         private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //TODO: Implement french Internalization -> AdminLoginPage.cs
-            MessageBox.Show(
-                "This Feature will be Implemented at a Later Date",
-                "Sorry Feature Not Implemented", 
-                MessageBoxButtons.OK, 
-                MessageBoxIcon.Information
-            );
+            AirlineTicketSystemController.NotImplementedMb();
         }
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //TODO: Implement english Internalization -> AdminLoginPage.cs
-            MessageBox.Show(
-                "This Feature will be Implemented at a Later Date",
-                "Sorry Feature Not Implemented", 
-                MessageBoxButtons.OK, 
-                MessageBoxIcon.Information
-            );
+            AirlineTicketSystemController.NotImplementedMb();
         }
 
         private void spanishToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            //TODO: Implement spanish Internalization -> AdminLoginPage.cs
-            MessageBox.Show(
-                "This Feature will be Implemented at a Later Date",
-                "Sorry Feature Not Implemented", 
-                MessageBoxButtons.OK, 
-                MessageBoxIcon.Information
-            );
+            AirlineTicketSystemController.NotImplementedMb();
         }
     }
 }

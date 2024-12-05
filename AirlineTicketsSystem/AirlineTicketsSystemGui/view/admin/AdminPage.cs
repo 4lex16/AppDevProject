@@ -30,7 +30,13 @@ namespace AirlineTicketsSystemGui
             FlightBs.ResetBindings(false);
             StaffBs.ResetBindings(false);
         }
-        
+
+        private void ResetDataSource()
+        {
+            FlightBs.DataSource = AirlineTicketSystem.GetInstance().Flights;
+            StaffBs.DataSource = AirlineTicketSystem.GetInstance().Staff;
+        }
+
         // Admin Page Form Controls
         private void AdminPage_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -73,13 +79,25 @@ namespace AirlineTicketsSystemGui
 
         private void StaffRemoveButton_Click(object sender, EventArgs e)
         {
-            AirlineTicketSystemController.NotImplementedMb();
+            if (StaffListBox.SelectedItem != null)
+            {
+                //TODO: AirlineTicketSystemController.RemoveStaff((Staff)StaffListBox.SelectedItem)
+                LoadData();
+            }
         }
         
         private void StaffIdTb_TextChanged(object sender, EventArgs e)
         {
-            //TODO: Implement Filter
-            AirlineTicketSystemController.NotImplementedMb();
+            if (StaffIdTb.Text.Equals(""))
+            {
+                ResetDataSource();
+            }
+            else
+            {
+                //TODO: List<Staff> staffs = AirlineTicketSystemController.FilterStaff(int.Parse(StaffIdTb))
+                //StaffBs.DataSource(staffs);
+            }
+            LoadData();
         }
 
         // Flight Tab Controls

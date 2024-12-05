@@ -340,7 +340,7 @@ namespace AirlineTicketsSystemGui.controller
             using (var connection = new SQLiteConnection(DatabaseFileName))
             {
                 connection.Open();
-                string query = "SELECT * FROM passengers;";
+                string query = "SELECT * FROM passengers";
 
                 using (var command = new SQLiteCommand(query, connection))
                 using (var reader = command.ExecuteReader())

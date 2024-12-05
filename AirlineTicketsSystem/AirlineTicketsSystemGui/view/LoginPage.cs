@@ -1,4 +1,5 @@
 ﻿
+using AirlineTicketsSystemGui.controller;
 using AirlineTicketsSystemGui.model;
 using System;
 using System.Collections.Generic;
@@ -18,6 +19,7 @@ namespace AirlineTicketsSystemGui
         public LoginPage()
         {
             InitializeComponent();
+            AirlineTicketSystemController airlineTicketSystemController = new AirlineTicketSystemController();
         }
 
         private void StaffLoginButton_Click(object sender, EventArgs e)
@@ -51,32 +53,34 @@ namespace AirlineTicketsSystemGui
 
         private void PassengerLoginButton_Click(object sender, EventArgs e)
         {
-            
+
             //int enteredPassengerId = int.Parse(PassengerIdTb.Text);
             //String enteredPassengerPassword = PassengerPasswordTb.Text;
-            
+
 
             //for (int i = 0; i < airlineTicketSystem.Passengers.Count(); i++)
             //{
             //    int id = airlineTicketSystem.Passengers[i].UserId;
-                
-            //    if (enteredPassengerId == id)
-            //    {
-            //        string password = airlineTicketSystem.Passengers[i].Password;
-            //        if (password.Equals(enteredPassengerPassword))
-            //        {
-            //            new PassengerPage(airlineTicketSystem.Passengers[i], airlineTicketSystem.Passengers[i].Tickets).Show();
-            //            this.Hide();
-            //        } else
-            //        {
-            //            MessageBox.Show("Incorrect Password, Please try again");
-            //        }
 
-            //    } else
-            //    {
-            //        MessageBox.Show("Id not found please try again!");
-            //    }
-            //}
+            if (enteredPassengerId == id)
+            {
+                string password = airlineTicketSystem.Passengers[i].Password;
+                if (password.Equals(enteredPassengerPassword))
+                {
+                    new PassengerPage(airlineTicketSystem.Passengers[i], airlineTicketSystem.Passengers[i].Tickets).Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Incorrect Password, Please try again");
+                }
+
+                //    } else
+                //    {
+                //        MessageBox.Show("Id not found please try again!");
+                //    }
+                //}
+            }
         }
 
         private void LoginPage_FormClosing(object sender, FormClosingEventArgs e)

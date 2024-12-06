@@ -516,5 +516,25 @@ namespace AirlineTicketsSystemGui.controller
             return ticketId;
         }
 
+        public static void RemoveStaff(int staffId)
+        {
+            // Check if the database exists
+            if (!File.Exists(dbFilePath))
+            {
+                SQLiteConnection.CreateFile(dbFilePath);
+            }
+
+            using (var connection = new SQLiteConnection(DatabaseFileName))
+            {
+                connection.Open();
+                string sql = @"DELETE FROM staff WHERE staff_id = @staffId ";
+
+                using (var command = new SQLiteCommand(sql, connection))
+                {
+                    command.Parameters.AddWithValue("@staffId", staffId);
+                    command.ExecuteReader();
+                }
+            }
+        }
     }
 }

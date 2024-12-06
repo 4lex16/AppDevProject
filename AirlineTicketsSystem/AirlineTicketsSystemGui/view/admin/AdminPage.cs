@@ -81,7 +81,7 @@ namespace AirlineTicketsSystemGui
         {
             if (StaffListBox.SelectedItem != null)
             {
-                //TODO: AirlineTicketSystemController.RemoveStaff((Staff)StaffListBox.SelectedItem)
+                AirlineTicketSystemController.RemoveStaff((Staff)StaffListBox.SelectedItem);
                 LoadData();
             }
         }

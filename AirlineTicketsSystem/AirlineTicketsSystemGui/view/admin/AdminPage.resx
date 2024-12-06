@@ -130,10 +130,6 @@
   <data name="&gt;&gt;StaffIdLabel.Parent" xml:space="preserve">
     <value>StaffTab</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tabControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
   <data name="StaffIdTb.Size" type="System.Drawing.Size, System.Drawing">
     <value>151, 23</value>
   </data>
@@ -204,17 +200,27 @@
   <data name="FlightDestinationTb.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="StaffAddButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="&gt;&gt;StaffFilterLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FlightDestinationButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;FlightBuyButton.Name" xml:space="preserve">
     <value>FlightBuyButton</value>
   </data>
-  <data name="AdminMenuStrip.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="RefreshButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 24</value>
   </data>
   <data name="&gt;&gt;logoutToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="StaffTab.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="StaffListBox.ItemHeight" type="System.Int32, mscorlib">
     <value>16</value>
@@ -231,6 +237,9 @@
   <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
   </data>
+  <data name="FlightEditButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
   <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -240,14 +249,17 @@
   <data name="&gt;&gt;FlightDestinationLabel.Name" xml:space="preserve">
     <value>FlightDestinationLabel</value>
   </data>
-  <data name="FlightIdButton.Text" xml:space="preserve">
-    <value>ID</value>
+  <data name="&gt;&gt;FlightDetailsButton.Name" xml:space="preserve">
+    <value>FlightDetailsButton</value>
   </data>
   <data name="&gt;&gt;FlightDetailsButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;FlightDestinationTb.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FlightDetailsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 44</value>
   </data>
   <data name="StaffRemoveButton.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
@@ -258,17 +270,23 @@
   <data name="FlightBuyButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
+  <data name="FlightIdLabel.Text" xml:space="preserve">
+    <value>ID :</value>
+  </data>
+  <data name="StaffFilterLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
   <data name="FlightIdTb.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="&gt;&gt;StaffIdLabel.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="FlightDestinationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 29</value>
+  </data>
   <data name="FlightEditButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 44</value>
-  </data>
-  <data name="&gt;&gt;StaffListBox.Parent" xml:space="preserve">
-    <value>StaffTab</value>
   </data>
   <data name="FlightIdButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -284,6 +302,9 @@
   </data>
   <data name="&gt;&gt;FlightOrderLabel.Parent" xml:space="preserve">
     <value>FlightTab</value>
+  </data>
+  <data name="FlightDetailsButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
@@ -306,8 +327,8 @@
   <data name="CancelButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>324, 256</value>
   </data>
-  <data name="&gt;&gt;FlightDestinationTb.Parent" xml:space="preserve">
-    <value>FlightTab</value>
+  <data name="StaffIdLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;StaffFilterLabel.Name" xml:space="preserve">
     <value>StaffFilterLabel</value>
@@ -327,11 +348,8 @@
   <data name="FlightIdLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
-  <data name="FlightListBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>542, 180</value>
-  </data>
-  <data name="CancelButton.Text" xml:space="preserve">
-    <value>Cancel</value>
+  <data name="&gt;&gt;StaffRemoveButton.Name" xml:space="preserve">
+    <value>StaffRemoveButton</value>
   </data>
   <data name="FlightIdButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
@@ -345,8 +363,8 @@
   <data name="&gt;&gt;pageToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;FlightIdButton.Name" xml:space="preserve">
-    <value>FlightIdButton</value>
+  <data name="StaffTab.Text" xml:space="preserve">
+    <value>Staff</value>
   </data>
   <data name="FlightListBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 71</value>
@@ -369,17 +387,17 @@
   <data name="&gt;&gt;StaffAddButton.Parent" xml:space="preserve">
     <value>StaffTab</value>
   </data>
-  <data name="FlightEditButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="AdminMenuStrip.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="FlightIdTb.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="StaffDetailsButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="StaffIdTb.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="FlightEditButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
-  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 27</value>
+  <data name="RefreshButton.Text" xml:space="preserve">
+    <value>Refresh</value>
   </data>
   <data name="StaffDetailsButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>5, 257</value>
@@ -393,14 +411,14 @@
   <data name="&gt;&gt;exitToolStripMenuItem.Name" xml:space="preserve">
     <value>exitToolStripMenuItem</value>
   </data>
-  <data name="FlightOrderLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
   <data name="FlightIdButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>108, 6</value>
   </data>
   <data name="FlightTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
+  </data>
+  <data name="FlightDestinationTb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 23</value>
   </data>
   <data name="FlightEditButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>218, 257</value>
@@ -417,8 +435,8 @@
   <data name="FlightTab.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
   </data>
-  <data name="StaffRemoveButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  <data name="FlightDestinationTb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>407, 40</value>
   </data>
   <data name="&gt;&gt;englishToolStripMenuItem.Name" xml:space="preserve">
     <value>englishToolStripMenuItem</value>
@@ -429,12 +447,6 @@
   <data name="StaffDetailsButton.Text" xml:space="preserve">
     <value>Details</value>
   </data>
-  <data name="&gt;&gt;FlightOrderLabel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;CancelButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="StaffIdLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>104, 42</value>
   </data>
@@ -444,8 +456,8 @@
   <data name="StaffEditButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 44</value>
   </data>
-  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Language</value>
+  <data name="&gt;&gt;AdminMenuStrip.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>AdminPage</value>
@@ -453,20 +465,14 @@
   <data name="pageToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Page</value>
   </data>
-  <data name="AdminMenuStrip.Text" xml:space="preserve">
-    <value>menuStrip1</value>
+  <data name="FlightBuyButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 257</value>
   </data>
   <data name="&gt;&gt;frenchToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="pageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
-  </data>
   <data name="StaffRemoveButton.Text" xml:space="preserve">
     <value>Remove</value>
-  </data>
-  <data name="&gt;&gt;FlightListBox.Name" xml:space="preserve">
-    <value>FlightListBox</value>
   </data>
   <data name="&gt;&gt;StaffRemoveButton.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -498,17 +504,17 @@
   <data name="FlightIdButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 29</value>
   </data>
-  <data name="FlightFilterLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
-  </data>
-  <data name="&gt;&gt;StaffTab.Parent" xml:space="preserve">
-    <value>tabControl1</value>
+  <data name="StaffIdLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
   </data>
   <data name="&gt;&gt;pageToolStripMenuItem.Name" xml:space="preserve">
     <value>pageToolStripMenuItem</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>AdminPage</value>
+  </data>
+  <data name="StaffFilterLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 23</value>
   </data>
   <data name="FlightDestinationButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -522,11 +528,14 @@
   <data name="StaffRemoveButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="StaffEditButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="AdminMenuStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
   <data name="FlightDestinationButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="RefreshButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="&gt;&gt;logoutToolStripMenuItem.Name" xml:space="preserve">
     <value>logoutToolStripMenuItem</value>
@@ -537,20 +546,17 @@
   <data name="&gt;&gt;FlightListBox.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="AdminMenuStrip.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
   <data name="FlightBuyButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
   </data>
-  <data name="FlightDestinationTb.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
+  <data name="FlightDetailsButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="StaffRemoveButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
   <data name="StaffAddButton.Text" xml:space="preserve">
     <value>Add</value>
@@ -567,9 +573,6 @@
   <data name="StaffAddButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;StaffAddButton.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
   <data name="logoutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
   </data>
@@ -579,23 +582,23 @@
   <data name="&gt;&gt;StaffDetailsButton.Name" xml:space="preserve">
     <value>StaffDetailsButton</value>
   </data>
-  <data name="FlightBuyButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 44</value>
-  </data>
   <data name="&gt;&gt;FlightTab.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;FlightIdButton.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="StaffAddButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="&gt;&gt;StaffTab.Parent" xml:space="preserve">
+    <value>tabControl1</value>
   </data>
   <data name="&gt;&gt;AdminMenuStrip.Type" xml:space="preserve">
     <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="FlightDetailsButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="FlightFilterLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;StaffEditButton.Name" xml:space="preserve">
     <value>StaffEditButton</value>
@@ -609,8 +612,8 @@
   <data name="FlightIdButton.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;FlightDestinationButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="FlightBuyButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 44</value>
   </data>
   <data name="&gt;&gt;FlightDestinationTb.Name" xml:space="preserve">
     <value>FlightDestinationTb</value>
@@ -618,8 +621,8 @@
   <data name="&gt;&gt;FlightIdLabel.Parent" xml:space="preserve">
     <value>FlightTab</value>
   </data>
-  <data name="&gt;&gt;StaffIdTb.Name" xml:space="preserve">
-    <value>StaffIdTb</value>
+  <data name="tabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 27</value>
   </data>
   <data name="&gt;&gt;FlightIdButton.Parent" xml:space="preserve">
     <value>FlightTab</value>
@@ -630,14 +633,14 @@
   <data name="&gt;&gt;RefreshButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="StaffTab.AutoScroll" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="FlightListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>542, 180</value>
   </data>
   <data name="&gt;&gt;FlightDetailsButton.Parent" xml:space="preserve">
     <value>FlightTab</value>
   </data>
-  <data name="&gt;&gt;AdminMenuStrip.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;CancelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="StaffAddButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 44</value>
@@ -645,23 +648,23 @@
   <data name="&gt;&gt;FlightIdTb.Parent" xml:space="preserve">
     <value>FlightTab</value>
   </data>
-  <data name="StaffTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+  <data name="FlightOrderLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
   </data>
   <data name="FlightDestinationButton.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="RefreshButton.Text" xml:space="preserve">
-    <value>Refresh</value>
+  <data name="AdminMenuStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="StaffEditButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>217, 257</value>
   </data>
   <data name="&gt;&gt;FlightFilterLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="FlightTab.Size" type="System.Drawing.Size, System.Drawing">
     <value>554, 306</value>
-  </data>
-  <data name="&gt;&gt;StaffRemoveButton.Parent" xml:space="preserve">
-    <value>StaffTab</value>
   </data>
   <data name="&gt;&gt;StaffEditButton.Parent" xml:space="preserve">
     <value>StaffTab</value>
@@ -672,20 +675,14 @@
   <data name="&gt;&gt;FlightIdLabel.Name" xml:space="preserve">
     <value>FlightIdLabel</value>
   </data>
-  <data name="StaffFilterLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 23</value>
+  <data name="&gt;&gt;StaffAddButton.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="FlightOrderLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;StaffEditButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="FlightBuyButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 257</value>
-  </data>
-  <data name="FlightIdLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 17</value>
+  <data name="FlightFilterLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 23</value>
   </data>
   <data name="&gt;&gt;StaffListBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -693,14 +690,17 @@
   <data name="&gt;&gt;FlightTab.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FlightListBox.Name" xml:space="preserve">
+    <value>FlightListBox</value>
   </data>
   <data name="FlightListBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
-  <data name="FlightDestinationTb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 23</value>
+  <data name="&gt;&gt;FlightOrderLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="FlightOrderLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
@@ -708,17 +708,14 @@
   <data name="tabControl1.ItemSize" type="System.Drawing.Size, System.Drawing">
     <value>100, 21</value>
   </data>
-  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Exit</value>
-  </data>
   <data name="&gt;&gt;FlightBuyButton.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="FlightFilterLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 23</value>
+  <data name="CancelButton.Text" xml:space="preserve">
+    <value>Cancel</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>562, 335</value>
@@ -735,8 +732,8 @@
   <data name="&gt;&gt;FlightDestinationButton.Parent" xml:space="preserve">
     <value>FlightTab</value>
   </data>
-  <data name="FlightDetailsButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 44</value>
+  <data name="&gt;&gt;StaffListBox.Parent" xml:space="preserve">
+    <value>StaffTab</value>
   </data>
   <data name="FlightTab.Text" xml:space="preserve">
     <value>Flight</value>
@@ -744,8 +741,8 @@
   <data name="StaffIdLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;StaffRemoveButton.Parent" xml:space="preserve">
+    <value>StaffTab</value>
   </data>
   <data name="FlightFilterLabel.Text" xml:space="preserve">
     <value>Filter By :</value>
@@ -756,14 +753,14 @@
   <data name="&gt;&gt;FlightEditButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="StaffEditButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>217, 257</value>
+  <data name="StaffEditButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="FlightIdLabel.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="StaffIdLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Exit</value>
   </data>
   <data name="&gt;&gt;FlightIdLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -771,14 +768,23 @@
   <data name="StaffDetailsButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
+  <data name="logoutToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Logout</value>
+  </data>
+  <data name="FlightIdLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 42</value>
+  </data>
   <data name="StaffAddButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>111, 257</value>
   </data>
-  <data name="&gt;&gt;StaffRemoveButton.Name" xml:space="preserve">
-    <value>StaffRemoveButton</value>
+  <data name="FlightIdLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 17</value>
   </data>
   <data name="FlightBuyButton.Text" xml:space="preserve">
     <value>Add</value>
+  </data>
+  <data name="&gt;&gt;FlightIdTb.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;StaffIdTb.ZOrder" xml:space="preserve">
     <value>6</value>
@@ -789,35 +795,32 @@
   <data name="tabControl1.Appearance" type="System.Windows.Forms.TabAppearance, System.Windows.Forms">
     <value>Buttons</value>
   </data>
-  <data name="StaffIdTb.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt</value>
-  </data>
   <data name="StaffIdLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 17</value>
-  </data>
-  <data name="&gt;&gt;FlightDetailsButton.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="StaffDetailsButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 44</value>
-  </data>
-  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 20</value>
   </data>
   <data name="&gt;&gt;FlightEditButton.Parent" xml:space="preserve">
     <value>FlightTab</value>
   </data>
-  <data name="FlightIdTb.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="StaffIdTb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="tabControl1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="StaffTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
   <data name="FlightIdLabel.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="StaffDetailsButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="FlightIdButton.Text" xml:space="preserve">
+    <value>ID</value>
   </data>
-  <data name="StaffEditButton.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
+  <data name="&gt;&gt;StaffEditButton.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="FlightOrderLabel.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 6</value>
@@ -825,8 +828,8 @@
   <data name="&gt;&gt;FlightDestinationButton.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="FlightDetailsButton.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;FlightDetailsButton.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;StaffTab.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -849,9 +852,6 @@
   <data name="&gt;&gt;FlightOrderLabel.Name" xml:space="preserve">
     <value>FlightOrderLabel</value>
   </data>
-  <data name="StaffFilterLabel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
   <data name="englishToolStripMenuItem.Text" xml:space="preserve">
     <value>E&amp;nglish</value>
   </data>
@@ -861,8 +861,8 @@
   <data name="tabControl1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt</value>
   </data>
-  <data name="RefreshButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 24</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="StaffEditButton.Text" xml:space="preserve">
     <value>Edit</value>
@@ -870,23 +870,23 @@
   <data name="&gt;&gt;frenchToolStripMenuItem.Name" xml:space="preserve">
     <value>frenchToolStripMenuItem</value>
   </data>
-  <data name="&gt;&gt;FlightDetailsButton.Name" xml:space="preserve">
-    <value>FlightDetailsButton</value>
+  <data name="StaffEditButton.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
-  <data name="FlightIdLabel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>105, 42</value>
+  <data name="FlightFilterLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="StaffTab.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 25</value>
+  <data name="StaffDetailsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 44</value>
   </data>
-  <data name="StaffIdLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+  <data name="FlightDestinationTb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
   </data>
   <data name="&gt;&gt;FlightBuyButton.Parent" xml:space="preserve">
     <value>FlightTab</value>
   </data>
-  <data name="FlightDestinationTb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>407, 40</value>
+  <data name="FlightEditButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;AdminMenuStrip.Name" xml:space="preserve">
     <value>AdminMenuStrip</value>
@@ -897,8 +897,8 @@
   <data name="FlightIdTb.Size" type="System.Drawing.Size, System.Drawing">
     <value>151, 23</value>
   </data>
-  <data name="StaffFilterLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleLeft</value>
+  <data name="StaffIdTb.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="&gt;&gt;languageToolStripMenuItem.Name" xml:space="preserve">
     <value>languageToolStripMenuItem</value>
@@ -912,14 +912,14 @@
   <data name="&gt;&gt;languageToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;FlightIdTb.ZOrder" xml:space="preserve">
-    <value>9</value>
+  <data name="&gt;&gt;FlightDestinationTb.Parent" xml:space="preserve">
+    <value>FlightTab</value>
   </data>
   <data name="FlightIdTb.Location" type="System.Drawing.Point, System.Drawing">
     <value>144, 40</value>
   </data>
-  <data name="RefreshButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="pageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
   </data>
   <data name="&gt;&gt;FlightEditButton.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -933,8 +933,8 @@
   <data name="&gt;&gt;CancelButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="FlightDestinationButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 29</value>
+  <data name="&gt;&gt;FlightIdButton.Name" xml:space="preserve">
+    <value>FlightIdButton</value>
   </data>
   <data name="&gt;&gt;StaffDetailsButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -951,14 +951,14 @@
   <data name="RefreshButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 8pt</value>
   </data>
-  <data name="FlightFilterLabel.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Language</value>
   </data>
   <data name="StaffListBox.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
   </data>
-  <data name="logoutToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Logout</value>
+  <data name="StaffTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
   </data>
   <data name="&gt;&gt;StaffListBox.Name" xml:space="preserve">
     <value>StaffListBox</value>
@@ -966,11 +966,11 @@
   <data name="StaffListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>542, 180</value>
   </data>
-  <data name="FlightIdLabel.Text" xml:space="preserve">
-    <value>ID :</value>
+  <data name="&gt;&gt;StaffIdTb.Name" xml:space="preserve">
+    <value>StaffIdTb</value>
   </data>
-  <data name="StaffTab.Text" xml:space="preserve">
-    <value>Staff</value>
+  <data name="StaffFilterLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>111</value>
@@ -978,10 +978,10 @@
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>en</value>
+  </metadata>
   <metadata name="AdminMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>fr-CA</value>
   </metadata>
 </root>

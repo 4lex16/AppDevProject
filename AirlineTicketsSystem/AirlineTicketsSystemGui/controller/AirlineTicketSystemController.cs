@@ -55,6 +55,12 @@ namespace AirlineTicketsSystemGui.controller
             return ticket.TicketId;
         }
 
+        public static void RemoveStaff(Staff staff)
+        {
+            DatabaseController.RemoveStaff(staff.UserId);
+            airlineTicketSystem.Staff.Remove(staff);
+        }
+
 
         public static void AboutMb(string header, string message)
         {

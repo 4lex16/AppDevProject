@@ -1,4 +1,6 @@
-﻿using System.Windows.Forms;
+﻿using System.Configuration;
+using System.Threading;
+using System.Windows.Forms;
 using AirlineTicketsSystemGui.model;
 
 namespace AirlineTicketsSystemGui.controller
@@ -9,6 +11,11 @@ namespace AirlineTicketsSystemGui.controller
 
         public AirlineTicketSystemController()
         {
+            // Initializes Globalization
+            string language = ConfigurationManager.AppSettings["language"];
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(language);
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(language);
+            // Initializes airlineTicketSystem
             airlineTicketSystem = AirlineTicketSystem.GetInstance();
             DatabaseController.InitializeDatabase();
             DatabaseController.CreateFlightTable();

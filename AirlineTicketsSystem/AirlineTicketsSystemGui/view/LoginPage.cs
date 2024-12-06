@@ -41,7 +41,7 @@ namespace AirlineTicketsSystemGui
                     }
                 }
             }
-                MessageBox.Show("Id and Password Combination not Found Please Try Again!");
+            MessageBox.Show("Id and Password Combination not Found Please Try Again!");
         }
 
         private void PassengerLoginButton_Click(object sender, EventArgs e)
@@ -98,14 +98,28 @@ namespace AirlineTicketsSystemGui
 
         private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new LanguageController().UpdateConfig("language", "fr-CA");
-            Application.Restart();
+            DialogResult r = MessageBox.Show("This will log you out " +
+                                             "and restart the application",
+                "Are you sure?",
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (r == DialogResult.OK)
+            {
+                new LanguageController().UpdateConfig("language", "fr-CA");
+                Application.Restart();
+            }
         }
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new LanguageController().UpdateConfig("language", "en");
-            Application.Restart();
+            DialogResult r = MessageBox.Show("This will log you out " +
+                                             "and restart the application",
+                "Are you sure?",
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (r == DialogResult.OK)
+            {
+                new LanguageController().UpdateConfig("language", "en");
+                Application.Restart();
+            }
         }
     }
 }

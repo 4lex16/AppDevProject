@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
+using AirlineTicketsSystemGui.controller;
 using AirlineTicketsSystemGui.model;
 
 namespace AirlineTicketsSystemGui
@@ -50,22 +52,30 @@ namespace AirlineTicketsSystemGui
             MessageBox.Show("Make sure to input all the correct data please");
         }
 
-        private void ticketListToolStripMenuItem_Click(object sender, EventArgs e)
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new PassengerPage(Passenger, Passenger.Tickets).Show();
-            this.Hide();
+            DialogResult r = MessageBox.Show("This will log you out " +
+                                             "and restart the application", 
+                "Are you sure?", 
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (r == DialogResult.OK)
+            {
+                new LanguageController().UpdateConfig("language", "en");
+                Application.Restart();
+            }
         }
 
-        private void flightListToolStripMenuItem_Click(object sender, EventArgs e)
+        private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new PassengerPage(Passenger, Passenger.Tickets).Show();
-            this.Hide();
-        }
-
-        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new LoginPage();
-            this.Hide();
+            DialogResult r = MessageBox.Show("This will log you out " +
+                                             "and restart the application",
+                "Are you sure?",
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (r == DialogResult.OK)
+            {
+                new LanguageController().UpdateConfig("language", "fr-CA");
+                Application.Restart();
+            }
         }
     }
 }

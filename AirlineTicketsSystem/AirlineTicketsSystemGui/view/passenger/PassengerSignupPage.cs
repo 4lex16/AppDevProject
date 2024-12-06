@@ -71,5 +71,31 @@ namespace AirlineTicketsSystemGui
         {
             MessageBox.Show("This is a sign up page for a new passenger, after successfully signing up, an id will appear keep it safe and do not share it with anyone");
         }
+
+        private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show("This will log you out " +
+                                             "and restart the application",
+                "Are you sure?",
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (r == DialogResult.OK)
+            {
+                new LanguageController().UpdateConfig("language", "fr-CA");
+                Application.Restart();
+            }
+        }
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show("This will log you out " +
+                                             "and restart the application",
+                "Are you sure?",
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (r == DialogResult.OK)
+            {
+                new LanguageController().UpdateConfig("language", "en");
+                Application.Restart();
+            }
+        }
     }
 }

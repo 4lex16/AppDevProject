@@ -190,23 +190,77 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="view\admin\AdminAddFlightPage.en.resx">
+      <DependentUpon>AdminAddFlightPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\admin\AdminAddFlightPage.fr-CA.resx">
+      <DependentUpon>AdminAddFlightPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\admin\AdminAddFlightPage.fr.resx">
+      <DependentUpon>AdminAddFlightPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\admin\AdminAddFlightPage.resx">
       <DependentUpon>AdminAddFlightPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\admin\AdminAddStaffPage.dje-NE.resx">
+      <DependentUpon>AdminAddStaffPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\admin\AdminAddStaffPage.en.resx">
+      <DependentUpon>AdminAddStaffPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\admin\AdminAddStaffPage.fr-CA.resx">
+      <DependentUpon>AdminAddStaffPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\admin\AdminAddStaffPage.resx">
       <DependentUpon>AdminAddStaffPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\admin\AdminEditFlightPage.en.resx">
+      <DependentUpon>AdminEditFlightPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\admin\AdminEditFlightPage.fr-CA.resx">
+      <DependentUpon>AdminEditFlightPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\admin\AdminEditFlightPage.fr.resx">
+      <DependentUpon>AdminEditFlightPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\admin\AdminEditFlightPage.resx">
       <DependentUpon>AdminEditFlightPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\admin\AdminEditStaffPage.fr-CA.resx">
+      <DependentUpon>AdminEditStaffPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\admin\AdminEditStaffPage.resx">
       <DependentUpon>AdminEditStaffPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\admin\AdminLoginPage.en.resx">
+      <DependentUpon>AdminLoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\admin\AdminLoginPage.fr-CA.resx">
+      <DependentUpon>AdminLoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\admin\AdminLoginPage.fr-CM.resx">
+      <DependentUpon>AdminLoginPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\admin\AdminLoginPage.resx">
       <DependentUpon>AdminLoginPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\admin\AdminPage.ebu-KE.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\admin\AdminPage.en.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\admin\AdminPage.fr-CA.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\admin\AdminPage.resx">
       <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\DetailsPage.en.resx">
+      <DependentUpon>DetailsPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\DetailsPage.fr-CA.resx">
+      <DependentUpon>DetailsPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\DetailsPage.resx">
       <DependentUpon>DetailsPage.cs</DependentUpon>
@@ -220,14 +274,38 @@
     <EmbeddedResource Include="view\LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\passenger\PassengerBuyTicketPage.en.resx">
+      <DependentUpon>PassengerBuyTicketPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\passenger\PassengerBuyTicketPage.fr-CA.resx">
+      <DependentUpon>PassengerBuyTicketPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\passenger\PassengerBuyTicketPage.resx">
       <DependentUpon>PassengerBuyTicketPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\passenger\PassengerPage.en.resx">
+      <DependentUpon>PassengerPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\passenger\PassengerPage.fr-CA.resx">
+      <DependentUpon>PassengerPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\passenger\PassengerPage.resx">
       <DependentUpon>PassengerPage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="view\passenger\PassengerSignupPage.en.resx">
+      <DependentUpon>PassengerSignupPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\passenger\PassengerSignupPage.fr-CA.resx">
+      <DependentUpon>PassengerSignupPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\passenger\PassengerSignupPage.resx">
       <DependentUpon>PassengerSignupPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\staff\StaffPage.en.resx">
+      <DependentUpon>StaffPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view\staff\StaffPage.fr-CA.resx">
+      <DependentUpon>StaffPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="view\staff\StaffPage.resx">
       <DependentUpon>StaffPage.cs</DependentUpon>

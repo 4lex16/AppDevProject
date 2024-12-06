@@ -19,7 +19,8 @@ namespace AirlineTicketsSystemGui
             int fc = int.Parse(FirstCTb.Text);
             int bc = int.Parse(BusinessCTb.Text);
             int cc = int.Parse(CoachCTb.Text);
-            //TODO: Add Flight the the thing
+            AirlineTicketSystemController.InsertFlight(fc, bc, cc,
+                destination, date, time);
             this.Close();
         }
 

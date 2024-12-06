@@ -233,6 +233,7 @@
             this.CancelButton.FlatAppearance.BorderSize = 2;
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.UseVisualStyleBackColor = false;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
             // FlightEditButton
             // 

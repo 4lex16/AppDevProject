@@ -61,6 +61,12 @@ namespace AirlineTicketsSystemGui.controller
             airlineTicketSystem.Staff.Remove(staff);
         }
 
+        public static void RemoveFlight(Flight flight)
+        {
+            DatabaseController.RemoveFlight(flight.FlightId);
+            airlineTicketSystem.Flights.Remove(flight);
+        }
+
 
         public static void AboutMb(string header, string message)
         {

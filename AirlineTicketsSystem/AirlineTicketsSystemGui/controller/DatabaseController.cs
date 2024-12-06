@@ -294,7 +294,6 @@ namespace AirlineTicketsSystemGui.controller
             }
         }
 
-
         public static void InsertStaffRecord(Staff staff)
         {
             InsertStaffRecord(staff.UserId, staff.Email, staff.Password);
@@ -527,11 +526,32 @@ namespace AirlineTicketsSystemGui.controller
             using (var connection = new SQLiteConnection(DatabaseFileName))
             {
                 connection.Open();
-                string sql = @"DELETE FROM staff WHERE staff_id = @staffId ";
+                string sql = @"DELETE FROM staff WHERE staff_id = @staffId";
 
                 using (var command = new SQLiteCommand(sql, connection))
                 {
                     command.Parameters.AddWithValue("@staffId", staffId);
+                    command.ExecuteReader();
+                }
+            }
+        }
+
+        public static void RemoveFlight(int flightId)
+        {
+            // Check if the database exists
+            if (!File.Exists(dbFilePath))
+            {
+                SQLiteConnection.CreateFile(dbFilePath);
+            }
+
+            using (var connection = new SQLiteConnection(DatabaseFileName))
+            {
+                connection.Open();
+                string sql = @"DELETE FROM flights WHERE flight_id = @flightId";
+
+                using (var command = new SQLiteCommand(sql, connection))
+                {
+                    command.Parameters.AddWithValue("@flightId", flightId);
                     command.ExecuteReader();
                 }
             }

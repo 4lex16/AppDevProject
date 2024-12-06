@@ -142,6 +142,15 @@ namespace AirlineTicketsSystemGui
             AirlineTicketSystemController.NotImplementedMb();
         }
 
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            if (FlightListBox.SelectedItem != null)
+            {
+                AirlineTicketSystemController.RemoveFlight((Flight)FlightListBox.SelectedItem);
+                LoadData();
+            }
+        }
+
         // Tool Strip Menu Controls
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {

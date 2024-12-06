@@ -32,19 +32,21 @@ namespace AirlineTicketsSystemGui
         private void InitializeComponent()
         {
             this.EditButton = new System.Windows.Forms.Button();
-            this.PasswordTb = new System.Windows.Forms.TextBox();
+            this.NewStaffEmailTb = new System.Windows.Forms.TextBox();
             this.PasswordLabel = new System.Windows.Forms.Label();
-            this.EmailTb = new System.Windows.Forms.TextBox();
+            this.StaffIDTb = new System.Windows.Forms.TextBox();
             this.EmailLabel = new System.Windows.Forms.Label();
             this.EditStaffMenuStrip = new System.Windows.Forms.MenuStrip();
             this.pageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CancelButton = new System.Windows.Forms.Button();
+            this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.spanishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CancelButton = new System.Windows.Forms.Button();
+            this.NewStaffPasswordTb = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.EditStaffMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,58 +57,58 @@ namespace AirlineTicketsSystemGui
             this.EditButton.BackColor = System.Drawing.SystemColors.Window;
             this.EditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.EditButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EditButton.Location = new System.Drawing.Point(12, 138);
+            this.EditButton.Location = new System.Drawing.Point(352, 175);
             this.EditButton.Name = "EditButton";
-            this.EditButton.Size = new System.Drawing.Size(401, 35);
+            this.EditButton.Size = new System.Drawing.Size(60, 35);
             this.EditButton.TabIndex = 34;
             this.EditButton.Text = "Edit";
             this.EditButton.UseVisualStyleBackColor = false;
             this.EditButton.Click += new System.EventHandler(this.EditButton_Click);
             // 
-            // PasswordTb
+            // NewStaffEmailTb
             // 
-            this.PasswordTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.NewStaffEmailTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PasswordTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PasswordTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordTb.Location = new System.Drawing.Point(12, 109);
-            this.PasswordTb.Name = "PasswordTb";
-            this.PasswordTb.Size = new System.Drawing.Size(401, 23);
-            this.PasswordTb.TabIndex = 33;
+            this.NewStaffEmailTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NewStaffEmailTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewStaffEmailTb.Location = new System.Drawing.Point(12, 87);
+            this.NewStaffEmailTb.Name = "NewStaffEmailTb";
+            this.NewStaffEmailTb.Size = new System.Drawing.Size(401, 23);
+            this.NewStaffEmailTb.TabIndex = 33;
             // 
             // PasswordLabel
             // 
             this.PasswordLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PasswordLabel.Location = new System.Drawing.Point(12, 83);
+            this.PasswordLabel.Location = new System.Drawing.Point(12, 64);
             this.PasswordLabel.Name = "PasswordLabel";
-            this.PasswordLabel.Size = new System.Drawing.Size(401, 23);
+            this.PasswordLabel.Size = new System.Drawing.Size(401, 20);
             this.PasswordLabel.TabIndex = 32;
-            this.PasswordLabel.Text = "Password";
+            this.PasswordLabel.Text = "New Staff Email";
             this.PasswordLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // EmailTb
+            // StaffIDTb
             // 
-            this.EmailTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.StaffIDTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.EmailTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.EmailTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailTb.Location = new System.Drawing.Point(11, 55);
-            this.EmailTb.Name = "EmailTb";
-            this.EmailTb.Size = new System.Drawing.Size(401, 23);
-            this.EmailTb.TabIndex = 31;
+            this.StaffIDTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.StaffIDTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.StaffIDTb.Location = new System.Drawing.Point(15, 38);
+            this.StaffIDTb.Name = "StaffIDTb";
+            this.StaffIDTb.Size = new System.Drawing.Size(401, 23);
+            this.StaffIDTb.TabIndex = 31;
             // 
             // EmailLabel
             // 
             this.EmailLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.EmailLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailLabel.Location = new System.Drawing.Point(11, 29);
+            this.EmailLabel.Location = new System.Drawing.Point(11, 19);
             this.EmailLabel.Name = "EmailLabel";
             this.EmailLabel.Size = new System.Drawing.Size(401, 23);
             this.EmailLabel.TabIndex = 30;
-            this.EmailLabel.Text = "Email";
+            this.EmailLabel.Text = "Staff User ID";
             this.EmailLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // EditStaffMenuStrip
@@ -132,14 +134,14 @@ namespace AirlineTicketsSystemGui
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "A&bout";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -153,19 +155,26 @@ namespace AirlineTicketsSystemGui
             this.languageToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.languageToolStripMenuItem.Text = "&Language";
             // 
-            // frenchToolStripMenuItem
-            // 
-            this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.frenchToolStripMenuItem.Text = "F&rançais";
-            this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
-            // 
             // englishToolStripMenuItem
             // 
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.englishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.englishToolStripMenuItem.Text = "E&nglish";
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
+            // 
+            // frenchToolStripMenuItem
+            // 
+            this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
+            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.frenchToolStripMenuItem.Text = "F&rançais";
+            this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
+            // 
+            // spanishToolStripMenuItem
+            // 
+            this.spanishToolStripMenuItem.Name = "spanishToolStripMenuItem";
+            this.spanishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.spanishToolStripMenuItem.Text = "Spanish";
+            this.spanishToolStripMenuItem.Click += new System.EventHandler(this.spanishToolStripMenuItem_Click);
             // 
             // CancelButton
             // 
@@ -174,31 +183,49 @@ namespace AirlineTicketsSystemGui
             this.CancelButton.BackColor = System.Drawing.SystemColors.Window;
             this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelButton.Location = new System.Drawing.Point(11, 179);
+            this.CancelButton.Location = new System.Drawing.Point(11, 175);
             this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(401, 35);
+            this.CancelButton.Size = new System.Drawing.Size(92, 35);
             this.CancelButton.TabIndex = 35;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = false;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
-            // spanishToolStripMenuItem
+            // NewStaffPasswordTb
             // 
-            this.spanishToolStripMenuItem.Name = "spanishToolStripMenuItem";
-            this.spanishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.spanishToolStripMenuItem.Text = "Spanish";
-            this.spanishToolStripMenuItem.Click += new System.EventHandler(this.spanishToolStripMenuItem_Click);
+            this.NewStaffPasswordTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.NewStaffPasswordTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.NewStaffPasswordTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NewStaffPasswordTb.Location = new System.Drawing.Point(12, 140);
+            this.NewStaffPasswordTb.Name = "NewStaffPasswordTb";
+            this.NewStaffPasswordTb.Size = new System.Drawing.Size(401, 23);
+            this.NewStaffPasswordTb.TabIndex = 37;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 114);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(401, 23);
+            this.label1.TabIndex = 36;
+            this.label1.Text = "New Staff Password";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // AdminEditStaffPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(424, 222);
+            this.Controls.Add(this.NewStaffPasswordTb);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.EditButton);
-            this.Controls.Add(this.PasswordTb);
+            this.Controls.Add(this.NewStaffEmailTb);
             this.Controls.Add(this.PasswordLabel);
-            this.Controls.Add(this.EmailTb);
+            this.Controls.Add(this.StaffIDTb);
             this.Controls.Add(this.EmailLabel);
             this.Controls.Add(this.EditStaffMenuStrip);
             this.Name = "AdminEditStaffPage";
@@ -212,9 +239,9 @@ namespace AirlineTicketsSystemGui
         }
 
         private System.Windows.Forms.Button EditButton;
-        private System.Windows.Forms.TextBox PasswordTb;
+        private System.Windows.Forms.TextBox NewStaffEmailTb;
         private System.Windows.Forms.Label PasswordLabel;
-        private System.Windows.Forms.TextBox EmailTb;
+        private System.Windows.Forms.TextBox StaffIDTb;
         private System.Windows.Forms.Label EmailLabel;
         private System.Windows.Forms.MenuStrip EditStaffMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem pageToolStripMenuItem;
@@ -228,5 +255,7 @@ namespace AirlineTicketsSystemGui
         #endregion
 
         private System.Windows.Forms.ToolStripMenuItem spanishToolStripMenuItem;
+        private System.Windows.Forms.TextBox NewStaffPasswordTb;
+        private System.Windows.Forms.Label label1;
     }
 }

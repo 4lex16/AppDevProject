@@ -26,7 +26,6 @@ namespace AirlineTicketsSystemGui
         {
             int enteredStaffId = int.Parse(StaffIdTb.Text);
             String enteredStaffPassword = StaffPasswordTb.Text;
-
             for (int i = 0; i < airlineTicketSystem.Staff.Count(); i++)
             {
                 int id = airlineTicketSystem.Staff[i].UserId;
@@ -38,17 +37,11 @@ namespace AirlineTicketsSystemGui
                     {
                         new StaffPage(airlineTicketSystem.Staff[i]).Show();
                         this.Hide();
+                        return;
                     }
-                    else
-                    {
-                        MessageBox.Show("Incorrect Password, Please try again");
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("Id not found please try again!");
                 }
             }
+                MessageBox.Show("Id and Password Combination not Found Please Try Again!");
         }
 
         private void PassengerLoginButton_Click(object sender, EventArgs e)
@@ -69,19 +62,11 @@ namespace AirlineTicketsSystemGui
                     {
                         new PassengerPage(airlineTicketSystem.Passengers[i], airlineTicketSystem.Passengers[i].Tickets).Show();
                         this.Hide();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Incorrect Password, Please try again");
+                        return;
                     }
                 }
-
-                else
-                {
-                    MessageBox.Show("Id not found please try again!");
-                }
-                
             }
+            MessageBox.Show("Id and Password Combination not Found Please Try Again!");
         }
 
         private void LoginPage_FormClosing(object sender, FormClosingEventArgs e)

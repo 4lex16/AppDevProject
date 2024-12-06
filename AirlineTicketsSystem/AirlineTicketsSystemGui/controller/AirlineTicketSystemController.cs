@@ -5,7 +5,7 @@ namespace AirlineTicketsSystemGui.controller
 {
     public class AirlineTicketSystemController
     {
-        private static AirlineTicketSystem airlineTicketSystem;
+        private static AirlineTicketSystem airlineTicketSystem = AirlineTicketSystem.GetInstance();
 
         public AirlineTicketSystemController()
         {

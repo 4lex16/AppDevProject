@@ -15,5 +15,9 @@ obj/
 *.cache
 
 # ADD THE DATABASE FILE
-!AirlineTicketsSystem/AirlineTicketsSystemGui/Files/AirlineTicketsSystemDatabase.db
+!AirlineTicketsSystem/AirlineTicketsSystemGui/Files/AirlineTicketsSystemDatabase.db'
+
+# Ignore specific annoying files
+AirlineTicketsSystem/AirlineTicketsSystemGui/.vs/AirlineTicketsSystemGui.csproj.dtbcache.json
+
 

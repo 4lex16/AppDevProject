@@ -13,7 +13,7 @@ namespace AirlineTicketsSystemGui.model
 
         public override string ToString()
         {
-            return $"Staff UserID: {UserId}, Email: {Email}, Password: {Password}";
+            return $"UserID: {UserId}, Email: {Email}, Password: {Password}";
         }
     }
 

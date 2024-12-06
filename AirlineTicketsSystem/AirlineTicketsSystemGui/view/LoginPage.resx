@@ -242,6 +242,9 @@
   <data name="&gt;&gt;frenchToolStripMenuItem.Name" xml:space="preserve">
     <value>frenchToolStripMenuItem</value>
   </data>
+  <data name="PassengerIdTb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 23</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="LoginTabControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Bottom, Left, Right</value>
@@ -327,6 +330,9 @@
   <data name="&gt;&gt;PassengerLoginButton.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="StaffLoginButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
   <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>117, 22</value>
   </data>
@@ -374,9 +380,6 @@
   </data>
   <data name="&gt;&gt;PassengerIdLabel.Name" xml:space="preserve">
     <value>PassengerIdLabel</value>
-  </data>
-  <data name="StaffIdLabel.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="StaffPasswordLabel.Text" xml:space="preserve">
     <value>Password :</value>
@@ -441,8 +444,8 @@
   <data name="StaffLoginTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="StaffLoginButton.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="StaffIdLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="PassengerLoginButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>284, 34</value>

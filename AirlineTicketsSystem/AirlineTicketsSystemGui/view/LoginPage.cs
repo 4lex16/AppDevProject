@@ -110,5 +110,17 @@ namespace AirlineTicketsSystemGui
         {
             Application.Exit();
         }
+
+        private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new LanguageController().UpdateConfig("language", "fr-CA");
+            Application.Restart();
+        }
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new LanguageController().UpdateConfig("language", "en");
+            Application.Restart();
+        }
     }
 }

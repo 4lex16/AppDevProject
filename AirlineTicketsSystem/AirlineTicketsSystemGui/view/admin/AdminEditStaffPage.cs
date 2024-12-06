@@ -16,17 +16,16 @@ namespace AirlineTicketsSystemGui
 
         private void AdminEditStaffPage_Load(object sender, EventArgs e)
         {
-            EmailTb.Text = Staff.Email;
-            PasswordTb.Text = Staff.Password;
+            StaffIDTb.Text = Staff.Email;
+            NewStaffEmailTb.Text = Staff.Password;
         }
-
 
         private void EditButton_Click(object sender, EventArgs e)
         {
-            string email = EmailTb.Text;
-            string password = PasswordTb.Text;
-            //TODO: Change Staff Information
-            this.Close();
+            if (StaffIDTb.Text != null && NewStaffPasswordTb.Text != null && NewStaffEmailTb.Text != null) 
+            {
+                DatabaseController.UpdateStaffRecord(int.Parse(StaffIDTb.Text), NewStaffEmailTb.Text, NewStaffPasswordTb.Text);
+            }
         }
 
         private void CancelButton_Click(object sender, EventArgs e)

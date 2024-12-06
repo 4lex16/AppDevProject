@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SQLite;
 using System.IO;
+using System.Windows.Forms;
 using AirlineTicketsSystemGui.model;
 using Microsoft.Data.Sqlite;
 
@@ -248,6 +249,51 @@ namespace AirlineTicketsSystemGui.controller
                 }
             }
         }
+
+        public static void UpdateStaffRecord(int staffId, string email, string password)
+        {
+            if (!File.Exists(dbFilePath))
+            {
+                SQLiteConnection.CreateFile(dbFilePath);
+            }
+
+            using (var connection = new SQLiteConnection(DatabaseFileName))
+            {
+                connection.Open();
+
+                // Check if the record exists
+                string checkQuery = "SELECT COUNT(1) FROM staff WHERE staff_id = @staffId";
+                using (var checkCommand = new SQLiteCommand(checkQuery, connection))
+                {
+                    checkCommand.Parameters.AddWithValue("@staffId", staffId);
+                    long recordExists = (long)checkCommand.ExecuteScalar();
+
+                    if (recordExists == 0)
+                    {
+                        MessageBox.Show($"No staff record found with StaffID {staffId}");
+                        return;
+                    }
+                }
+
+                // Update the record if it exists
+                string updateQuery =
+                @"
+                    UPDATE staff
+                    SET email = @newEmail, password = @newPassword
+                    WHERE staff_id = @staffId;
+                ";
+
+                using (var command = new SQLiteCommand(updateQuery, connection))
+                {
+                    command.Parameters.AddWithValue("@staffId", staffId);
+                    command.Parameters.AddWithValue("@newEmail", email);
+                    command.Parameters.AddWithValue("@newPassword", password);
+                    command.ExecuteNonQuery();
+                }
+                MessageBox.Show("Staff Information Successfuly Changed");
+            }
+        }
+
 
         public static void InsertStaffRecord(Staff staff)
         {

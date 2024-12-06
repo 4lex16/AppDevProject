@@ -74,16 +74,6 @@ namespace AirlineTicketsSystemGui
             MessageBox.Show("This page is to view all the flights and passengers");
         }
 
-        private void passengerListToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            tabs.SelectedIndex = 1;
-        }
-
-        private void flightListToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            tabs.SelectedIndex = 0;
-        }
-
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new LoginPage().Show();
@@ -208,6 +198,32 @@ namespace AirlineTicketsSystemGui
             else
             {
                 FlightListBox.Items.AddRange(flights.ToArray());
+            }
+        }
+
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show("This will log you out " +
+                                             "and restart the application",
+                "Are you sure?",
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (r == DialogResult.OK)
+            {
+                new LanguageController().UpdateConfig("language", "en");
+                Application.Restart();
+            }
+        }
+
+        private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DialogResult r = MessageBox.Show("This will log you out " +
+                                             "and restart the application",
+                "Are you sure?",
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (r == DialogResult.OK)
+            {
+                new LanguageController().UpdateConfig("language", "fr-CA");
+                Application.Restart();
             }
         }
     }

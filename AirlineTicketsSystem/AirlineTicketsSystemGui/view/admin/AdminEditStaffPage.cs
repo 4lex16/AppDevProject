@@ -47,17 +47,28 @@ namespace AirlineTicketsSystemGui
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AirlineTicketSystemController.NotImplementedMb();
+            DialogResult r = MessageBox.Show("This will log you out " +
+                                             "and restart the application",
+                "Are you sure?",
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (r == DialogResult.OK)
+            {
+                new LanguageController().UpdateConfig("language", "en");
+                Application.Restart();
+            }
         }
 
         private void frenchToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AirlineTicketSystemController.NotImplementedMb();
-        }
-
-        private void spanishToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            AirlineTicketSystemController.NotImplementedMb();
+            DialogResult r = MessageBox.Show("This will log you out " +
+                                             "and restart the application",
+                "Are you sure?",
+                MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (r == DialogResult.OK)
+            {
+                new LanguageController().UpdateConfig("language", "fr-CA");
+                Application.Restart();
+            }
         }
     }
 }

@@ -117,7 +117,844 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>448, 553</value>
+  </data>
+  <data name="&gt;&gt;DateTb.Name" xml:space="preserve">
+    <value>DateTb</value>
+  </data>
+  <data name="&gt;&gt;CancelButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="DateTb.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;frenchToolStripMenuItem.Name" xml:space="preserve">
+    <value>frenchToolStripMenuItem</value>
+  </data>
+  <data name="BusinessClassTb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 23</value>
+  </data>
+  <data name="&gt;&gt;FirstClassTb.Parent" xml:space="preserve">
+    <value>FlightDetailsGb</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
+    <value>F&amp;rançais</value>
+  </data>
+  <data name="TimeLabel.Text" xml:space="preserve">
+    <value>Time :</value>
+  </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ticketListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
+  </data>
+  <data name="CardNumberLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;CoachClassTb.Name" xml:space="preserve">
+    <value>CoachClassTb</value>
+  </data>
+  <data name="SeatTypeCb.Items1" xml:space="preserve">
+    <value>Business Class</value>
+  </data>
+  <data name="&gt;&gt;BusinessClassLabel.Name" xml:space="preserve">
+    <value>BusinessClassLabel</value>
+  </data>
+  <data name="&gt;&gt;FlightDetailsGb.Name" xml:space="preserve">
+    <value>FlightDetailsGb</value>
+  </data>
+  <data name="PassengerMenuStrip.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>E&amp;nglish</value>
+  </data>
+  <data name="&gt;&gt;SeatTypeCb.Parent" xml:space="preserve">
+    <value>InformationGroupBox</value>
+  </data>
+  <data name="DateLabel.Text" xml:space="preserve">
+    <value>Date :</value>
+  </data>
+  <data name="SeatTypeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;TimeLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DateTb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="DateTb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 23</value>
+  </data>
+  <data name="CoachClassLabel.Text" xml:space="preserve">
+    <value>Coach Class Available Seats:</value>
+  </data>
+  <data name="FirstClassTb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="&gt;&gt;TimeLabel.Name" xml:space="preserve">
+    <value>TimeLabel</value>
+  </data>
+  <data name="InformationGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 287</value>
+  </data>
+  <data name="logOutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 22</value>
+  </data>
+  <data name="FlightDetailsGb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;DestinationLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FirstClassTb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
+  </data>
+  <data name="FirstClassLabel.Text" xml:space="preserve">
+    <value>First Class Available Seats:</value>
+  </data>
+  <data name="CvvCvcLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 36</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>431, 31</value>
+  </data>
+  <data name="&gt;&gt;FlightDetailsGb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TimeLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;DestinationLabel.Name" xml:space="preserve">
+    <value>DestinationLabel</value>
+  </data>
+  <data name="&gt;&gt;BuyButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="InformationGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;CoachClassLabel.Name" xml:space="preserve">
+    <value>CoachClassLabel</value>
+  </data>
+  <data name="&gt;&gt;CvvCvcTb.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;CoachClassLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;FlightDetailsGb.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DestinationTb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DestinationTb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 27</value>
+  </data>
+  <data name="&gt;&gt;TimeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FlightDetailsGb.Text" xml:space="preserve">
+    <value>Flight Details</value>
+  </data>
+  <data name="&gt;&gt;CvvCvcLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BusinessClassLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CoachClassLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="DateTb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 63</value>
+  </data>
+  <data name="CancelButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;TimeTb.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 22</value>
+  </data>
+  <data name="&gt;&gt;DateLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 22</value>
+  </data>
+  <data name="&gt;&gt;CancelButton.Name" xml:space="preserve">
+    <value>CancelButton</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PassengerBuyTicketPage</value>
+  </data>
+  <data name="SeatTypeLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="CancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 506</value>
+  </data>
+  <data name="&gt;&gt;BuyButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ExpirationDateTb.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;DestinationLabel.Parent" xml:space="preserve">
+    <value>FlightDetailsGb</value>
+  </data>
+  <data name="FirstClassLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="CardNumberLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 77</value>
+  </data>
+  <data name="ticketListToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Ticket List</value>
+  </data>
+  <data name="&gt;&gt;TimeTb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ExpirationDateTb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DestinationLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="accountToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Account</value>
+  </data>
+  <data name="DestinationTb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 23</value>
+  </data>
+  <data name="CoachClassTb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="&gt;&gt;FirstClassTb.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;CoachClassLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BusinessClassLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;SeatTypeCb.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CardNumberTb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="&gt;&gt;FirstClassLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="TimeTb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="CoachClassLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;FirstClassTb.Name" xml:space="preserve">
+    <value>FirstClassTb</value>
+  </data>
+  <data name="TimeTb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>315, 23</value>
+  </data>
+  <data name="&gt;&gt;FirstClassLabel.Name" xml:space="preserve">
+    <value>FirstClassLabel</value>
+  </data>
+  <data name="&gt;&gt;DestinationTb.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ExpirationDateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 106</value>
+  </data>
+  <data name="CvvCvcTb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 143</value>
+  </data>
+  <data name="&gt;&gt;CardNumberLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Name" xml:space="preserve">
+    <value>exitToolStripMenuItem</value>
+  </data>
+  <data name="TimeTb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 99</value>
+  </data>
+  <data name="&gt;&gt;accountToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="SeatTypeCb.Items" xml:space="preserve">
+    <value>First Class</value>
+  </data>
+  <data name="DateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 55</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="CancelButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;CancelButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SeatTypeLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Name" xml:space="preserve">
+    <value>englishToolStripMenuItem</value>
+  </data>
+  <data name="InformationGroupBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="FirstClassTb.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="FirstClassLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 129</value>
+  </data>
+  <data name="CoachClassTb.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="SeatTypeCb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 55</value>
+  </data>
+  <data name="&gt;&gt;TimeTb.Name" xml:space="preserve">
+    <value>TimeTb</value>
+  </data>
+  <data name="&gt;&gt;CoachClassLabel.Parent" xml:space="preserve">
+    <value>FlightDetailsGb</value>
+  </data>
+  <data name="BuyButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="pageToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Page</value>
+  </data>
+  <data name="&gt;&gt;languageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BuyButton.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="BusinessClassLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="CvvCvcLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 135</value>
+  </data>
+  <data name="&gt;&gt;DestinationTb.Parent" xml:space="preserve">
+    <value>FlightDetailsGb</value>
+  </data>
+  <data name="&gt;&gt;ExpirationDateLabel.Name" xml:space="preserve">
+    <value>ExpirationDateLabel</value>
+  </data>
+  <data name="&gt;&gt;BusinessClassTb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FlightDetailsGb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>446, 254</value>
+  </data>
+  <data name="&gt;&gt;frenchToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SeatTypeLabel.Name" xml:space="preserve">
+    <value>SeatTypeLabel</value>
+  </data>
+  <data name="DestinationTb.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="SeatTypeCb.Items2" xml:space="preserve">
+    <value>Coach Class</value>
+  </data>
+  <data name="&gt;&gt;BuyButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="BuyButton.Text" xml:space="preserve">
+    <value>Buy</value>
+  </data>
+  <data name="InformationGroupBox.Text" xml:space="preserve">
+    <value>Enter Information</value>
+  </data>
+  <data name="&gt;&gt;BusinessClassTb.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;SeatTypeCb.Name" xml:space="preserve">
+    <value>SeatTypeCb</value>
+  </data>
+  <data name="&gt;&gt;pageToolStripMenuItem.Name" xml:space="preserve">
+    <value>pageToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;BusinessClassLabel.Parent" xml:space="preserve">
+    <value>FlightDetailsGb</value>
+  </data>
+  <data name="CancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;CvvCvcLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="CvvCvcTb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>303, 23</value>
+  </data>
+  <data name="SeatTypeCb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>431, 24</value>
+  </data>
+  <data name="SeatTypeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>431, 36</value>
+  </data>
+  <data name="&gt;&gt;CvvCvcTb.Name" xml:space="preserve">
+    <value>CvvCvcTb</value>
+  </data>
+  <data name="&gt;&gt;DestinationLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="CoachClassLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>224, 36</value>
+  </data>
+  <data name="TimeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 36</value>
+  </data>
+  <data name="&gt;&gt;FlightDetailsGb.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BusinessClassLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>248, 36</value>
+  </data>
+  <data name="&gt;&gt;BusinessClassTb.Parent" xml:space="preserve">
+    <value>FlightDetailsGb</value>
+  </data>
+  <data name="flightListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
+  </data>
+  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
+  </data>
+  <data name="&gt;&gt;BusinessClassTb.Name" xml:space="preserve">
+    <value>BusinessClassTb</value>
+  </data>
+  <data name="FirstClassTb.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="BusinessClassLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 168</value>
+  </data>
+  <data name="ExpirationDateTb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>303, 23</value>
+  </data>
+  <data name="CoachClassLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;CoachClassTb.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;logOutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DateLabel.Parent" xml:space="preserve">
+    <value>FlightDetailsGb</value>
+  </data>
+  <data name="&gt;&gt;DestinationTb.Name" xml:space="preserve">
+    <value>DestinationTb</value>
+  </data>
+  <data name="FlightDetailsGb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 27</value>
+  </data>
+  <data name="BusinessClassTb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 176</value>
+  </data>
+  <data name="ExpirationDateTb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="&gt;&gt;DateLabel.Name" xml:space="preserve">
+    <value>DateLabel</value>
+  </data>
+  <data name="TimeLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="CvvCvcLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;DateTb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CvvCvcTb.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="ExpirationDateLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="DateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 36</value>
+  </data>
+  <data name="InformationGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>448, 176</value>
+  </data>
+  <data name="&gt;&gt;SeatTypeLabel.Parent" xml:space="preserve">
+    <value>InformationGroupBox</value>
+  </data>
+  <data name="DestinationLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 36</value>
+  </data>
+  <data name="BuyButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 469</value>
+  </data>
+  <data name="&gt;&gt;DateLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;ExpirationDateTb.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="DestinationLabel.Text" xml:space="preserve">
+    <value>Destination :</value>
+  </data>
+  <data name="&gt;&gt;CancelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CvvCvcLabel.Parent" xml:space="preserve">
+    <value>InformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;aboutToolStripMenuItem.Name" xml:space="preserve">
+    <value>aboutToolStripMenuItem</value>
+  </data>
+  <data name="DestinationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 19</value>
+  </data>
+  <data name="&gt;&gt;ticketListToolStripMenuItem.Name" xml:space="preserve">
+    <value>ticketListToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;logOutToolStripMenuItem.Name" xml:space="preserve">
+    <value>logOutToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;PassengerMenuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ticketListToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DestinationLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;PassengerMenuStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PassengerMenuStrip.Name" xml:space="preserve">
+    <value>PassengerMenuStrip</value>
+  </data>
+  <data name="&gt;&gt;BusinessClassLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="DestinationLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;CvvCvcTb.Parent" xml:space="preserve">
+    <value>InformationGroupBox</value>
+  </data>
+  <data name="ExpirationDateLabel.Text" xml:space="preserve">
+    <value>Expiration Date</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>PassengerBuyPage</value>
+  </data>
+  <data name="FirstClassTb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 137</value>
+  </data>
+  <data name="flightListToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Flight List</value>
+  </data>
+  <data name="&gt;&gt;FirstClassLabel.Parent" xml:space="preserve">
+    <value>FlightDetailsGb</value>
+  </data>
+  <data name="SeatTypeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 16</value>
+  </data>
+  <data name="TimeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="CancelButton.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;InformationGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CoachClassTb.Parent" xml:space="preserve">
+    <value>FlightDetailsGb</value>
+  </data>
+  <data name="&gt;&gt;accountToolStripMenuItem.Name" xml:space="preserve">
+    <value>accountToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;pageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BusinessClassLabel.Text" xml:space="preserve">
+    <value>Business Class Available Seats:</value>
+  </data>
+  <data name="ExpirationDateLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="DateLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="FirstClassTb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>214, 23</value>
+  </data>
+  <data name="BusinessClassTb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="CoachClassLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 207</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Exit</value>
+  </data>
+  <data name="CvvCvcTb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="PassengerMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>448, 24</value>
+  </data>
+  <data name="&gt;&gt;CardNumberTb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CvvCvcLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="SeatTypeLabel.Text" xml:space="preserve">
+    <value>Select Seat Type :</value>
+  </data>
+  <data name="&gt;&gt;DateTb.Parent" xml:space="preserve">
+    <value>FlightDetailsGb</value>
+  </data>
+  <data name="PassengerMenuStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="BuyButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;InformationGroupBox.Name" xml:space="preserve">
+    <value>InformationGroupBox</value>
+  </data>
+  <data name="ExpirationDateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 36</value>
+  </data>
+  <data name="CvvCvcLabel.Text" xml:space="preserve">
+    <value>CVV/CVC :</value>
+  </data>
+  <data name="CardNumberTb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>303, 23</value>
+  </data>
+  <data name="TimeTb.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;InformationGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TimeTb.Parent" xml:space="preserve">
+    <value>FlightDetailsGb</value>
+  </data>
+  <data name="BusinessClassTb.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="PassengerMenuStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="FirstClassLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 39</value>
+  </data>
+  <data name="&gt;&gt;flightListToolStripMenuItem.Name" xml:space="preserve">
+    <value>flightListToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;SeatTypeLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CardNumberTb.Parent" xml:space="preserve">
+    <value>InformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ExpirationDateTb.Parent" xml:space="preserve">
+    <value>InformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;CardNumberTb.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;CardNumberLabel.Parent" xml:space="preserve">
+    <value>InformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;CardNumberLabel.Name" xml:space="preserve">
+    <value>CardNumberLabel</value>
+  </data>
+  <data name="CardNumberLabel.Text" xml:space="preserve">
+    <value>Card Number :</value>
+  </data>
+  <data name="BusinessClassTb.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;ExpirationDateLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CardNumberLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="BuyButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>431, 31</value>
+  </data>
+  <data name="&gt;&gt;CvvCvcLabel.Name" xml:space="preserve">
+    <value>CvvCvcLabel</value>
+  </data>
+  <data name="&gt;&gt;FirstClassLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SeatTypeCb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TimeLabel.Parent" xml:space="preserve">
+    <value>FlightDetailsGb</value>
+  </data>
+  <data name="&gt;&gt;flightListToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;InformationGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="accountToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 20</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DestinationTb.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="&gt;&gt;BuyButton.Name" xml:space="preserve">
+    <value>BuyButton</value>
+  </data>
+  <data name="CoachClassTb.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;CvvCvcTb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CoachClassTb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>242, 215</value>
+  </data>
+  <data name="ExpirationDateTb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 114</value>
+  </data>
+  <data name="CardNumberTb.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="logOutToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Log Out</value>
+  </data>
+  <data name="BusinessClassLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;CardNumberLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CardNumberTb.Name" xml:space="preserve">
+    <value>CardNumberTb</value>
+  </data>
+  <data name="CoachClassTb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>201, 23</value>
+  </data>
+  <data name="CvvCvcLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;languageToolStripMenuItem.Name" xml:space="preserve">
+    <value>languageToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;ExpirationDateTb.Name" xml:space="preserve">
+    <value>ExpirationDateTb</value>
+  </data>
+  <data name="DateLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="CardNumberLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="ExpirationDateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="FirstClassLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;CoachClassTb.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>A&amp;bout</value>
+  </data>
+  <data name="SeatTypeCb.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;DateTb.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;ExpirationDateLabel.Parent" xml:space="preserve">
+    <value>InformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;SeatTypeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ExpirationDateLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="FirstClassLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="TimeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 91</value>
+  </data>
+  <data name="CardNumberLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 36</value>
+  </data>
+  <data name="FlightDetailsGb.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Language</value>
+  </data>
+  <data name="CardNumberTb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 85</value>
+  </data>
+  <data name="&gt;&gt;PassengerMenuStrip.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <metadata name="PassengerMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>fr-CA</value>
   </metadata>
 </root>

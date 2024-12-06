@@ -31,6 +31,7 @@ namespace AirlineTicketsSystemGui
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminAddFlightPage));
             this.DestinationLabel = new System.Windows.Forms.Label();
             this.DestinationTb = new System.Windows.Forms.TextBox();
             this.AddButton = new System.Windows.Forms.Button();
@@ -53,9 +54,8 @@ namespace AirlineTicketsSystemGui
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.spanishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.HourNup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinuteNup)).BeginInit();
             this.AddFlightMenuStrip.SuspendLayout();
@@ -63,177 +63,95 @@ namespace AirlineTicketsSystemGui
             // 
             // DestinationLabel
             // 
-            this.DestinationLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DestinationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DestinationLabel.Location = new System.Drawing.Point(12, 24);
+            resources.ApplyResources(this.DestinationLabel, "DestinationLabel");
             this.DestinationLabel.Name = "DestinationLabel";
-            this.DestinationLabel.Size = new System.Drawing.Size(397, 23);
-            this.DestinationLabel.TabIndex = 0;
-            this.DestinationLabel.Text = "Destination";
-            this.DestinationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // DestinationTb
             // 
-            this.DestinationTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.DestinationTb, "DestinationTb");
             this.DestinationTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.DestinationTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DestinationTb.Location = new System.Drawing.Point(12, 50);
             this.DestinationTb.Name = "DestinationTb";
-            this.DestinationTb.Size = new System.Drawing.Size(397, 23);
-            this.DestinationTb.TabIndex = 1;
             // 
             // AddButton
             // 
-            this.AddButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.AddButton, "AddButton");
             this.AddButton.BackColor = System.Drawing.SystemColors.Window;
-            this.AddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.AddButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddButton.Location = new System.Drawing.Point(12, 278);
             this.AddButton.Name = "AddButton";
-            this.AddButton.Size = new System.Drawing.Size(397, 35);
-            this.AddButton.TabIndex = 2;
-            this.AddButton.Text = "Add";
             this.AddButton.UseVisualStyleBackColor = false;
             this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // DateLabel
             // 
-            this.DateLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateLabel.Location = new System.Drawing.Point(12, 76);
+            resources.ApplyResources(this.DateLabel, "DateLabel");
             this.DateLabel.Name = "DateLabel";
-            this.DateLabel.Size = new System.Drawing.Size(397, 23);
-            this.DateLabel.TabIndex = 4;
-            this.DateLabel.Text = "Departure Date";
-            this.DateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // DateDp
             // 
-            this.DateDp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.DateDp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateDp.Location = new System.Drawing.Point(12, 102);
+            resources.ApplyResources(this.DateDp, "DateDp");
             this.DateDp.Name = "DateDp";
-            this.DateDp.Size = new System.Drawing.Size(397, 23);
-            this.DateDp.TabIndex = 5;
             // 
             // TimeLabel
             // 
-            this.TimeLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TimeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TimeLabel.Location = new System.Drawing.Point(230, 139);
+            resources.ApplyResources(this.TimeLabel, "TimeLabel");
             this.TimeLabel.Name = "TimeLabel";
-            this.TimeLabel.Size = new System.Drawing.Size(179, 23);
-            this.TimeLabel.TabIndex = 6;
-            this.TimeLabel.Text = "Departure Time";
-            this.TimeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // HourLabel
             // 
-            this.HourLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HourLabel.Location = new System.Drawing.Point(231, 175);
+            resources.ApplyResources(this.HourLabel, "HourLabel");
             this.HourLabel.Name = "HourLabel";
-            this.HourLabel.Size = new System.Drawing.Size(80, 23);
-            this.HourLabel.TabIndex = 10;
-            this.HourLabel.Text = "Hour :";
-            this.HourLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // MinuteLabel
             // 
-            this.MinuteLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MinuteLabel.Location = new System.Drawing.Point(230, 206);
+            resources.ApplyResources(this.MinuteLabel, "MinuteLabel");
             this.MinuteLabel.Name = "MinuteLabel";
-            this.MinuteLabel.Size = new System.Drawing.Size(80, 23);
-            this.MinuteLabel.TabIndex = 11;
-            this.MinuteLabel.Text = "Minute :";
-            this.MinuteLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FirstCTb
             // 
+            resources.ApplyResources(this.FirstCTb, "FirstCTb");
             this.FirstCTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FirstCTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstCTb.Location = new System.Drawing.Point(125, 176);
             this.FirstCTb.Name = "FirstCTb";
-            this.FirstCTb.Size = new System.Drawing.Size(101, 23);
-            this.FirstCTb.TabIndex = 14;
             // 
             // SeatsLabel
             // 
-            this.SeatsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SeatsLabel.Location = new System.Drawing.Point(12, 139);
+            resources.ApplyResources(this.SeatsLabel, "SeatsLabel");
             this.SeatsLabel.Name = "SeatsLabel";
-            this.SeatsLabel.Size = new System.Drawing.Size(212, 23);
-            this.SeatsLabel.TabIndex = 13;
-            this.SeatsLabel.Text = "Seats";
-            this.SeatsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // BusinessCTb
             // 
+            resources.ApplyResources(this.BusinessCTb, "BusinessCTb");
             this.BusinessCTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BusinessCTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BusinessCTb.Location = new System.Drawing.Point(125, 205);
             this.BusinessCTb.Name = "BusinessCTb";
-            this.BusinessCTb.Size = new System.Drawing.Size(101, 23);
-            this.BusinessCTb.TabIndex = 15;
             // 
             // CoachCTb
             // 
+            resources.ApplyResources(this.CoachCTb, "CoachCTb");
             this.CoachCTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.CoachCTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CoachCTb.Location = new System.Drawing.Point(125, 236);
             this.CoachCTb.Name = "CoachCTb";
-            this.CoachCTb.Size = new System.Drawing.Size(101, 23);
-            this.CoachCTb.TabIndex = 16;
             // 
             // CoachCLabel
             // 
-            this.CoachCLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CoachCLabel.Location = new System.Drawing.Point(12, 235);
+            resources.ApplyResources(this.CoachCLabel, "CoachCLabel");
             this.CoachCLabel.Name = "CoachCLabel";
-            this.CoachCLabel.Size = new System.Drawing.Size(107, 23);
-            this.CoachCLabel.TabIndex = 19;
-            this.CoachCLabel.Text = "Coach C. :";
-            this.CoachCLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // BuisnessCLabel
             // 
-            this.BuisnessCLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuisnessCLabel.Location = new System.Drawing.Point(12, 206);
+            resources.ApplyResources(this.BuisnessCLabel, "BuisnessCLabel");
             this.BuisnessCLabel.Name = "BuisnessCLabel";
-            this.BuisnessCLabel.Size = new System.Drawing.Size(107, 23);
-            this.BuisnessCLabel.TabIndex = 18;
-            this.BuisnessCLabel.Text = "Business C. :";
-            this.BuisnessCLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FirstCLabel
             // 
-            this.FirstCLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstCLabel.Location = new System.Drawing.Point(12, 175);
+            resources.ApplyResources(this.FirstCLabel, "FirstCLabel");
             this.FirstCLabel.Name = "FirstCLabel";
-            this.FirstCLabel.Size = new System.Drawing.Size(107, 23);
-            this.FirstCLabel.TabIndex = 17;
-            this.FirstCLabel.Text = "First C. :";
-            this.FirstCLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // HourNup
             // 
-            this.HourNup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.HourNup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HourNup.Location = new System.Drawing.Point(316, 176);
+            resources.ApplyResources(this.HourNup, "HourNup");
             this.HourNup.Maximum = new decimal(new int[] {
             23,
             0,
             0,
             0});
             this.HourNup.Name = "HourNup";
-            this.HourNup.Size = new System.Drawing.Size(93, 23);
-            this.HourNup.TabIndex = 20;
             this.HourNup.Value = new decimal(new int[] {
             12,
             0,
@@ -242,89 +160,66 @@ namespace AirlineTicketsSystemGui
             // 
             // MinuteNup
             // 
-            this.MinuteNup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.MinuteNup.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MinuteNup.Location = new System.Drawing.Point(316, 205);
+            resources.ApplyResources(this.MinuteNup, "MinuteNup");
             this.MinuteNup.Maximum = new decimal(new int[] {
             59,
             0,
             0,
             0});
             this.MinuteNup.Name = "MinuteNup";
-            this.MinuteNup.Size = new System.Drawing.Size(93, 23);
-            this.MinuteNup.TabIndex = 21;
             // 
             // AddFlightMenuStrip
             // 
+            resources.ApplyResources(this.AddFlightMenuStrip, "AddFlightMenuStrip");
             this.AddFlightMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pageToolStripMenuItem,
             this.languageToolStripMenuItem});
-            this.AddFlightMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.AddFlightMenuStrip.Name = "AddFlightMenuStrip";
-            this.AddFlightMenuStrip.Size = new System.Drawing.Size(418, 24);
-            this.AddFlightMenuStrip.TabIndex = 22;
-            this.AddFlightMenuStrip.Text = "menuStrip1";
             // 
             // pageToolStripMenuItem
             // 
+            resources.ApplyResources(this.pageToolStripMenuItem, "pageToolStripMenuItem");
             this.pageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.pageToolStripMenuItem.Name = "pageToolStripMenuItem";
-            this.pageToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
-            this.pageToolStripMenuItem.Text = "&Page";
             // 
             // aboutToolStripMenuItem
             // 
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.aboutToolStripMenuItem.Text = "A&bout";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
+            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
-            this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // languageToolStripMenuItem
             // 
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.englishToolStripMenuItem,
-            this.frenchToolStripMenuItem,
-            this.spanishToolStripMenuItem});
+            this.frenchToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-            this.languageToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.languageToolStripMenuItem.Text = "&Language";
-            // 
-            // frenchToolStripMenuItem
-            // 
-            this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.frenchToolStripMenuItem.Text = "F&rançais";
-            this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
             // 
             // englishToolStripMenuItem
             // 
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.englishToolStripMenuItem.Text = "E&nglish";
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
-            // spanishToolStripMenuItem
+            // frenchToolStripMenuItem
             // 
-            this.spanishToolStripMenuItem.Name = "spanishToolStripMenuItem";
-            this.spanishToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.spanishToolStripMenuItem.Text = "Spanish";
-            this.spanishToolStripMenuItem.Click += new System.EventHandler(this.spanishToolStripMenuItem_Click);
+            resources.ApplyResources(this.frenchToolStripMenuItem, "frenchToolStripMenuItem");
+            this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
+            this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
             // 
             // AdminAddFlightPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(418, 321);
             this.Controls.Add(this.AddFlightMenuStrip);
             this.Controls.Add(this.MinuteNup);
             this.Controls.Add(this.HourNup);
@@ -344,7 +239,6 @@ namespace AirlineTicketsSystemGui
             this.Controls.Add(this.DestinationTb);
             this.Controls.Add(this.DestinationLabel);
             this.Name = "AdminAddFlightPage";
-            this.Text = "Add Flight";
             ((System.ComponentModel.ISupportInitialize)(this.HourNup)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinuteNup)).EndInit();
             this.AddFlightMenuStrip.ResumeLayout(false);
@@ -388,7 +282,5 @@ namespace AirlineTicketsSystemGui
         private System.Windows.Forms.Button AddButton;
 
         #endregion
-
-        private System.Windows.Forms.ToolStripMenuItem spanishToolStripMenuItem;
     }
 }

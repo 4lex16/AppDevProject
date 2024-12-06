@@ -117,7 +117,802 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="PassengerListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 65</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PassengerOrderLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="FlightFilterButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;PassengerIdTB.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;frenchToolStripMenuItem.Name" xml:space="preserve">
+    <value>frenchToolStripMenuItem</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="FlightListBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;FlightDestinationTB.Name" xml:space="preserve">
+    <value>FlightDestinationTB</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Text" xml:space="preserve">
+    <value>F&amp;rançais</value>
+  </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FlightDestinationTB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>407, 40</value>
+  </data>
+  <data name="PassengerFilterLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 23</value>
+  </data>
+  <data name="FlightDestinationLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="&gt;&gt;FlightDestinationLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FlightDetailsButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 257</value>
+  </data>
+  <data name="&gt;&gt;FlightIdTB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FlightDestinationLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FlightIdTB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 23</value>
+  </data>
+  <data name="FlightDestinationLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PassengerIdLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 17</value>
+  </data>
+  <data name="&gt;&gt;logoutToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tabs.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FlightIdLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 42</value>
+  </data>
+  <data name="&gt;&gt;PassengerIdButton.Parent" xml:space="preserve">
+    <value>PassengerTab</value>
+  </data>
+  <data name="tabs.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="PassengerUsernameButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>159, 29</value>
+  </data>
+  <data name="&gt;&gt;PassengerIdTB.Parent" xml:space="preserve">
+    <value>PassengerTab</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FlightIdLabel.Name" xml:space="preserve">
+    <value>FlightIdLabel</value>
+  </data>
+  <data name="&gt;&gt;FlightDestinationLabel.Name" xml:space="preserve">
+    <value>FlightDestinationLabel</value>
+  </data>
+  <data name="&gt;&gt;PassengerListBox.Parent" xml:space="preserve">
+    <value>PassengerTab</value>
+  </data>
+  <data name="&gt;&gt;FlightDetailsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PassengerUsernameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 17</value>
+  </data>
+  <data name="&gt;&gt;PassengerUsernameLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PassengerOrderLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PassengerDetailsButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PassengerIdTB.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="&gt;&gt;PassengerUsernameButton.Parent" xml:space="preserve">
+    <value>PassengerTab</value>
+  </data>
+  <data name="&gt;&gt;PassengerUsernameLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;PassengerTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PassengerFilterLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PassengerIdButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="tabs.Appearance" type="System.Windows.Forms.TabAppearance, System.Windows.Forms">
+    <value>Buttons</value>
+  </data>
+  <data name="PassengerUsernameLabel.Text" xml:space="preserve">
+    <value>Passenger name</value>
+  </data>
+  <data name="FlightIdButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;PassengerIdButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;tabs.Name" xml:space="preserve">
+    <value>tabs</value>
+  </data>
+  <data name="FlightIdButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;FlightOrderLabel.Parent" xml:space="preserve">
+    <value>FlightTab</value>
+  </data>
+  <data name="PassengerTab.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>StaffPage</value>
+  </data>
+  <data name="FlightDestinationTB.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;PassengerUsernameTB.Parent" xml:space="preserve">
+    <value>PassengerTab</value>
+  </data>
+  <data name="tabs.Size" type="System.Drawing.Size, System.Drawing">
+    <value>642, 334</value>
+  </data>
+  <data name="PassengerUsernameButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 6</value>
+  </data>
+  <data name="PassengerUsernameButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="&gt;&gt;PassengerIdTB.Name" xml:space="preserve">
+    <value>PassengerIdTB</value>
+  </data>
+  <data name="&gt;&gt;PassengerUsernameButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="FlightIdLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FlightIdLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="PassengerListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;PassengerUsernameButton.Name" xml:space="preserve">
+    <value>PassengerUsernameButton</value>
+  </data>
+  <data name="PassengerDetailsButton.Text" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="PassengerUsernameTB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>431, 40</value>
+  </data>
+  <data name="PassengerUsernameButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;PassengerListBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;pageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FlightListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 65</value>
+  </data>
+  <data name="FlightTab.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;FlightListBox.Parent" xml:space="preserve">
+    <value>FlightTab</value>
+  </data>
+  <data name="&gt;&gt;FlightListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FlightDestinationButton.Name" xml:space="preserve">
+    <value>FlightDestinationButton</value>
+  </data>
+  <data name="PassengerOrderLabel.Text" xml:space="preserve">
+    <value>Order By :</value>
+  </data>
+  <data name="PassengerIdButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 6</value>
+  </data>
+  <data name="FlightFilterButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="StaffMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>666, 24</value>
+  </data>
+  <data name="&gt;&gt;PassengerDetailsButton.Name" xml:space="preserve">
+    <value>PassengerDetailsButton</value>
+  </data>
+  <data name="PassengerIdLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PassengerUsernameLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="FlightDestinationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>301, 42</value>
+  </data>
+  <data name="FlightDestinationLabel.Text" xml:space="preserve">
+    <value>Destination :</value>
+  </data>
+  <data name="&gt;&gt;exitToolStripMenuItem.Name" xml:space="preserve">
+    <value>exitToolStripMenuItem</value>
+  </data>
+  <data name="FlightIdButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 6</value>
+  </data>
+  <data name="FlightTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;FlightIdLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="StaffMenuStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="FlightListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="FlightTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="&gt;&gt;PassengerFilterLabel.Name" xml:space="preserve">
+    <value>PassengerFilterLabel</value>
+  </data>
+  <data name="&gt;&gt;englishToolStripMenuItem.Name" xml:space="preserve">
+    <value>englishToolStripMenuItem</value>
+  </data>
+  <data name="tabs.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="PassengerFilterLabel.Text" xml:space="preserve">
+    <value>Filter By :</value>
+  </data>
+  <data name="&gt;&gt;PassengerDetailsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StaffMenuStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FlightFilterButton.Name" xml:space="preserve">
+    <value>FlightFilterButton</value>
+  </data>
+  <data name="FlightDestinationTB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 23</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Staff Page</value>
+  </data>
+  <data name="pageToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Page</value>
+  </data>
+  <data name="&gt;&gt;languageToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;frenchToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PassengerIdLabel.Text" xml:space="preserve">
+    <value>ID :</value>
+  </data>
+  <data name="PassengerIdButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 29</value>
+  </data>
+  <data name="StaffMenuStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="FlightOrderLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="PassengerUsernameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;FlightDestinationTB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PassengerUsernameTB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>156, 23</value>
+  </data>
+  <data name="FlightIdTB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 40</value>
+  </data>
+  <data name="&gt;&gt;FlightDestinationLabel.Parent" xml:space="preserve">
+    <value>FlightTab</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;FlightTab.Name" xml:space="preserve">
+    <value>FlightTab</value>
+  </data>
+  <data name="FlightDestinationTB.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="FlightIdButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 29</value>
+  </data>
+  <data name="PassengerFilterLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="PassengerTab.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="FlightDetailsButton.Text" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="FlightDestinationButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="FlightDestinationButton.Text" xml:space="preserve">
+    <value>Destination</value>
+  </data>
+  <data name="FlightDetailsButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;FlightDestinationTB.Parent" xml:space="preserve">
+    <value>FlightTab</value>
+  </data>
+  <data name="FlightDestinationButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="PassengerListBox.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;logoutToolStripMenuItem.Name" xml:space="preserve">
+    <value>logoutToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;FlightIdLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PassengerFilterLabel.Parent" xml:space="preserve">
+    <value>PassengerTab</value>
+  </data>
+  <data name="&gt;&gt;PassengerIdLabel.Name" xml:space="preserve">
+    <value>PassengerIdLabel</value>
+  </data>
+  <data name="&gt;&gt;FlightListBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;FlightIdButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;PassengerUsernameTB.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PassengerIdLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="PassengerIdButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="PassengerTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;PassengerUsernameTB.Name" xml:space="preserve">
+    <value>PassengerUsernameTB</value>
+  </data>
+  <data name="PassengerIdTB.Location" type="System.Drawing.Point, System.Drawing">
+    <value>144, 40</value>
+  </data>
+  <data name="logoutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="PassengerFilterLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;PassengerUsernameLabel.Parent" xml:space="preserve">
+    <value>PassengerTab</value>
+  </data>
+  <data name="&gt;&gt;FlightTab.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PassengerUsernameButton.Text" xml:space="preserve">
+    <value>Passenger Name</value>
+  </data>
+  <data name="&gt;&gt;FlightIdButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="FlightOrderLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="PassengerIdButton.Text" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="PassengerTab.Text" xml:space="preserve">
+    <value>Passenger</value>
+  </data>
+  <data name="&gt;&gt;PassengerOrderLabel.Parent" xml:space="preserve">
+    <value>PassengerTab</value>
+  </data>
+  <data name="&gt;&gt;PassengerListBox.Name" xml:space="preserve">
+    <value>PassengerListBox</value>
+  </data>
+  <data name="FlightIdButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;FlightDestinationButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PassengerFilterLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 39</value>
+  </data>
+  <data name="&gt;&gt;FlightIdLabel.Parent" xml:space="preserve">
+    <value>FlightTab</value>
+  </data>
+  <data name="tabs.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="PassengerFilterLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;PassengerIdLabel.Parent" xml:space="preserve">
+    <value>PassengerTab</value>
+  </data>
+  <data name="FlightListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>622, 180</value>
+  </data>
+  <data name="&gt;&gt;FlightDetailsButton.Parent" xml:space="preserve">
+    <value>FlightTab</value>
+  </data>
+  <data name="FlightDestinationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 29</value>
+  </data>
+  <data name="&gt;&gt;aboutToolStripMenuItem.Name" xml:space="preserve">
+    <value>aboutToolStripMenuItem</value>
+  </data>
+  <data name="FlightOrderLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;FlightIdTB.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="FlightDestinationButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;PassengerFilterLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PassengerIdTB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PassengerUsernameLabel.Name" xml:space="preserve">
+    <value>PassengerUsernameLabel</value>
+  </data>
+  <data name="FlightTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>634, 305</value>
+  </data>
+  <data name="PassengerIdLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>105, 42</value>
+  </data>
+  <data name="PassengerDetailsButton.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;FlightIdTB.Name" xml:space="preserve">
+    <value>FlightIdTB</value>
+  </data>
+  <data name="&gt;&gt;FlightFilterButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;PassengerListBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FlightDetailsButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="FlightOrderLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;FlightTab.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="PassengerOrderLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 23</value>
+  </data>
+  <data name="&gt;&gt;FlightListBox.Name" xml:space="preserve">
+    <value>FlightListBox</value>
+  </data>
+  <data name="&gt;&gt;PassengerIdButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>666, 373</value>
+  </data>
+  <data name="&gt;&gt;FlightFilterButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="logoutToolStripMenuItem.Text" xml:space="preserve">
+    <value>L&amp;ogout</value>
+  </data>
+  <data name="&gt;&gt;PassengerOrderLabel.Name" xml:space="preserve">
+    <value>PassengerOrderLabel</value>
+  </data>
+  <data name="FlightDestinationLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;FlightDestinationButton.Parent" xml:space="preserve">
+    <value>FlightTab</value>
+  </data>
+  <data name="FlightDetailsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 44</value>
+  </data>
+  <data name="FlightTab.Text" xml:space="preserve">
+    <value>Flight</value>
+  </data>
+  <data name="PassengerUsernameTB.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="&gt;&gt;FlightIdButton.Parent" xml:space="preserve">
+    <value>FlightTab</value>
+  </data>
+  <data name="PassengerTab.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="FlightDestinationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 6</value>
+  </data>
+  <data name="PassengerIdTB.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="PassengerOrderLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="FlightIdLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tabs.ItemSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 21</value>
+  </data>
+  <data name="exitToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Exit</value>
+  </data>
+  <data name="&gt;&gt;StaffMenuStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="PassengerDetailsButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 257</value>
+  </data>
+  <data name="&gt;&gt;pageToolStripMenuItem.Name" xml:space="preserve">
+    <value>pageToolStripMenuItem</value>
+  </data>
+  <data name="FlightIdLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 17</value>
+  </data>
+  <data name="FlightFilterButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 39</value>
+  </data>
+  <data name="&gt;&gt;FlightFilterButton.Parent" xml:space="preserve">
+    <value>FlightTab</value>
+  </data>
+  <data name="&gt;&gt;FlightOrderLabel.Name" xml:space="preserve">
+    <value>FlightOrderLabel</value>
+  </data>
+  <data name="&gt;&gt;PassengerIdLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FlightIdTB.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="StaffMenuStrip.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="PassengerDetailsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 44</value>
+  </data>
+  <data name="languageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 20</value>
+  </data>
+  <data name="FlightDestinationTB.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
+  <data name="FlightFilterButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 23</value>
+  </data>
+  <data name="PassengerOrderLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="FlightIdButton.Text" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="&gt;&gt;tabs.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;FlightOrderLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tabs.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FlightDetailsButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PassengerIdLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tabs.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 27</value>
+  </data>
+  <data name="FlightOrderLabel.Text" xml:space="preserve">
+    <value>Order By :</value>
+  </data>
+  <data name="PassengerUsernameTB.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;FlightDestinationButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="englishToolStripMenuItem.Text" xml:space="preserve">
+    <value>E&amp;nglish</value>
+  </data>
+  <data name="FlightFilterButton.Text" xml:space="preserve">
+    <value>Filter By :</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;languageToolStripMenuItem.Name" xml:space="preserve">
+    <value>languageToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;FlightDestinationTB.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="PassengerUsernameButton.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;FlightDetailsButton.Name" xml:space="preserve">
+    <value>FlightDetailsButton</value>
+  </data>
+  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>180, 22</value>
+  </data>
+  <data name="PassengerIdLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="PassengerIdButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="FlightListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;PassengerTab.Parent" xml:space="preserve">
+    <value>tabs</value>
+  </data>
+  <data name="PassengerOrderLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="PassengerDetailsButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="aboutToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;About</value>
+  </data>
+  <data name="FlightIdTB.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;PassengerTab.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="PassengerDetailsButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="PassengerTab.Size" type="System.Drawing.Size, System.Drawing">
+    <value>634, 305</value>
+  </data>
+  <data name="PassengerListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>622, 180</value>
+  </data>
+  <data name="&gt;&gt;FlightOrderLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
+  </data>
+  <data name="&gt;&gt;PassengerDetailsButton.Parent" xml:space="preserve">
+    <value>PassengerTab</value>
+  </data>
+  <data name="&gt;&gt;PassengerIdButton.Name" xml:space="preserve">
+    <value>PassengerIdButton</value>
+  </data>
+  <data name="PassengerIdTB.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 23</value>
+  </data>
+  <data name="&gt;&gt;FlightDestinationLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;FlightIdButton.Name" xml:space="preserve">
+    <value>FlightIdButton</value>
+  </data>
+  <data name="FlightDetailsButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;StaffMenuStrip.Name" xml:space="preserve">
+    <value>StaffMenuStrip</value>
+  </data>
+  <data name="PassengerUsernameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;FlightTab.Parent" xml:space="preserve">
+    <value>tabs</value>
+  </data>
+  <data name="&gt;&gt;FlightIdTB.Parent" xml:space="preserve">
+    <value>FlightTab</value>
+  </data>
+  <data name="FlightOrderLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 23</value>
+  </data>
+  <data name="FlightFilterButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;PassengerUsernameTB.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="languageToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Language</value>
+  </data>
+  <data name="&gt;&gt;PassengerTab.Name" xml:space="preserve">
+    <value>PassengerTab</value>
+  </data>
+  <data name="PassengerListBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;PassengerOrderLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;PassengerUsernameButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="PassengerUsernameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 42</value>
+  </data>
+  <data name="FlightIdLabel.Text" xml:space="preserve">
+    <value>ID :</value>
+  </data>
+  <data name="&gt;&gt;StaffMenuStrip.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="StaffMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>fr-CA</value>
   </metadata>
 </root>

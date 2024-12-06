@@ -28,16 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPage));
             this.AdminMenuStrip = new System.Windows.Forms.MenuStrip();
             this.pageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.adminToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logoutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.languageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.englishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.frenchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.spanishToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.StaffTab = new System.Windows.Forms.TabPage();
             this.StaffRemoveButton = new System.Windows.Forms.Button();
@@ -71,106 +70,71 @@
             // 
             // AdminMenuStrip
             // 
+            resources.ApplyResources(this.AdminMenuStrip, "AdminMenuStrip");
             this.AdminMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pageToolStripMenuItem,
-            this.adminToolStripMenuItem,
             this.languageToolStripMenuItem});
-            this.AdminMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.AdminMenuStrip.Name = "AdminMenuStrip";
-            this.AdminMenuStrip.Size = new System.Drawing.Size(586, 24);
-            this.AdminMenuStrip.TabIndex = 5;
-            this.AdminMenuStrip.Text = "menuStrip1";
             // 
             // pageToolStripMenuItem
             // 
+            resources.ApplyResources(this.pageToolStripMenuItem, "pageToolStripMenuItem");
             this.pageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem,
+            this.logoutToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.pageToolStripMenuItem.Name = "pageToolStripMenuItem";
-            this.pageToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
-            this.pageToolStripMenuItem.Text = "&Page";
             // 
             // aboutToolStripMenuItem
             // 
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
-            this.aboutToolStripMenuItem.Text = "A&bout";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // logoutToolStripMenuItem
+            // 
+            resources.ApplyResources(this.logoutToolStripMenuItem, "logoutToolStripMenuItem");
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
+            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
-            this.exitToolStripMenuItem.Text = "&Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // adminToolStripMenuItem
-            // 
-            this.adminToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.logoutToolStripMenuItem1});
-            this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.adminToolStripMenuItem.Text = "&Admin";
-            // 
-            // logoutToolStripMenuItem1
-            // 
-            this.logoutToolStripMenuItem1.Name = "logoutToolStripMenuItem1";
-            this.logoutToolStripMenuItem1.ShortcutKeyDisplayString = "";
-            this.logoutToolStripMenuItem1.Size = new System.Drawing.Size(112, 22);
-            this.logoutToolStripMenuItem1.Text = "&Logout";
-            this.logoutToolStripMenuItem1.Click += new System.EventHandler(this.logoutToolStripMenuItem1_Click);
             // 
             // languageToolStripMenuItem
             // 
+            resources.ApplyResources(this.languageToolStripMenuItem, "languageToolStripMenuItem");
             this.languageToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.englishToolStripMenuItem,
-            this.frenchToolStripMenuItem,
-            this.spanishToolStripMenuItem});
+            this.frenchToolStripMenuItem});
             this.languageToolStripMenuItem.Name = "languageToolStripMenuItem";
-            this.languageToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
-            this.languageToolStripMenuItem.Text = "&Language";
             // 
             // englishToolStripMenuItem
             // 
+            resources.ApplyResources(this.englishToolStripMenuItem, "englishToolStripMenuItem");
             this.englishToolStripMenuItem.Name = "englishToolStripMenuItem";
-            this.englishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.englishToolStripMenuItem.Text = "E&nglish";
             this.englishToolStripMenuItem.Click += new System.EventHandler(this.englishToolStripMenuItem_Click);
             // 
             // frenchToolStripMenuItem
             // 
+            resources.ApplyResources(this.frenchToolStripMenuItem, "frenchToolStripMenuItem");
             this.frenchToolStripMenuItem.Name = "frenchToolStripMenuItem";
-            this.frenchToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.frenchToolStripMenuItem.Text = "F&rançais";
             this.frenchToolStripMenuItem.Click += new System.EventHandler(this.frenchToolStripMenuItem_Click);
-            // 
-            // spanishToolStripMenuItem
-            // 
-            this.spanishToolStripMenuItem.Name = "spanishToolStripMenuItem";
-            this.spanishToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.spanishToolStripMenuItem.Text = "&Spanish";
-            this.spanishToolStripMenuItem.Click += new System.EventHandler(this.spanishToolStripMenuItem_Click);
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Appearance = System.Windows.Forms.TabAppearance.Buttons;
+            resources.ApplyResources(this.tabControl1, "tabControl1");
             this.tabControl1.Controls.Add(this.StaffTab);
             this.tabControl1.Controls.Add(this.FlightTab);
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.ItemSize = new System.Drawing.Size(100, 21);
-            this.tabControl1.Location = new System.Drawing.Point(12, 27);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(562, 335);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
-            this.tabControl1.TabIndex = 6;
             // 
             // StaffTab
             // 
-            this.StaffTab.AutoScroll = true;
+            resources.ApplyResources(this.StaffTab, "StaffTab");
             this.StaffTab.Controls.Add(this.StaffRemoveButton);
             this.StaffTab.Controls.Add(this.StaffEditButton);
             this.StaffTab.Controls.Add(this.StaffAddButton);
@@ -179,115 +143,73 @@
             this.StaffTab.Controls.Add(this.StaffIdLabel);
             this.StaffTab.Controls.Add(this.StaffIdTb);
             this.StaffTab.Controls.Add(this.StaffListBox);
-            this.StaffTab.Location = new System.Drawing.Point(4, 25);
             this.StaffTab.Name = "StaffTab";
-            this.StaffTab.Padding = new System.Windows.Forms.Padding(3);
-            this.StaffTab.Size = new System.Drawing.Size(554, 306);
-            this.StaffTab.TabIndex = 1;
-            this.StaffTab.Text = "Staff";
             this.StaffTab.UseVisualStyleBackColor = true;
             // 
             // StaffRemoveButton
             // 
+            resources.ApplyResources(this.StaffRemoveButton, "StaffRemoveButton");
             this.StaffRemoveButton.BackColor = System.Drawing.SystemColors.Window;
             this.StaffRemoveButton.FlatAppearance.BorderSize = 2;
-            this.StaffRemoveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StaffRemoveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StaffRemoveButton.Location = new System.Drawing.Point(323, 256);
             this.StaffRemoveButton.Name = "StaffRemoveButton";
-            this.StaffRemoveButton.Size = new System.Drawing.Size(100, 44);
-            this.StaffRemoveButton.TabIndex = 24;
-            this.StaffRemoveButton.Text = "Remove";
             this.StaffRemoveButton.UseVisualStyleBackColor = false;
             this.StaffRemoveButton.Click += new System.EventHandler(this.StaffRemoveButton_Click);
             // 
             // StaffEditButton
             // 
+            resources.ApplyResources(this.StaffEditButton, "StaffEditButton");
             this.StaffEditButton.BackColor = System.Drawing.SystemColors.Window;
             this.StaffEditButton.FlatAppearance.BorderSize = 2;
-            this.StaffEditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StaffEditButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StaffEditButton.Location = new System.Drawing.Point(217, 257);
             this.StaffEditButton.Name = "StaffEditButton";
-            this.StaffEditButton.Size = new System.Drawing.Size(100, 44);
-            this.StaffEditButton.TabIndex = 23;
-            this.StaffEditButton.Text = "Edit";
             this.StaffEditButton.UseVisualStyleBackColor = false;
             this.StaffEditButton.Click += new System.EventHandler(this.StaffEditButton_Click);
             // 
             // StaffAddButton
             // 
+            resources.ApplyResources(this.StaffAddButton, "StaffAddButton");
             this.StaffAddButton.BackColor = System.Drawing.SystemColors.Window;
             this.StaffAddButton.FlatAppearance.BorderSize = 2;
-            this.StaffAddButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StaffAddButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StaffAddButton.Location = new System.Drawing.Point(111, 257);
             this.StaffAddButton.Name = "StaffAddButton";
-            this.StaffAddButton.Size = new System.Drawing.Size(100, 44);
-            this.StaffAddButton.TabIndex = 22;
-            this.StaffAddButton.Text = "Add";
             this.StaffAddButton.UseVisualStyleBackColor = false;
             this.StaffAddButton.Click += new System.EventHandler(this.StaffAddButton_Click);
             // 
             // StaffDetailsButton
             // 
+            resources.ApplyResources(this.StaffDetailsButton, "StaffDetailsButton");
             this.StaffDetailsButton.BackColor = System.Drawing.SystemColors.Window;
             this.StaffDetailsButton.FlatAppearance.BorderSize = 2;
-            this.StaffDetailsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.StaffDetailsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StaffDetailsButton.Location = new System.Drawing.Point(5, 257);
             this.StaffDetailsButton.Name = "StaffDetailsButton";
-            this.StaffDetailsButton.Size = new System.Drawing.Size(100, 44);
-            this.StaffDetailsButton.TabIndex = 21;
-            this.StaffDetailsButton.Text = "Details";
             this.StaffDetailsButton.UseVisualStyleBackColor = false;
             this.StaffDetailsButton.Click += new System.EventHandler(this.StaffDetailsButton_Click);
             // 
             // StaffFilterLabel
             // 
+            resources.ApplyResources(this.StaffFilterLabel, "StaffFilterLabel");
             this.StaffFilterLabel.BackColor = System.Drawing.SystemColors.Window;
             this.StaffFilterLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.StaffFilterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StaffFilterLabel.Location = new System.Drawing.Point(5, 39);
             this.StaffFilterLabel.Name = "StaffFilterLabel";
-            this.StaffFilterLabel.Size = new System.Drawing.Size(93, 23);
-            this.StaffFilterLabel.TabIndex = 20;
-            this.StaffFilterLabel.Text = "Filter By :";
-            this.StaffFilterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // StaffIdLabel
             // 
-            this.StaffIdLabel.AutoSize = true;
-            this.StaffIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StaffIdLabel.Location = new System.Drawing.Point(104, 42);
+            resources.ApplyResources(this.StaffIdLabel, "StaffIdLabel");
             this.StaffIdLabel.Name = "StaffIdLabel";
-            this.StaffIdLabel.Size = new System.Drawing.Size(33, 17);
-            this.StaffIdLabel.TabIndex = 17;
-            this.StaffIdLabel.Text = "ID :";
             // 
             // StaffIdTb
             // 
+            resources.ApplyResources(this.StaffIdTb, "StaffIdTb");
             this.StaffIdTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.StaffIdTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StaffIdTb.Location = new System.Drawing.Point(143, 39);
             this.StaffIdTb.Name = "StaffIdTb";
-            this.StaffIdTb.Size = new System.Drawing.Size(151, 23);
-            this.StaffIdTb.TabIndex = 15;
             this.StaffIdTb.TextChanged += new System.EventHandler(this.StaffIdTb_TextChanged);
             // 
             // StaffListBox
             // 
-            this.StaffListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.StaffListBox, "StaffListBox");
             this.StaffListBox.FormattingEnabled = true;
-            this.StaffListBox.ItemHeight = 16;
-            this.StaffListBox.Location = new System.Drawing.Point(8, 71);
             this.StaffListBox.Name = "StaffListBox";
-            this.StaffListBox.Size = new System.Drawing.Size(542, 180);
-            this.StaffListBox.TabIndex = 12;
             // 
             // FlightTab
             // 
+            resources.ApplyResources(this.FlightTab, "FlightTab");
             this.FlightTab.Controls.Add(this.CancelButton);
             this.FlightTab.Controls.Add(this.FlightEditButton);
             this.FlightTab.Controls.Add(this.FlightBuyButton);
@@ -301,197 +223,122 @@
             this.FlightTab.Controls.Add(this.FlightDestinationButton);
             this.FlightTab.Controls.Add(this.FlightIdButton);
             this.FlightTab.Controls.Add(this.FlightListBox);
-            this.FlightTab.Location = new System.Drawing.Point(4, 25);
             this.FlightTab.Name = "FlightTab";
-            this.FlightTab.Padding = new System.Windows.Forms.Padding(3);
-            this.FlightTab.Size = new System.Drawing.Size(554, 306);
-            this.FlightTab.TabIndex = 0;
-            this.FlightTab.Text = "Flight";
             this.FlightTab.UseVisualStyleBackColor = true;
             // 
             // CancelButton
             // 
+            resources.ApplyResources(this.CancelButton, "CancelButton");
             this.CancelButton.BackColor = System.Drawing.SystemColors.Window;
             this.CancelButton.FlatAppearance.BorderSize = 2;
-            this.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelButton.Location = new System.Drawing.Point(324, 256);
             this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(100, 44);
-            this.CancelButton.TabIndex = 12;
-            this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = false;
             // 
             // FlightEditButton
             // 
+            resources.ApplyResources(this.FlightEditButton, "FlightEditButton");
             this.FlightEditButton.BackColor = System.Drawing.SystemColors.Window;
             this.FlightEditButton.FlatAppearance.BorderSize = 2;
-            this.FlightEditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FlightEditButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FlightEditButton.Location = new System.Drawing.Point(218, 257);
             this.FlightEditButton.Name = "FlightEditButton";
-            this.FlightEditButton.Size = new System.Drawing.Size(100, 44);
-            this.FlightEditButton.TabIndex = 11;
-            this.FlightEditButton.Text = "Edit";
             this.FlightEditButton.UseVisualStyleBackColor = false;
             this.FlightEditButton.Click += new System.EventHandler(this.FlightEditButton_Click);
             // 
             // FlightBuyButton
             // 
+            resources.ApplyResources(this.FlightBuyButton, "FlightBuyButton");
             this.FlightBuyButton.BackColor = System.Drawing.SystemColors.Window;
             this.FlightBuyButton.FlatAppearance.BorderSize = 2;
-            this.FlightBuyButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FlightBuyButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FlightBuyButton.Location = new System.Drawing.Point(112, 257);
             this.FlightBuyButton.Name = "FlightBuyButton";
-            this.FlightBuyButton.Size = new System.Drawing.Size(100, 44);
-            this.FlightBuyButton.TabIndex = 10;
-            this.FlightBuyButton.Text = "Add";
             this.FlightBuyButton.UseVisualStyleBackColor = false;
             this.FlightBuyButton.Click += new System.EventHandler(this.FlightAddButton_Click);
             // 
             // FlightDetailsButton
             // 
+            resources.ApplyResources(this.FlightDetailsButton, "FlightDetailsButton");
             this.FlightDetailsButton.BackColor = System.Drawing.SystemColors.Window;
             this.FlightDetailsButton.FlatAppearance.BorderSize = 2;
-            this.FlightDetailsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FlightDetailsButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FlightDetailsButton.Location = new System.Drawing.Point(6, 257);
             this.FlightDetailsButton.Name = "FlightDetailsButton";
-            this.FlightDetailsButton.Size = new System.Drawing.Size(100, 44);
-            this.FlightDetailsButton.TabIndex = 9;
-            this.FlightDetailsButton.Text = "Details";
             this.FlightDetailsButton.UseVisualStyleBackColor = false;
             this.FlightDetailsButton.Click += new System.EventHandler(this.FlightDetailsButton_Click);
             // 
             // FlightFilterLabel
             // 
+            resources.ApplyResources(this.FlightFilterLabel, "FlightFilterLabel");
             this.FlightFilterLabel.BackColor = System.Drawing.SystemColors.Window;
             this.FlightFilterLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.FlightFilterLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FlightFilterLabel.Location = new System.Drawing.Point(6, 39);
             this.FlightFilterLabel.Name = "FlightFilterLabel";
-            this.FlightFilterLabel.Size = new System.Drawing.Size(93, 23);
-            this.FlightFilterLabel.TabIndex = 8;
-            this.FlightFilterLabel.Text = "Filter By :";
-            this.FlightFilterLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FlightOrderLabel
             // 
+            resources.ApplyResources(this.FlightOrderLabel, "FlightOrderLabel");
             this.FlightOrderLabel.BackColor = System.Drawing.SystemColors.Window;
             this.FlightOrderLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.FlightOrderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FlightOrderLabel.Location = new System.Drawing.Point(6, 6);
             this.FlightOrderLabel.Name = "FlightOrderLabel";
-            this.FlightOrderLabel.Size = new System.Drawing.Size(93, 23);
-            this.FlightOrderLabel.TabIndex = 7;
-            this.FlightOrderLabel.Text = "Order By :";
-            this.FlightOrderLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // FlightDestinationLabel
             // 
-            this.FlightDestinationLabel.AutoSize = true;
-            this.FlightDestinationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FlightDestinationLabel.Location = new System.Drawing.Point(301, 42);
+            resources.ApplyResources(this.FlightDestinationLabel, "FlightDestinationLabel");
             this.FlightDestinationLabel.Name = "FlightDestinationLabel";
-            this.FlightDestinationLabel.Size = new System.Drawing.Size(100, 17);
-            this.FlightDestinationLabel.TabIndex = 6;
-            this.FlightDestinationLabel.Text = "Destination :";
             // 
             // FlightIdLabel
             // 
-            this.FlightIdLabel.AutoSize = true;
-            this.FlightIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FlightIdLabel.Location = new System.Drawing.Point(105, 42);
+            resources.ApplyResources(this.FlightIdLabel, "FlightIdLabel");
             this.FlightIdLabel.Name = "FlightIdLabel";
-            this.FlightIdLabel.Size = new System.Drawing.Size(33, 17);
-            this.FlightIdLabel.TabIndex = 5;
-            this.FlightIdLabel.Text = "ID :";
             // 
             // FlightDestinationTb
             // 
-            this.FlightDestinationTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.FlightDestinationTb, "FlightDestinationTb");
             this.FlightDestinationTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FlightDestinationTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FlightDestinationTb.Location = new System.Drawing.Point(407, 40);
             this.FlightDestinationTb.Name = "FlightDestinationTb";
-            this.FlightDestinationTb.Size = new System.Drawing.Size(141, 23);
-            this.FlightDestinationTb.TabIndex = 4;
             this.FlightDestinationTb.TextChanged += new System.EventHandler(this.FlightDestinationTb_TextChanged);
             // 
             // FlightIdTb
             // 
+            resources.ApplyResources(this.FlightIdTb, "FlightIdTb");
             this.FlightIdTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.FlightIdTb.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FlightIdTb.Location = new System.Drawing.Point(144, 40);
             this.FlightIdTb.Name = "FlightIdTb";
-            this.FlightIdTb.Size = new System.Drawing.Size(151, 23);
-            this.FlightIdTb.TabIndex = 3;
             this.FlightIdTb.TextChanged += new System.EventHandler(this.FlightIdTb_TextChanged);
             // 
             // FlightDestinationButton
             // 
+            resources.ApplyResources(this.FlightDestinationButton, "FlightDestinationButton");
             this.FlightDestinationButton.BackColor = System.Drawing.SystemColors.Window;
             this.FlightDestinationButton.FlatAppearance.BorderSize = 2;
-            this.FlightDestinationButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FlightDestinationButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FlightDestinationButton.Location = new System.Drawing.Point(162, 6);
             this.FlightDestinationButton.Name = "FlightDestinationButton";
-            this.FlightDestinationButton.Size = new System.Drawing.Size(105, 29);
-            this.FlightDestinationButton.TabIndex = 2;
-            this.FlightDestinationButton.Text = "Destination";
             this.FlightDestinationButton.UseVisualStyleBackColor = false;
             this.FlightDestinationButton.Click += new System.EventHandler(this.FlightDestinationButton_Click);
             // 
             // FlightIdButton
             // 
+            resources.ApplyResources(this.FlightIdButton, "FlightIdButton");
             this.FlightIdButton.BackColor = System.Drawing.SystemColors.Window;
             this.FlightIdButton.FlatAppearance.BorderSize = 2;
-            this.FlightIdButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.FlightIdButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FlightIdButton.Location = new System.Drawing.Point(108, 6);
             this.FlightIdButton.Name = "FlightIdButton";
-            this.FlightIdButton.Size = new System.Drawing.Size(48, 29);
-            this.FlightIdButton.TabIndex = 1;
-            this.FlightIdButton.Text = "ID";
             this.FlightIdButton.UseVisualStyleBackColor = false;
             this.FlightIdButton.Click += new System.EventHandler(this.FlightIdButton_Click);
             // 
             // FlightListBox
             // 
-            this.FlightListBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.FlightListBox, "FlightListBox");
             this.FlightListBox.FormattingEnabled = true;
-            this.FlightListBox.ItemHeight = 16;
-            this.FlightListBox.Location = new System.Drawing.Point(9, 71);
             this.FlightListBox.Name = "FlightListBox";
-            this.FlightListBox.Size = new System.Drawing.Size(542, 180);
-            this.FlightListBox.TabIndex = 0;
             // 
             // RefreshButton
             // 
+            resources.ApplyResources(this.RefreshButton, "RefreshButton");
             this.RefreshButton.BackColor = System.Drawing.SystemColors.Window;
-            this.RefreshButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.RefreshButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RefreshButton.Location = new System.Drawing.Point(515, 0);
             this.RefreshButton.Name = "RefreshButton";
-            this.RefreshButton.Size = new System.Drawing.Size(71, 24);
-            this.RefreshButton.TabIndex = 13;
-            this.RefreshButton.Text = "Refresh";
             this.RefreshButton.UseVisualStyleBackColor = false;
             this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
             // 
             // AdminPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(586, 374);
             this.Controls.Add(this.RefreshButton);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.AdminMenuStrip);
             this.Name = "AdminPage";
-            this.Text = "AdminPage";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AdminPage_FormClosing);
             this.Load += new System.EventHandler(this.AdminPage_Load);
             this.AdminMenuStrip.ResumeLayout(false);
@@ -507,11 +354,6 @@
         }
 
         private System.Windows.Forms.Button CancelButton;
-
-        private System.Windows.Forms.ToolStripMenuItem adminToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem1;
-
-        private System.Windows.Forms.ToolStripMenuItem spanishToolStripMenuItem;
 
         #endregion
         private System.Windows.Forms.MenuStrip AdminMenuStrip;
@@ -545,5 +387,6 @@
         private System.Windows.Forms.ListBox StaffListBox;
         private System.Windows.Forms.Button StaffRemoveButton;
         private System.Windows.Forms.Button RefreshButton;
+        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
     }
 }

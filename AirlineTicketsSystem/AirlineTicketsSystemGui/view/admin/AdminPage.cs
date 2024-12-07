@@ -94,8 +94,16 @@ namespace AirlineTicketsSystemGui
             }
             else
             {
-                //TODO: List<Staff> staffs = AirlineTicketSystemController.FilterStaff(int.Parse(StaffIdTb))
-                //StaffBs.DataSource(staffs);
+                    int staffId = int.Parse(StaffIdTb.Text);
+                List<Staff> staffs = new List<Staff>();
+                foreach (Staff staff in AirlineTicketSystem.GetInstance().Staff)
+                {
+                    if (staff.UserId.ToString().StartsWith(staffId.ToString()))
+                    {
+                        staffs.Add(staff);
+                    }
+                }
+                StaffBs.DataSource = staffs;
             }
             LoadData();
         }
@@ -124,22 +132,60 @@ namespace AirlineTicketsSystemGui
 
         private void FlightIdButton_Click(object sender, EventArgs e)
         {
-            AirlineTicketSystemController.NotImplementedMb();
+            List<Flight> flights = AirlineTicketSystem.GetInstance().Flights.OrderBy(flight => flight.FlightId).ToList();
+            FlightBs.DataSource = flights;
+            LoadData();
         }
         
         private void FlightDestinationButton_Click(object sender, EventArgs e)
         {
-            AirlineTicketSystemController.NotImplementedMb();
+            List<Flight> flights = AirlineTicketSystem.GetInstance().Flights.OrderBy(flight => flight.Destination).ToList();
+            FlightBs.DataSource = flights;
+            LoadData();
         }
         
         private void FlightIdTb_TextChanged(object sender, EventArgs e)
         {
-            AirlineTicketSystemController.NotImplementedMb();
+            if (FlightIdTb.Text.Equals(""))
+            {
+                ResetDataSource();
+            }
+            else
+            {
+                int flightId = int.Parse(FlightIdTb.Text);
+                List<Flight> flights = new List<Flight>();
+                foreach (Flight flight in AirlineTicketSystem.GetInstance().Flights)
+                {
+                    if (flight.FlightId.ToString().StartsWith(flightId.ToString()))
+                    {
+                        flights.Add(flight);
+                    }
+                }
+                FlightBs.DataSource = flights;
+            }
+            LoadData();
         }
 
         private void FlightDestinationTb_TextChanged(object sender, EventArgs e)
         {
-            AirlineTicketSystemController.NotImplementedMb();
+            if (FlightDestinationTb.Text.Equals(""))
+            {
+                ResetDataSource();
+            }
+            else
+            {
+                string destination = FlightDestinationTb.Text;
+                List<Flight> flights = new List<Flight>();
+                foreach (Flight flight in AirlineTicketSystem.GetInstance().Flights)
+                {
+                    if (flight.Destination.ToLower().StartsWith(destination.ToLower()))
+                    {
+                        flights.Add(flight);
+                    }
+                }
+                FlightBs.DataSource = flights;
+            }
+            LoadData();
         }
 
         private void CancelButton_Click(object sender, EventArgs e)

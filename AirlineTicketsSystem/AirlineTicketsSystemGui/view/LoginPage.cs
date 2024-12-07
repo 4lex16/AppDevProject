@@ -88,7 +88,9 @@ namespace AirlineTicketsSystemGui
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This login page requires the provided Id and the password");
+            AirlineTicketSystemController.AboutMb("About Login Page", 
+                "This page's purpose is to log in as staff or passenger," +
+                " open the admin login page or register as a passenger");
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)

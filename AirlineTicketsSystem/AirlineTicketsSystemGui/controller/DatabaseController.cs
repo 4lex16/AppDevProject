@@ -354,7 +354,6 @@ namespace AirlineTicketsSystemGui.controller
                             reader.GetInt32(2),
                             reader.GetInt32(3),
                             reader.GetString(4),
-                            reader.GetString(4),
                             reader.GetString(5),
                             reader.GetString(6)
                         ));

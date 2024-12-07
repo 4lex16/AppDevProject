@@ -117,20 +117,20 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="FlightTab.Text" xml:space="preserve">
-    <value>Flight</value>
+  <data name="TicketDetailsButton.Text" xml:space="preserve">
+    <value>Details</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="FlightListBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>542, 212</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="FilghtDateButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
+  <data name="RefreshButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>515, 0</value>
   </data>
   <data name="&gt;&gt;frenchToolStripMenuItem.Name" xml:space="preserve">
     <value>frenchToolStripMenuItem</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="FlightListBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
   </data>
@@ -147,8 +147,8 @@
   <data name="TicketOrderLabel.Text" xml:space="preserve">
     <value>Order By :</value>
   </data>
-  <data name="TicketPrintButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  <data name="FlightDetailsButton.Text" xml:space="preserve">
+    <value>Details</value>
   </data>
   <data name="&gt;&gt;TicketTab.Name" xml:space="preserve">
     <value>TicketTab</value>
@@ -180,11 +180,8 @@
   <data name="&gt;&gt;logoutToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;FlightIdButton.Name" xml:space="preserve">
-    <value>FlightIdButton</value>
-  </data>
-  <data name="RefreshButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>515, 0</value>
+  <data name="&gt;&gt;RefreshButton.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
@@ -194,6 +191,9 @@
   </data>
   <data name="&gt;&gt;FlightDestinationButton.Parent" xml:space="preserve">
     <value>FlightTab</value>
+  </data>
+  <data name="FlightDestinationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 6</value>
   </data>
   <data name="&gt;&gt;aboutToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -213,8 +213,14 @@
   <data name="TicketOrderLabel.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 23</value>
   </data>
+  <data name="TicketPrintButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 44</value>
+  </data>
   <data name="&gt;&gt;TicketIdButton.Name" xml:space="preserve">
     <value>TicketIdButton</value>
+  </data>
+  <data name="FlightDestinationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 29</value>
   </data>
   <data name="FlightIdButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -231,26 +237,23 @@
   <data name="&gt;&gt;FlightOrderLabel.Parent" xml:space="preserve">
     <value>FlightTab</value>
   </data>
-  <data name="FlightOrderLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>93, 23</value>
-  </data>
   <data name="TicketTab.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
   <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
   </data>
-  <data name="FilghtDateButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>PassengerPage</value>
   </data>
-  <data name="FlightDetailsButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TicketTab.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TicketPrintButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;TicketDetailsButton.Name" xml:space="preserve">
     <value>TicketDetailsButton</value>
@@ -261,8 +264,8 @@
   <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;RefreshButton.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="FlightBuyButton.Text" xml:space="preserve">
+    <value>Buy</value>
   </data>
   <data name="TicketRefundButton.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
@@ -294,9 +297,6 @@
   <data name="FlightIdButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;FilghtDateButton.Parent" xml:space="preserve">
-    <value>FlightTab</value>
-  </data>
   <data name="TicketListBox.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
@@ -324,6 +324,9 @@
   <data name="TicketOrderLabel.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
+  <data name="&gt;&gt;TicketRefundButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="FlightListBox.ItemHeight" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
@@ -342,7 +345,7 @@
   <data name="TicketRefundButton.Text" xml:space="preserve">
     <value>Refund</value>
   </data>
-  <data name="TicketDetailsButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="TicketRefundButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
@@ -360,8 +363,8 @@
   <data name="FilghtDateButton.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
   </data>
-  <data name="&gt;&gt;pageToolStripMenuItem.Name" xml:space="preserve">
-    <value>pageToolStripMenuItem</value>
+  <data name="pageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 20</value>
   </data>
   <data name="&gt;&gt;TicketListBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -387,23 +390,23 @@
   <data name="&gt;&gt;FlightTab.Name" xml:space="preserve">
     <value>FlightTab</value>
   </data>
+  <data name="&gt;&gt;FlightBuyButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="FlightIdButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 29</value>
-  </data>
-  <data name="&gt;&gt;RefreshButton.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="TicketTab.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
   </data>
-  <data name="FlightDetailsButton.Text" xml:space="preserve">
-    <value>Details</value>
+  <data name="&gt;&gt;pageToolStripMenuItem.Name" xml:space="preserve">
+    <value>pageToolStripMenuItem</value>
   </data>
   <data name="FlightDestinationButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="&gt;&gt;TicketTab.Parent" xml:space="preserve">
-    <value>tabControl1</value>
+  <data name="&gt;&gt;RefreshButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="FlightDestinationButton.Text" xml:space="preserve">
     <value>Destination</value>
@@ -413,9 +416,6 @@
   </data>
   <data name="FlightDestinationButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
-  </data>
-  <data name="&gt;&gt;TicketRefundButton.Parent" xml:space="preserve">
-    <value>TicketTab</value>
   </data>
   <data name="&gt;&gt;logoutToolStripMenuItem.Name" xml:space="preserve">
     <value>logoutToolStripMenuItem</value>
@@ -438,17 +438,20 @@
   <data name="TicketDetailsButton.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
-  <data name="&gt;&gt;FlightBuyButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="FilghtDateButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;RefreshButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="TicketPrintButton.Text" xml:space="preserve">
+    <value>Print</value>
   </data>
-  <data name="TicketIdButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 29</value>
+  <data name="PassengerMenuStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="logoutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
+  </data>
+  <data name="FlightBuyButton.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="&gt;&gt;TicketDetailsButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -486,8 +489,8 @@
   <data name="&gt;&gt;FlightIdButton.Parent" xml:space="preserve">
     <value>FlightTab</value>
   </data>
-  <data name="TicketDetailsButton.Text" xml:space="preserve">
-    <value>Details</value>
+  <data name="&gt;&gt;RefreshButton.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;TicketPrintButton.Name" xml:space="preserve">
     <value>TicketPrintButton</value>
@@ -525,9 +528,6 @@
   <data name="TicketRefundButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>112, 257</value>
   </data>
-  <data name="&gt;&gt;TicketListBox.Parent" xml:space="preserve">
-    <value>TicketTab</value>
-  </data>
   <data name="&gt;&gt;FlightTab.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
@@ -540,14 +540,11 @@
   <data name="tabControl1.ItemSize" type="System.Drawing.Size, System.Drawing">
     <value>100, 21</value>
   </data>
-  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;FilghtDateButton.Parent" xml:space="preserve">
+    <value>FlightTab</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>562, 334</value>
-  </data>
-  <data name="FlightDestinationButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>105, 29</value>
   </data>
   <data name="&gt;&gt;tabControl1.Name" xml:space="preserve">
     <value>tabControl1</value>
@@ -561,11 +558,14 @@
   <data name="FlightDetailsButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 44</value>
   </data>
+  <data name="FlightTab.Text" xml:space="preserve">
+    <value>Flight</value>
+  </data>
   <data name="TicketTab.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="FlightDestinationButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>162, 6</value>
+  <data name="TicketIdButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 29</value>
   </data>
   <data name="&gt;&gt;TicketIdButton.Parent" xml:space="preserve">
     <value>TicketTab</value>
@@ -579,17 +579,14 @@
   <data name="PassengerMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
     <value>586, 24</value>
   </data>
-  <data name="&gt;&gt;TicketIdButton.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="TicketRefundButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+  <data name="TicketDetailsButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
   </data>
-  <data name="PassengerMenuStrip.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;TicketListBox.Parent" xml:space="preserve">
+    <value>TicketTab</value>
   </data>
-  <data name="FlightBuyButton.Text" xml:space="preserve">
-    <value>Buy</value>
+  <data name="FilghtDateButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
   </data>
   <data name="&gt;&gt;FilghtDateButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -633,8 +630,8 @@
   <data name="&gt;&gt;TicketListBox.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="FlightBuyButton.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="&gt;&gt;TicketIdButton.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="FlightOrderLabel.Text" xml:space="preserve">
     <value>Order By :</value>
@@ -644,9 +641,6 @@
   </data>
   <data name="TicketOrderLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
-  </data>
-  <data name="TicketListBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 41</value>
   </data>
   <data name="englishToolStripMenuItem.Text" xml:space="preserve">
     <value>E&amp;nglish</value>
@@ -659,6 +653,9 @@
   </data>
   <data name="&gt;&gt;FlightDetailsButton.Name" xml:space="preserve">
     <value>FlightDetailsButton</value>
+  </data>
+  <data name="TicketDetailsButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 257</value>
   </data>
   <data name="&gt;&gt;PassengerMenuStrip.Parent" xml:space="preserve">
     <value>$this</value>
@@ -693,20 +690,23 @@
   <data name="FlightIdButton.Text" xml:space="preserve">
     <value>ID</value>
   </data>
-  <data name="pageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+  <data name="TicketListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 41</value>
   </data>
-  <data name="&gt;&gt;TicketRefundButton.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;TicketRefundButton.Parent" xml:space="preserve">
+    <value>TicketTab</value>
   </data>
   <data name="TicketIdButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>108, 6</value>
   </data>
-  <data name="TicketDetailsButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 257</value>
+  <data name="&gt;&gt;TicketTab.Parent" xml:space="preserve">
+    <value>tabControl1</value>
   </data>
-  <data name="TicketPrintButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 44</value>
+  <data name="&gt;&gt;FlightIdButton.Name" xml:space="preserve">
+    <value>FlightIdButton</value>
+  </data>
+  <data name="FlightDetailsButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
   <data name="TicketRefundButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 44</value>
@@ -717,8 +717,8 @@
   <data name="&gt;&gt;TicketPrintButton.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="TicketPrintButton.Text" xml:space="preserve">
-    <value>Print</value>
+  <data name="FlightOrderLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 23</value>
   </data>
   <data name="TicketPrintButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>

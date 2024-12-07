@@ -140,6 +140,10 @@
   <data name="&gt;&gt;exitToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="RefreshButton.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
   <data name="TicketOrderLabel.Text" xml:space="preserve">
     <value>Order By :</value>
   </data>
@@ -179,6 +183,9 @@
   <data name="&gt;&gt;FlightIdButton.Name" xml:space="preserve">
     <value>FlightIdButton</value>
   </data>
+  <data name="RefreshButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>515, 0</value>
+  </data>
   <data name="aboutToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
   </data>
@@ -194,7 +201,6 @@
   <data name="&gt;&gt;FlightDetailsButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="FlightDetailsButton.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
@@ -240,8 +246,8 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>PassengerPage</value>
   </data>
-  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="FlightDetailsButton.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
   <data name="&gt;&gt;TicketTab.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -253,6 +259,9 @@
     <value>Ticket List</value>
   </data>
   <data name="&gt;&gt;tabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RefreshButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
   <data name="TicketRefundButton.TabIndex" type="System.Int32, mscorlib">
@@ -292,7 +301,7 @@
     <value>13</value>
   </data>
   <data name="&gt;&gt;tabControl1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="FilghtDateButton.Text" xml:space="preserve">
     <value>Date</value>
@@ -330,14 +339,11 @@
   <data name="TicketIdButton.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
   </data>
-  <data name="TicketRefundButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 257</value>
+  <data name="TicketRefundButton.Text" xml:space="preserve">
+    <value>Refund</value>
   </data>
   <data name="TicketDetailsButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
-  </data>
-  <data name="FlightDetailsButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Passenger Page</value>
@@ -366,6 +372,9 @@
   <data name="&gt;&gt;frenchToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;RefreshButton.Name" xml:space="preserve">
+    <value>RefreshButton</value>
+  </data>
   <data name="&gt;&gt;FilghtDateButton.Name" xml:space="preserve">
     <value>FilghtDateButton</value>
   </data>
@@ -380,6 +389,9 @@
   </data>
   <data name="FlightIdButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>48, 29</value>
+  </data>
+  <data name="&gt;&gt;RefreshButton.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="TicketTab.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
@@ -427,6 +439,9 @@
     <value>22</value>
   </data>
   <data name="&gt;&gt;FlightBuyButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RefreshButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="TicketIdButton.Size" type="System.Drawing.Size, System.Drawing">
@@ -507,8 +522,8 @@
   <data name="FlightOrderLabel.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 10pt, style=Bold</value>
   </data>
-  <data name="TicketRefundButton.Text" xml:space="preserve">
-    <value>Refund</value>
+  <data name="TicketRefundButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>112, 257</value>
   </data>
   <data name="&gt;&gt;TicketListBox.Parent" xml:space="preserve">
     <value>TicketTab</value>
@@ -524,6 +539,9 @@
   </data>
   <data name="tabControl1.ItemSize" type="System.Drawing.Size, System.Drawing">
     <value>100, 21</value>
+  </data>
+  <data name="&gt;&gt;tabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="tabControl1.Size" type="System.Drawing.Size, System.Drawing">
     <value>562, 334</value>
@@ -712,7 +730,7 @@
     <value>&amp;Logout</value>
   </data>
   <data name="&gt;&gt;PassengerMenuStrip.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <metadata name="PassengerMenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -721,6 +739,6 @@
     <value>True</value>
   </metadata>
   <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>fr-CA</value>
+    <value>en</value>
   </metadata>
 </root>

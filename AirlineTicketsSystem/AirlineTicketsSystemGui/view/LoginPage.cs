@@ -26,7 +26,7 @@ namespace AirlineTicketsSystemGui
         {
             int enteredStaffId = int.Parse(StaffIdTb.Text);
             String enteredStaffPassword = StaffPasswordTb.Text;
-            for (int i = 0; i < airlineTicketSystem.Staff.Count(); i++)
+            for (int i = 0; i < airlineTicketSystem.Staff.Count; i++)
             {
                 int id = airlineTicketSystem.Staff[i].UserId;
 

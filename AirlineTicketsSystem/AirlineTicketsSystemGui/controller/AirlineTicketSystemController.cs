@@ -26,7 +26,7 @@ namespace AirlineTicketsSystemGui.controller
 
         public static int InsertPassenger(string fullName, string email, string password, string phone, string address)
         {
-            Passenger passenger = new Passenger(airlineTicketSystem.Passengers.Count + 10000, fullName, email, password, phone, address);
+            Passenger passenger = new Passenger(airlineTicketSystem.Passengers.Count + 10000, email, password, fullName, phone, address);
             DatabaseController.InsertPassengerRecord(passenger);
             airlineTicketSystem.Passengers.Add(passenger);
             return passenger.UserId;

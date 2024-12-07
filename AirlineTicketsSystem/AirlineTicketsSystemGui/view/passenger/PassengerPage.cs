@@ -41,8 +41,10 @@ namespace AirlineTicketsSystemGui
 
         private void PassengerPage_Load(object sender, EventArgs e)
         {
-            FlightListBox.Items.AddRange(airlineTicketSystem.Flights.ToArray());
-            TicketListBox.Items.AddRange(Passenger.Tickets.ToArray());
+            Flights = airlineTicketSystem.Flights;
+            Tickets = Passenger.Tickets;
+            FlightListBox.Items.AddRange(Flights.ToArray());
+            TicketListBox.Items.AddRange(Tickets.ToArray());
         }
 
         private void TicketDetailsButton_Click(object sender, EventArgs e)
@@ -65,7 +67,7 @@ namespace AirlineTicketsSystemGui
         {
             if (FlightListBox.SelectedItem != null)
             {
-                new PassengerBuyTicketPage((Flight)FlightListBox.SelectedItem, Passenger);
+                new PassengerBuyTicketPage((Flight)FlightListBox.SelectedItem, Passenger).Show();
             }
         }
 
@@ -178,7 +180,8 @@ namespace AirlineTicketsSystemGui
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            new LoginPage();
+            this.Hide();
         }
 
         private void englishToolStripMenuItem_Click(object sender, EventArgs e)
@@ -205,6 +208,13 @@ namespace AirlineTicketsSystemGui
                 new LanguageController().UpdateConfig("language", "fr-CA");
                 Application.Restart();
             }
+        }
+
+        private void RefreshButton_Click(object sender, EventArgs e)
+        {
+            Tickets = Passenger.Tickets;
+            TicketListBox.Items.Clear();
+            TicketListBox.Items.AddRange(Tickets.ToArray());
         }
     }
 }

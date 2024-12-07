@@ -32,8 +32,6 @@ namespace AirlineTicketsSystemGui
         private void SignupButton_Click(object sender, EventArgs e)
         {
             AirlineTicketSystemController.InsertPassenger(FullnameTb.Text, EmailTb.Text, PasswordTb.Text, PhoneTb.Text, AddressTb.Text);
-            new LoginPage().Show();
-            this.Hide();
 
             
 

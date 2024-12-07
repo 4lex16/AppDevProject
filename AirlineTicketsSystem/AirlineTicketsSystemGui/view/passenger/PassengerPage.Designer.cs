@@ -53,6 +53,7 @@
             this.TicketIdButton = new System.Windows.Forms.Button();
             this.TicketListBox = new System.Windows.Forms.ListBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.RefreshButton = new System.Windows.Forms.Button();
             this.PassengerMenuStrip.SuspendLayout();
             this.FlightTab.SuspendLayout();
             this.TicketTab.SuspendLayout();
@@ -255,10 +256,19 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             // 
+            // RefreshButton
+            // 
+            resources.ApplyResources(this.RefreshButton, "RefreshButton");
+            this.RefreshButton.BackColor = System.Drawing.SystemColors.Window;
+            this.RefreshButton.Name = "RefreshButton";
+            this.RefreshButton.UseVisualStyleBackColor = false;
+            this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
+            // 
             // PassengerPage
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.RefreshButton);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.PassengerMenuStrip);
             this.MainMenuStrip = this.PassengerMenuStrip;
@@ -300,5 +310,6 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.Button FilghtDateButton;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
+        private System.Windows.Forms.Button RefreshButton;
     }
 }

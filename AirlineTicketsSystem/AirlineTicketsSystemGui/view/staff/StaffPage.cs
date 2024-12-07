@@ -48,6 +48,8 @@ namespace AirlineTicketsSystemGui
 
         private void StaffPage_Load(object sender, EventArgs e)
         {
+            flights = airlineTicketSystem.Flights;
+            passengers = airlineTicketSystem.Passengers;
             FlightListBox.Items.AddRange(flights.ToArray());
             PassengerListBox.Items.AddRange(passengers.ToArray());
         }

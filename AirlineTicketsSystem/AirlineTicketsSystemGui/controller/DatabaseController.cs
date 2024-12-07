@@ -354,6 +354,7 @@ namespace AirlineTicketsSystemGui.controller
                             reader.GetInt32(2),
                             reader.GetInt32(3),
                             reader.GetString(4),
+                            reader.GetString(4),
                             reader.GetString(5),
                             reader.GetString(6)
                         ));
@@ -386,7 +387,7 @@ namespace AirlineTicketsSystemGui.controller
             {
                 connection.Open();
                 string query = "SELECT * FROM passengers";
-
+                
                 using (var command = new SQLiteCommand(query, connection))
                 using (var reader = command.ExecuteReader())
                 {
@@ -395,9 +396,9 @@ namespace AirlineTicketsSystemGui.controller
                         passengers.Add(new Passenger
                         (
                             reader.GetInt32(0),
-                            reader.GetString(1),
                             reader.GetString(2),
                             reader.GetString(3),
+                            reader.GetString(1),
                             reader.GetString(4),
                             reader.GetString(5)
                         ));

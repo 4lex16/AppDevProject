@@ -82,5 +82,71 @@ namespace AirlineTicketsSystemGui.controller
                 MessageBoxIcon.Error
             );
         }
+
+        public static void UpdateStaff(int staffId, string email, string password)
+        {
+            Staff staff = new Staff(staffId, email, password);
+            DatabaseController.UpdateStaffRecord(staffId, email, password);
+            for (int i = 0; i < airlineTicketSystem.Staff.Count; i++)
+            {
+                if (airlineTicketSystem.Staff[i].UserId == staffId)
+                {
+                    airlineTicketSystem.Staff[i] = staff;
+                    break;
+                }
+            }
+        }
+
+        public static void UpdateFirstClassSeats(Flight flight, int firstClassSeats)
+        {
+            DatabaseController.UpdateFirstClassSeats(flight.FlightId, firstClassSeats);
+            for (int i = 0; i < airlineTicketSystem.Flights.Count; i++)
+            {
+                if (airlineTicketSystem.Flights[i].FlightId == flight.FlightId)
+                {
+                    airlineTicketSystem.Flights[i] = flight;
+                    break;
+                }
+            }
+        }
+
+        public static void UpdateBusinessClassSeats(Flight flight, int businessClassSeats)
+        {
+            DatabaseController.UpdateBusinessClassSeats(flight.FlightId, businessClassSeats);
+            for (int i = 0; i < airlineTicketSystem.Flights.Count; i++)
+            {
+                if (airlineTicketSystem.Flights[i].FlightId == flight.FlightId)
+                {
+                    airlineTicketSystem.Flights[i] = flight;
+                    break;
+                }
+            }
+        }
+
+        public static void UpdateFlight(int flightId, int firstClassSeats, int businessClassSeats, int coachClassSeats, string destination, string departureTime, string departureDate)
+        {
+            Flight flight = new Flight(flightId, firstClassSeats, businessClassSeats, coachClassSeats, destination, departureTime, departureDate);
+            DatabaseController.UpdateFlightRecord(flightId, firstClassSeats, businessClassSeats, coachClassSeats, destination, departureTime, departureDate);
+            for (int i = 0; i < airlineTicketSystem.Flights.Count; i++)
+            {
+                if (airlineTicketSystem.Flights[i].FlightId == flight.FlightId)
+                {
+                    airlineTicketSystem.Flights[i] = flight;
+                    break;
+                }
+            }
+        }
+        public static void UpdateCoachClassSeats(Flight flight, int coachClassSeats)
+        {
+            DatabaseController.UpdateBusinessClassSeats(flight.FlightId, coachClassSeats);
+            for (int i = 0; i < airlineTicketSystem.Flights.Count; i++)
+            {
+                if (airlineTicketSystem.Flights[i].FlightId == flight.FlightId)
+                {
+                    airlineTicketSystem.Flights[i] = flight;
+                    break;
+                }
+            }
+        }
     }
 }

@@ -74,6 +74,7 @@ namespace AirlineTicketsSystemGui
             resources.ApplyResources(this.StaffIDTb, "StaffIDTb");
             this.StaffIDTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.StaffIDTb.Name = "StaffIDTb";
+            this.StaffIDTb.ReadOnly = true;
             // 
             // EmailLabel
             // 

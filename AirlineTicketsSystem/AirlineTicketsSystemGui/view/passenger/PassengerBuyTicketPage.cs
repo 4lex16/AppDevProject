@@ -26,8 +26,8 @@ namespace AirlineTicketsSystemGui
         private void BuyButton_Click(object sender, EventArgs e)
         {
             //All it do is get information and create ticket assign it to passenger
-            Ticket ticket = new Ticket(Passenger.Tickets.Count + 100, Flight, Passenger.UserId, (SeatType)SeatTypeCb.SelectedIndex);
-            AirlineTicketSystemController.inserTicket(ticket.Flight, ticket.PassengerId, ticket.SeatType);
+            AirlineTicketSystemController.inserTicket(Flight, Passenger.UserId, (SeatType)SeatTypeCb.SelectedIndex);
+            Ticket ticket = DatabaseController.ReturnLastTicket();
             Passenger.Tickets.Add(ticket);
             this.Close();
         }

@@ -16,16 +16,23 @@ namespace AirlineTicketsSystemGui
 
         private void AdminEditStaffPage_Load(object sender, EventArgs e)
         {
-            StaffIDTb.Text = Staff.Email;
-            NewStaffEmailTb.Text = Staff.Password;
+            StaffIDTb.Text = Staff.UserId.ToString();
+            NewStaffEmailTb.Text = Staff.Email;
+            NewStaffPasswordTb.Text = Staff.Password;
         }
 
         private void EditButton_Click(object sender, EventArgs e)
         {
-            if (StaffIDTb.Text != null && NewStaffPasswordTb.Text != null && NewStaffEmailTb.Text != null) 
+            if (StaffIDTb.Text != null && NewStaffPasswordTb.Text != null && NewStaffEmailTb.Text != null)
             {
-                DatabaseController.UpdateStaffRecord(int.Parse(StaffIDTb.Text), NewStaffEmailTb.Text, NewStaffPasswordTb.Text);
+                AirlineTicketSystemController.UpdateStaff(int.Parse(StaffIDTb.Text), NewStaffEmailTb.Text, NewStaffPasswordTb.Text);
             }
+            else
+            {
+                MessageBox.Show("No Field Can be Empty!");
+            }
+
+            this.Close();
         }
 
         private void CancelButton_Click(object sender, EventArgs e)

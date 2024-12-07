@@ -144,7 +144,7 @@ namespace AirlineTicketsSystemGui
         {
             var orderFlight = flights.OrderBy(flight => flight.FlightId).ToList();
 
-            new StaffPage(Staff, orderFlight, passengers);
+            new StaffPage(Staff, orderFlight, passengers).Show();
             this.Hide();
         }
 
@@ -152,7 +152,7 @@ namespace AirlineTicketsSystemGui
         {
             var orderFlight = flights.OrderBy(flight => flight.Destination).ToList();
 
-            new StaffPage(Staff, orderFlight, passengers);
+            new StaffPage(Staff, orderFlight, passengers).Show();
             this.Hide();
         }
 

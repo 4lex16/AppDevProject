@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -91,7 +91,7 @@ namespace AirlineTicketsSystemGui
 
                 for (int i = 0; i < airlineTicketSystem.Passengers.Count; i++)
                 {
-                    if (airlineTicketSystem.Passengers[i].UserId == passengerId)
+                    if (airlineTicketSystem.Passengers[i].UserId.ToString().StartsWith(passengerId.ToString()))
                     {
                         PassengerListBox.Items.Add(airlineTicketSystem.Passengers[i].ToString());
                         break;
@@ -107,17 +107,15 @@ namespace AirlineTicketsSystemGui
         private void PassengerIdButton_Click(object sender, EventArgs e)
         {
             var orderPassenger = passengers.OrderBy(passenger => passenger.UserId).ToList();
-
-            new StaffPage(Staff, flights, orderPassenger);
-            this.Hide();
+            PassengerListBox.Items.Clear();
+            PassengerListBox.Items.AddRange(orderPassenger.ToArray());
         }
 
         private void PassengerUsernameButton_Click(object sender, EventArgs e)
         {
             var orderPassenger = passengers.OrderBy(passenger => passenger.Name).ToList();
-
-            new StaffPage(Staff, flights, orderPassenger);
-            this.Hide();
+            PassengerListBox.Items.Clear();
+            PassengerListBox.Items.AddRange(orderPassenger.ToArray());
         }
 
         private void PassengerUsernameTB_TextChanged(object sender, EventArgs e)
@@ -129,7 +127,7 @@ namespace AirlineTicketsSystemGui
 
                 for (int i = 0; i < airlineTicketSystem.Passengers.Count; i++)
                 {
-                    if (airlineTicketSystem.Passengers[i].Name.ToLower().Equals(passengerName.ToLower()))
+                    if (airlineTicketSystem.Passengers[i].Name.ToLower().StartsWith(passengerName.ToLower()))
                     {
                         PassengerListBox.Items.Add(airlineTicketSystem.Passengers[i].ToString());
                         break;
@@ -167,9 +165,9 @@ namespace AirlineTicketsSystemGui
 
                 for (int i = 0; i < airlineTicketSystem.Flights.Count; i++)
                 {
-                    if (airlineTicketSystem.Flights[i].FlightId == flightId)
+                    if (airlineTicketSystem.Flights[i].FlightId.ToString().StartsWith(flightId.ToString()))
                     {
-                        FlightListBox.Items.Add(airlineTicketSystem.Flights[i].ToString());
+                        FlightListBox.Items.Add(airlineTicketSystem.Flights[i]);
                         break;
                     }
                 }
@@ -190,7 +188,7 @@ namespace AirlineTicketsSystemGui
 
                 for (int i = 0; i < airlineTicketSystem.Flights.Count; i++)
                 {
-                    if (airlineTicketSystem.Flights[i].Destination.ToLower().Equals(flightDestination.ToLower()))
+                    if (airlineTicketSystem.Flights[i].Destination.ToLower().StartsWith(flightDestination.ToLower()))
                     {
                         FlightListBox.Items.Add(airlineTicketSystem.Flights[i].ToString());
                         break;

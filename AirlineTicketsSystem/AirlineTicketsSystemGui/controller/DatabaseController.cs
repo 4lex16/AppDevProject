@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SQLite;
@@ -384,20 +385,22 @@ namespace AirlineTicketsSystemGui.controller
             {
                 connection.Open();
                 string query = "SELECT * FROM passengers";
-                
+
                 using (var command = new SQLiteCommand(query, connection))
                 using (var reader = command.ExecuteReader())
                 {
                     while (reader.Read())
                     {
+                        int userId = reader.GetInt32(0);
                         passengers.Add(new Passenger
                         (
-                            reader.GetInt32(0),
+                            userId,
                             reader.GetString(2),
                             reader.GetString(3),
                             reader.GetString(1),
                             reader.GetString(4),
-                            reader.GetString(5)
+                            reader.GetString(5),
+                            QueryTicketsByUserId(userId)
                         ));
                     }
                 }
@@ -421,7 +424,7 @@ namespace AirlineTicketsSystemGui.controller
                 connection.Open();
                 string query =
                 @"
-                    SELECT t.ticket_id, s.seat_type_num, p.passenger_id, f.flight_id,
+                    SELECT t.ticket_id, t.seat_type, p.passenger_id, f.flight_id,
                     f.first_class_seats, f.business_class_seats, f.coach_class_seats, 
                     f.destination, f.departure_time, f.departure_date 
                     FROM tickets t
@@ -442,8 +445,8 @@ namespace AirlineTicketsSystemGui.controller
                                 reader.GetInt32(5),
                                 reader.GetInt32(6),
                                 reader.GetString(7),
-                                reader.GetString(8),
-                                reader.GetString(9)
+                                reader.GetString(9),
+                                reader.GetString(8)
                             ),
                             reader.GetInt32(2),
                             (SeatType)reader.GetInt32(1)
@@ -568,33 +571,35 @@ namespace AirlineTicketsSystemGui.controller
                 connection.Open();
                 string query =
                 @"
-                    SELECT t.ticket_id, s.seat_type_num, p.passenger_id, f.flight_id,
+                    SELECT t.ticket_id, t.seat_type, p.passenger_id, f.flight_id,
                     f.first_class_seats, f.business_class_seats, f.coach_class_seats, 
                     f.destination, f.departure_time, f.departure_date 
                     FROM tickets t
                     JOIN passengers p ON t.passenger_id = p.passenger_id
                     JOIN flights f ON t.flight_id = f.flight_id
-                    WHERE t.passenger_id = " + userId;
-
+                    WHERE t.passenger_id = @userId";
                 using (var command = new SQLiteCommand(query, connection))
-                using (var reader = command.ExecuteReader())
                 {
-                    while (reader.Read())
+                    command.Parameters.AddWithValue("@userId", userId);
+                    using (var reader = command.ExecuteReader())
                     {
-                        tickets.Add(new Ticket(
-                            reader.GetInt32(0),
-                            new Flight(
-                                reader.GetInt32(3),
-                                reader.GetInt32(4),
-                                reader.GetInt32(5),
-                                reader.GetInt32(6),
-                                reader.GetString(7),
-                                reader.GetString(8),
-                                reader.GetString(9)
-                            ),
-                            reader.GetInt32(2),
-                            (SeatType)reader.GetInt32(1)
-                        ));
+                        while (reader.Read())
+                        {
+                            tickets.Add(new Ticket(
+                                reader.GetInt32(0),
+                                new Flight(
+                                    reader.GetInt32(3),
+                                    reader.GetInt32(4),
+                                    reader.GetInt32(5),
+                                    reader.GetInt32(6),
+                                    reader.GetString(7),
+                                    reader.GetString(9),
+                                    reader.GetString(8)
+                                ),
+                                reader.GetInt32(2),
+                                (SeatType)reader.GetInt32(1)
+                            ));
+                        }
                     }
                 }
             }
@@ -602,9 +607,13 @@ namespace AirlineTicketsSystemGui.controller
 
         }
 
+
+
+
         public static Flight ReturnLastFlight()
         {
             Flight flight;
+
             if (!File.Exists(dbFilePath))
             {
                 SQLiteConnection.CreateFile(dbFilePath);
@@ -612,14 +621,15 @@ namespace AirlineTicketsSystemGui.controller
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
             {
-                string query = 
+                string query =
                 @"
                     SELECT * FROM flights
                 ";
 
                 using (var command = new SQLiteCommand(query, connection))
                 using (var reader = command.ExecuteReader())
-                {;
+                {
+                    ;
                     //int flightId, int firstClassSeats, int businessClassSeats, int coachClassSeats, string destination, string departureDate, string departureTime
                     flight = new Flight(
                         reader.GetInt32(0),
@@ -629,17 +639,17 @@ namespace AirlineTicketsSystemGui.controller
                         reader.GetString(4),
                         reader.GetString(5),
                         reader.GetString(6)
-                        ) ;
+                        );
                 }
 
             }
             return flight;
 
         }
-
         public static Ticket ReturnLastTicket()
         {
             Ticket ticket;
+
             if (!File.Exists(dbFilePath))
             {
                 SQLiteConnection.CreateFile(dbFilePath);
@@ -677,9 +687,9 @@ namespace AirlineTicketsSystemGui.controller
                         );
                 }
             }
-
             return ticket;
         }
+
         public static Staff ReturnLastStaff()
         {
             Staff staff;
@@ -734,10 +744,47 @@ namespace AirlineTicketsSystemGui.controller
                         reader.GetString(4),
                         reader.GetString(5)
                         );
-                } 
+                }
             }
 
             return passenger;
+        }
+        public static void AddFcTicket(int flightId)
+        {
+            connection.Open();
+            string query = @"UPDATE flight 
+                                 SET first_class_seats = first_class_seats - 1 
+                                 WHERE flight_id = @flightId";
+            using (var command = new SQLiteCommand(query, connection))
+            {
+                command.Parameters.AddWithValue("@flightId", flightId);
+                command.ExecuteReader();
+            }
+        }
+
+        public static void AddBcTicket(int flightId)
+        {
+            connection.Open();
+            string query = @"UPDATE flight 
+                                 SET business_class_seats = business_class_seats - 1 
+                                 WHERE flight_id = @flightId";
+            using (var command = new SQLiteCommand(query, connection))
+            {
+                command.Parameters.AddWithValue("@flightId", flightId);
+                command.ExecuteReader();
+            }
+        }
+        public static void AddCcTicket(int flightId)
+        {
+            connection.Open();
+            string query = @"UPDATE flight 
+                                 SET coach_class_seats = coach_class_seats - 1 
+                                 WHERE flight_id = @flightId";
+            using (var command = new SQLiteCommand(query, connection))
+            {
+                command.Parameters.AddWithValue("@flightId", flightId);
+                command.ExecuteReader();
+            }
         }
     }
 }

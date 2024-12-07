@@ -51,7 +51,7 @@ namespace AirlineTicketsSystemGui
         {
             if (TicketListBox.SelectedItem != null)
             {
-                new DetailsPage("ticket", TicketListBox.SelectedItem).Show();
+                new DetailsPage("tickets", TicketListBox.SelectedItem).Show();
             }
         }
 

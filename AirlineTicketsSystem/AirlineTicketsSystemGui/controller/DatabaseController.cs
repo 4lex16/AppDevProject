@@ -6,6 +6,7 @@ using System.IO;
 using System.Windows.Forms;
 using AirlineTicketsSystemGui.model;
 using Microsoft.Data.Sqlite;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 
 namespace AirlineTicketsSystemGui.controller
 {
@@ -168,7 +169,7 @@ namespace AirlineTicketsSystemGui.controller
                 @"
                         INSERT INTO flights (flight_id, first_class_seats, business_class_seats, coach_class_seats, destination, departure_time, departure_date)
                         VALUES (@flightId, @firstClass, @businessClass, @coachClass, @destination, @departureTime, @departureDate);
-                    ";
+                ";
 
                 using (var command = new SQLiteCommand(insertQuery, connection))
                 {
@@ -353,7 +354,6 @@ namespace AirlineTicketsSystemGui.controller
                             reader.GetInt32(1),
                             reader.GetInt32(2),
                             reader.GetInt32(3),
-                            reader.GetString(4),
                             reader.GetString(4),
                             reader.GetString(5),
                             reader.GetString(6)
@@ -556,6 +556,55 @@ namespace AirlineTicketsSystemGui.controller
                     command.ExecuteReader();
                 }
             }
+        }
+
+        public static List<Ticket> QueryTicketsByUserId(int userId)
+        {
+            var tickets = new List<Ticket>();
+
+            if (!File.Exists(dbFilePath))
+            {
+                SQLiteConnection.CreateFile(dbFilePath);
+            }
+
+            using (var connection = new SQLiteConnection(DatabaseFileName))
+            {
+                connection.Open();
+                string query =
+                @"
+                    SELECT t.ticket_id, s.seat_type_num, p.passenger_id, f.flight_id,
+                    f.first_class_seats, f.business_class_seats, f.coach_class_seats, 
+                    f.destination, f.departure_time, f.departure_date 
+                    FROM tickets t
+                    JOIN seatTypes s ON t.seat_type_id = s.seat_type_id
+                    JOIN passengers p ON t.passenger_id = p.passenger_id
+                    JOIN flights f ON t.flight_id = f.flight_id
+                    WHERE t.passenger_id = " + userId;
+
+                using (var command = new SQLiteCommand(query, connection))
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        tickets.Add(new Ticket(
+                            reader.GetInt32(0),
+                            new Flight(
+                                reader.GetInt32(3),
+                                reader.GetInt32(4),
+                                reader.GetInt32(5),
+                                reader.GetInt32(6),
+                                reader.GetString(7),
+                                reader.GetString(8),
+                                reader.GetString(9)
+                            ),
+                            reader.GetInt32(2),
+                            (SeatType)reader.GetInt32(1)
+                        ));
+                    }
+                }
+            }
+            return tickets;
+
         }
     }
 }

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SQLite;
 using System.IO;
+using System.Security.Cryptography;
 using System.Windows.Forms;
 using AirlineTicketsSystemGui.model;
 using Microsoft.Data.Sqlite;
@@ -48,7 +49,7 @@ namespace AirlineTicketsSystemGui.controller
                 string createTable =
                 @"
                     CREATE TABLE IF NOT EXISTS flights (
-                        flight_id INTEGER PRIMARY KEY,
+                        flight_id INTEGER PRIMARY KEY AUTOINCREMENT,
                         first_class_seats INTEGER NOT NULL,
                         business_class_seats INTEGER NOT NULL,
                         coach_class_seats INTEGER NOT NULL,
@@ -81,7 +82,7 @@ namespace AirlineTicketsSystemGui.controller
                 string createTable =
                 @"
                         CREATE TABLE IF NOT EXISTS tickets (
-                        ticket_id INTEGER PRIMARY KEY,
+                        ticket_id INTEGER PRIMARY KEY AUTOINCREMENT,
                         passenger_id INTEGER,
                         flight_id INTEGER,
                         seat_type INTEGER,
@@ -111,7 +112,7 @@ namespace AirlineTicketsSystemGui.controller
                 string createTable =
                 @"
                         CREATE TABLE IF NOT EXISTS staff (
-                        staff_id INTEGER PRIMARY KEY,
+                        staff_id INTEGER PRIMARY KEY AUTOINCREMENT,
                         email TEXT,
                         password TEXT
                         );
@@ -139,7 +140,7 @@ namespace AirlineTicketsSystemGui.controller
                 string createTable =
                 @"
                         CREATE TABLE IF NOT EXISTS passengers (
-                        passenger_id INTEGER PRIMARY KEY,
+                        passenger_id INTEGER PRIMARY KEY AUTOINCREMENT,
                         passenger_name TEXT,
                         passenger_email TEXT,
                         passenger_password TEXT,
@@ -156,7 +157,7 @@ namespace AirlineTicketsSystemGui.controller
         }
 
         // Insert Methods
-        public static void InsertFlightRecord(int flightId, int firstClass, int businessClass, int coachClass, string destination, string departureTime, string departureDate)
+        public static void InsertFlightRecord(int firstClass, int businessClass, int coachClass, string destination, string departureTime, string departureDate)
         {
             if (!File.Exists(dbFilePath))
             {
@@ -168,13 +169,12 @@ namespace AirlineTicketsSystemGui.controller
                 connection.Open();
                 string insertQuery =
                 @"
-                        INSERT INTO flights (flight_id, first_class_seats, business_class_seats, coach_class_seats, destination, departure_time, departure_date)
-                        VALUES (@flightId, @firstClass, @businessClass, @coachClass, @destination, @departureTime, @departureDate);
+                        INSERT INTO flights ( first_class_seats, business_class_seats, coach_class_seats, destination, departure_time, departure_date)
+                        VALUES (@firstClass, @businessClass, @coachClass, @destination, @departureTime, @departureDate);
                 ";
 
                 using (var command = new SQLiteCommand(insertQuery, connection))
                 {
-                    command.Parameters.AddWithValue("@flightId", flightId);
                     command.Parameters.AddWithValue("@firstClass", firstClass);
                     command.Parameters.AddWithValue("@businessClass", businessClass);
                     command.Parameters.AddWithValue("@coachClass", coachClass);
@@ -188,11 +188,11 @@ namespace AirlineTicketsSystemGui.controller
 
         public static void InsertFlightRecord(Flight flight)
         {
-            InsertFlightRecord(flight.FlightId, flight.FirstClassSeats, flight.BusinessClassSeats, flight.CoachClassSeats,
+            InsertFlightRecord(flight.FirstClassSeats, flight.BusinessClassSeats, flight.CoachClassSeats,
                 flight.Destination, flight.DepartureTime, flight.DepartureDate);
         }
 
-        public static void InsertPassengerRecord(int passengerId, string fullName, string email, string password, string phone, string address)
+        public static void InsertPassengerRecord(string fullName, string email, string password, string phone, string address)
         {
             if (!File.Exists(dbFilePath))
             {
@@ -204,13 +204,12 @@ namespace AirlineTicketsSystemGui.controller
                 connection.Open();
                 string insertQuery =
                 @"
-                        INSERT INTO passengers (passenger_id, passenger_name, passenger_email, passenger_password, passenger_phone_number, passenger_address)
-                        VALUES (@passengerId, @name, @email, @password, @phone, @address);
+                        INSERT INTO passengers (passenger_name, passenger_email, passenger_password, passenger_phone_number, passenger_address)
+                        VALUES (@name, @email, @password, @phone, @address);
                     ";
 
                 using (var command = new SQLiteCommand(insertQuery, connection))
                 {
-                    command.Parameters.AddWithValue("@passengerId", passengerId);
                     command.Parameters.AddWithValue("@name", fullName);
                     command.Parameters.AddWithValue("@email", email);
                     command.Parameters.AddWithValue("@password", password);
@@ -223,10 +222,10 @@ namespace AirlineTicketsSystemGui.controller
 
         public static void InsertPassengerRecord(Passenger passenger)
         {
-            InsertPassengerRecord(passenger.UserId, passenger.Name, passenger.Email, passenger.Password, passenger.Phone, passenger.Address);
+            InsertPassengerRecord(passenger.Name, passenger.Email, passenger.Password, passenger.Phone, passenger.Address);
         }
 
-        public static void InsertStaffRecord(int staffId, string email, string password)
+        public static void InsertStaffRecord(string email, string password)
         {
             if (!File.Exists(dbFilePath))
             {
@@ -238,13 +237,12 @@ namespace AirlineTicketsSystemGui.controller
                 connection.Open();
                 string insertQuery =
                 @"
-                    INSERT INTO staff (staff_id, email, password)
-                    VALUES (@staffId, @email, @password);
+                    INSERT INTO staff (email, password)
+                    VALUES (@email, @password);
                 ";
 
                 using (var command = new SQLiteCommand(insertQuery, connection))
                 {
-                    command.Parameters.AddWithValue("@staffId", staffId);
                     command.Parameters.AddWithValue("@email", email);
                     command.Parameters.AddWithValue("@password", password);
                     command.ExecuteNonQuery();
@@ -298,10 +296,10 @@ namespace AirlineTicketsSystemGui.controller
 
         public static void InsertStaffRecord(Staff staff)
         {
-            InsertStaffRecord(staff.UserId, staff.Email, staff.Password);
+            InsertStaffRecord(staff.Email, staff.Password);
         }
 
-        public static void InsertTicketRecord(int ticketId, int passengerId, int flightId, SeatType seatType)
+        public static void InsertTicketRecord(int passengerId, int flightId, SeatType seatType)
         {
             if (!File.Exists(dbFilePath))
             {
@@ -313,13 +311,12 @@ namespace AirlineTicketsSystemGui.controller
                 connection.Open();
                 string insertQuery =
                 @"
-                        INSERT INTO tickets (ticket_id, passenger_id, flight_id, seat_type)
-                        VALUES (@ticketId, @passengerId, @flightId, @seatType);
+                        INSERT INTO tickets (passenger_id, flight_id, seat_type)
+                        VALUES (@passengerId, @flightId, @seatType);
                     ";
 
                 using (var command = new SQLiteCommand(insertQuery, connection))
                 {
-                    command.Parameters.AddWithValue("@ticketId", ticketId);
                     command.Parameters.AddWithValue("@passengerId", passengerId);
                     command.Parameters.AddWithValue("@flightId", flightId);
                     command.Parameters.AddWithValue("@seatType", seatType);
@@ -388,7 +385,7 @@ namespace AirlineTicketsSystemGui.controller
             {
                 connection.Open();
                 string query = "SELECT * FROM passengers";
-                
+
                 using (var command = new SQLiteCommand(query, connection))
                 using (var reader = command.ExecuteReader())
                 {
@@ -403,12 +400,12 @@ namespace AirlineTicketsSystemGui.controller
                             reader.GetString(1),
                             reader.GetString(4),
                             reader.GetString(5),
-                            QueryTicketsByUserId(userId) 
+                            QueryTicketsByUserId(userId)
                         ));
                     }
                 }
             }
-            
+
             return passengers;
         }
 
@@ -584,7 +581,8 @@ namespace AirlineTicketsSystemGui.controller
                 using (var command = new SQLiteCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@userId", userId);
-                    using (var reader = command.ExecuteReader()) {
+                    using (var reader = command.ExecuteReader())
+                    {
                         while (reader.Read())
                         {
                             tickets.Add(new Ticket(
@@ -609,8 +607,13 @@ namespace AirlineTicketsSystemGui.controller
 
         }
 
-        public static void AddFcTicket(int flightId)
+
+
+
+        public static Flight ReturnLastFlight()
         {
+            Flight flight;
+
             if (!File.Exists(dbFilePath))
             {
                 SQLiteConnection.CreateFile(dbFilePath);
@@ -618,57 +621,169 @@ namespace AirlineTicketsSystemGui.controller
 
             using (var connection = new SQLiteConnection(DatabaseFileName))
             {
-                connection.Open();
-                string query = @"UPDATE flight 
-                                 SET first_class_seats = first_class_seats - 1 
-                                 WHERE flight_id = @flightId"; 
+                string query =
+                @"
+                    SELECT * FROM flights
+                ";
+
                 using (var command = new SQLiteCommand(query, connection))
+                using (var reader = command.ExecuteReader())
                 {
-                    command.Parameters.AddWithValue("@flightId", flightId);
-                    command.ExecuteReader();
+                    ;
+                    //int flightId, int firstClassSeats, int businessClassSeats, int coachClassSeats, string destination, string departureDate, string departureTime
+                    flight = new Flight(
+                        reader.GetInt32(0),
+                        reader.GetInt32(1),
+                        reader.GetInt32(2),
+                        reader.GetInt32(3),
+                        reader.GetString(4),
+                        reader.GetString(5),
+                        reader.GetString(6)
+                        );
                 }
+
+            }
+            return flight;
+
+        }
+        public static Ticket ReturnLastTicket()
+        {
+            Ticket ticket;
+
+            if (!File.Exists(dbFilePath))
+            {
+                SQLiteConnection.CreateFile(dbFilePath);
+            }
+
+            using (var connection = new SQLiteConnection(DatabaseFileName))
+            {
+                string query =
+                @"
+                    SELECT tickets.ticket_id, tickets.passenger_id, tickets.flight_id, tickets.seat_type, flights.first_class_seats
+                    flights.business_class_seats, flights.coach_class_seats, flights.destination, flights.departure_time, flights.departure_dat 
+                    FROM tickets
+                    JOIN flights ON tickets.flight_id = flights.flight_id
+                    WHERE ticket_id = (SELECT MAX(ticket_id) FROM tickets)
+                ";
+
+                using (var command = new SQLiteCommand(query, connection))
+                using (var reader = command.ExecuteReader())
+                {
+                    //int ticketId, Flight flight, int passengerId, SeatType seatTyp
+                    ticket = new Ticket(
+                        reader.GetInt32(0),
+                        //int flightId, int firstClassSeats, int businessClassSeats, int coachClassSeats, string destination, string departureDate, string departureTime
+                        new Flight(
+                            reader.GetInt32(2),
+                            reader.GetInt32(4),
+                            reader.GetInt32(5),
+                            reader.GetInt32(6),
+                            reader.GetString(7),
+                            reader.GetString(8),
+                            reader.GetString(9)
+                            ),
+                        reader.GetInt32(1),
+                        (SeatType)reader.GetInt32(3)
+                        );
+                }
+            }
+            return ticket;
+        }
+
+        public static Staff ReturnLastStaff()
+        {
+            Staff staff;
+            if (!File.Exists(dbFilePath))
+            {
+                SQLiteConnection.CreateFile(dbFilePath);
+            }
+
+            using (var connection = new SQLiteConnection(DatabaseFileName))
+            {
+                string query =
+                @"
+                    SELECT * FROM staff WHERE staff_id = (SELECT MAX(staff_id) FROM staff)
+                ";
+
+                using (var command = new SQLiteCommand(query, connection))
+                using (var reader = command.ExecuteReader())
+                {
+                    staff = new Staff(
+                        reader.GetInt32(0),
+                        reader.GetString(1),
+                        reader.GetString(2)
+                        );
+                }
+            }
+
+            return staff;
+        }
+        public static Passenger ReturnLastPassenger()
+        {
+            Passenger passenger;
+            if (!File.Exists(dbFilePath))
+            {
+                SQLiteConnection.CreateFile(dbFilePath);
+            }
+
+            using (var connection = new SQLiteConnection(DatabaseFileName))
+            {
+                string query =
+                @"
+                    SELECT * FROM passengers WHERE passenger_id = (SELECT MAX(passenger_id) FROM passengers)
+                ";
+
+                using (var command = new SQLiteCommand(query, connection))
+                using (var reader = command.ExecuteReader())
+                {
+                    passenger = new Passenger(
+                        reader.GetInt32(0),
+                        reader.GetString(2),
+                        reader.GetString(3),
+                        reader.GetString(1),
+                        reader.GetString(4),
+                        reader.GetString(5)
+                        );
+                }
+            }
+
+            return passenger;
+        }
+        public static void AddFcTicket(int flightId)
+        {
+            connection.Open();
+            string query = @"UPDATE flight 
+                                 SET first_class_seats = first_class_seats - 1 
+                                 WHERE flight_id = @flightId";
+            using (var command = new SQLiteCommand(query, connection))
+            {
+                command.Parameters.AddWithValue("@flightId", flightId);
+                command.ExecuteReader();
             }
         }
 
         public static void AddBcTicket(int flightId)
         {
-            if (!File.Exists(dbFilePath))
-            {
-                SQLiteConnection.CreateFile(dbFilePath);
-            }
-
-            using (var connection = new SQLiteConnection(DatabaseFileName))
-            {
-                connection.Open();
-                string query = @"UPDATE flight 
+            connection.Open();
+            string query = @"UPDATE flight 
                                  SET business_class_seats = business_class_seats - 1 
                                  WHERE flight_id = @flightId";
-                using (var command = new SQLiteCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@flightId", flightId);
-                    command.ExecuteReader();
-                }
+            using (var command = new SQLiteCommand(query, connection))
+            {
+                command.Parameters.AddWithValue("@flightId", flightId);
+                command.ExecuteReader();
             }
         }
-
         public static void AddCcTicket(int flightId)
         {
-            if (!File.Exists(dbFilePath))
-            {
-                SQLiteConnection.CreateFile(dbFilePath);
-            }
-
-            using (var connection = new SQLiteConnection(DatabaseFileName))
-            {
-                connection.Open();
-                string query = @"UPDATE flight 
+            connection.Open();
+            string query = @"UPDATE flight 
                                  SET coach_class_seats = coach_class_seats - 1 
                                  WHERE flight_id = @flightId";
-                using (var command = new SQLiteCommand(query, connection))
-                {
-                    command.Parameters.AddWithValue("@flightId", flightId);
-                    command.ExecuteReader();
-                }
+            using (var command = new SQLiteCommand(query, connection))
+            {
+                command.Parameters.AddWithValue("@flightId", flightId);
+                command.ExecuteReader();
             }
         }
     }

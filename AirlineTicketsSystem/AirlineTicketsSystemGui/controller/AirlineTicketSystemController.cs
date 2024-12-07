@@ -26,32 +26,32 @@ namespace AirlineTicketsSystemGui.controller
 
         public static int InsertPassenger(string fullName, string email, string password, string phone, string address)
         {
-            Passenger passenger = new Passenger(airlineTicketSystem.Passengers.Count + 10000, email, password, fullName, phone, address);
-            DatabaseController.InsertPassengerRecord(passenger);
+            DatabaseController.InsertPassengerRecord(fullName, email, password, phone, address);
+            Passenger passenger = DatabaseController.ReturnLastPassenger();
             airlineTicketSystem.Passengers.Add(passenger);
             return passenger.UserId;
         }
 
         public static int InsertFlight(int firstClassSeats, int businessClassSeats, int coachClassSeats, string destination, string departureDate, string departureTime)
         {
-            Flight flight = new Flight(airlineTicketSystem.Flights.Count + 1000, firstClassSeats, businessClassSeats, coachClassSeats, destination, departureDate, departureTime);
-            DatabaseController.InsertFlightRecord(flight);
+            DatabaseController.InsertFlightRecord(firstClassSeats, businessClassSeats, coachClassSeats, destination, departureTime, departureDate);
+            Flight flight = DatabaseController.ReturnLastFlight();
             airlineTicketSystem.Flights.Add(flight);
             return flight.FlightId;
         }
 
         public static int InsertStaff(string email, string password)
         {
-            Staff staff = new Staff(airlineTicketSystem.Staff.Count + 100, email, password);
-            DatabaseController.InsertStaffRecord(staff);
+            DatabaseController.InsertStaffRecord(email, password);
+            Staff staff = DatabaseController.ReturnLastStaff();
             airlineTicketSystem.Staff.Add(staff);
             return staff.UserId;
         }
 
         public static int inserTicket(Flight flight, int passengerId, SeatType seatType)
         {
-            Ticket ticket = new Ticket(DatabaseController.GetTicketId(), flight, passengerId, seatType);
-            DatabaseController.InsertTicketRecord(DatabaseController.GetTicketId(), passengerId, flight.FlightId, seatType);
+            DatabaseController.InsertTicketRecord(passengerId, flight.FlightId, seatType);
+            Ticket ticket = DatabaseController.ReturnLastTicket();
             return ticket.TicketId;
         }
 

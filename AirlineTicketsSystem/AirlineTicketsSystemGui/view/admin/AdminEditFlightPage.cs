@@ -18,10 +18,9 @@ namespace AirlineTicketsSystemGui
         // Admin Edit Flight Page Controls
         private void AdminEditFlightPage_Load(object sender, System.EventArgs e)
         {
+            FlightIdTb.Text = Flight.FlightId.ToString();
             DestinationTb.Text = Flight.Destination;
             DateDp.Text = Flight.DepartureDate;
-            HourNup.Text = Flight.DepartureTime.Split(':')[0];
-            MinuteNup.Text = Flight.DepartureTime.Split(':')[1];
             FirstCTb.Text = Flight.FirstClassSeats.ToString();
             BusinessCTb.Text = Flight.BusinessClassSeats.ToString();
             CoachCTb.Text = Flight.CoachClassSeats.ToString();
@@ -29,13 +28,15 @@ namespace AirlineTicketsSystemGui
 
         private void EditButton_Click(object sender, System.EventArgs e)
         {
-            string destination = DestinationTb.Text;
-            string date = DateDp.Text;
             string time = $"{HourNup.Text}:{MinuteNup.Text}";
-            int fc = int.Parse(FirstCTb.Text);
-            int bc = int.Parse(BusinessCTb.Text);
-            int cc = int.Parse(CoachCTb.Text);
-            //TODO: Implement this function in the controller
+            if (FlightIdTb.Text != null && FirstCTb.Text != null && BusinessCTb.Text != null && CoachCTb.Text != null && DestinationTb.Text != null && DateDp.Text != null)
+            {
+                AirlineTicketSystemController.UpdateFlight(int.Parse(FlightIdTb.Text), int.Parse(FirstCTb.Text), int.Parse(BusinessCTb.Text), int.Parse(CoachCTb.Text), DestinationTb.Text, DateDp.Text, time);
+            }
+            else
+            {
+                MessageBox.Show("No Field Can be Empty!");
+            }
             this.Close();
         }
 

@@ -121,10 +121,61 @@
     <value>&amp;About</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="englishToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+  <data name="MinuteNup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>313, 259</value>
   </data>
-  <data name="frenchToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+  <data name="HourNup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>313, 230</value>
+  </data>
+  <data name="CoachCLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 289</value>
+  </data>
+  <data name="BuisnessCLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 260</value>
+  </data>
+  <data name="FirstCLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 229</value>
+  </data>
+  <data name="CoachCTb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 290</value>
+  </data>
+  <data name="BusinessCTb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 259</value>
+  </data>
+  <data name="FirstCTb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>122, 230</value>
+  </data>
+  <data name="SeatsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 193</value>
+  </data>
+  <data name="MinuteLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 260</value>
+  </data>
+  <data name="HourLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 229</value>
+  </data>
+  <data name="TimeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 193</value>
+  </data>
+  <data name="DateDp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 167</value>
+  </data>
+  <data name="DateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 141</value>
+  </data>
+  <data name="EditButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 332</value>
+  </data>
+  <data name="DestinationTb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 102</value>
+  </data>
+  <data name="CancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 332</value>
+  </data>
+  <data name="FlightIdTb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 50</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>418, 374</value>
   </data>
 </root>

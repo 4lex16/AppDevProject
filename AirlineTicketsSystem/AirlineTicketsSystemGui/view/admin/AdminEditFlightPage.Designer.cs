@@ -57,6 +57,8 @@ namespace AirlineTicketsSystemGui
             this.DestinationTb = new System.Windows.Forms.TextBox();
             this.DestinationLabel = new System.Windows.Forms.Label();
             this.CancelButton = new System.Windows.Forms.Button();
+            this.FlightIdTb = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.EditFlightMenuStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MinuteNup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.HourNup)).BeginInit();
@@ -225,10 +227,24 @@ namespace AirlineTicketsSystemGui
             this.CancelButton.UseVisualStyleBackColor = false;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
+            // FlightIdTb
+            // 
+            resources.ApplyResources(this.FlightIdTb, "FlightIdTb");
+            this.FlightIdTb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.FlightIdTb.Name = "FlightIdTb";
+            this.FlightIdTb.ReadOnly = true;
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
             // AdminEditFlightPage
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.FlightIdTb);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.CancelButton);
             this.Controls.Add(this.EditFlightMenuStrip);
             this.Controls.Add(this.MinuteNup);
@@ -288,5 +304,8 @@ namespace AirlineTicketsSystemGui
         private System.Windows.Forms.Button EditBtn;
 
         #endregion
+
+        private System.Windows.Forms.TextBox FlightIdTb;
+        private System.Windows.Forms.Label label1;
     }
 }
